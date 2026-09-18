@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CS Utility - Nade</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/nade.css">
+</head>
+
+<body>
+
+    <header class="nade-header">
+
+        <a id="back-button" href="#" class="back-button">
+            ← Map
+        </a>
+
+        <h1 id="nade-name">NADE</h1>
+
+    </header>
+
+
+    <main class="nade-page">
+
+        <!-- Nade title -->
+
+        <section class="nade-title">
+
+            <h2 id="title">
+                Loading...
+            </h2>
+
+            <div class="nade-tags">
+
+                <span id="team-tag" class="tag">
+                    T
+                </span>
+
+                <span id="type-tag" class="tag">
+                    SMOKE
+                </span>
+
+                <span id="difficulty-tag" class="tag">
+                    BASIC
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- Main content -->
+
+        <section class="nade-content">
+
+
+            <!-- LEFT: MEDIA -->
+
+            <div class="media-area">
+
+                <!-- Video / Image toggle -->
+
+                <div class="media-toggle">
+
+                    <button
+                        id="video-button"
+                        class="media-button active"
+                    >
+                        VIDEO
+                    </button>
+
+                    <button
+                        id="image-button"
+                        class="media-button"
+                    >
+                        IMAGE
+                    </button>
+
+                </div>
+
+
+                <!-- Video -->
+
+                <div
+                    id="video-container"
+                    class="media-container"
+                >
+
+                    <video
+                        id="nade-video"
+                        controls
+                        autoplay
+                        muted
+                        playsinline
+                    ></video>
+
+                </div>
+
+
+                <!-- Image -->
+
+                <div
+                    id="image-container"
+                    class="media-container image-container"
+                >
+
+                    <img
+                        id="lineup-image"
+                        src=""
+                        alt="Nade lineup"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT: INFORMATION -->
+
+            <div class="details">
+
+
+                <!-- Description -->
+
+                <div class="detail-section">
+
+                    <h3>DESCRIPTION</h3>
+
+                    <p id="description">
+                        Loading...
+                    </p>
+
+                </div>
+
+
+                <!-- Technique -->
+
+                <div class="detail-section">
+
+                    <h3>TECHNIQUE</h3>
+
+                    <p id="technique">
+                        Loading...
+                    </p>
+
+                </div>
+
+
+                <!-- Setpos / Setang -->
+
+                <div class="detail-section">
+
+                    <div class="commands-header">
+
+                        <h3>SETUP COMMAND</h3>
+
+                        <button
+                            id="copy-command"
+                            class="copy-button"
+                        >
+                            COPY
+                        </button>
+
+                    </div>
+
+
+                    <code
+                        id="setpos-setang"
+                        class="combined-command"
+                    >
+                        -
+                    </code>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="js/nade.js"></script>
+
+</body>
+
+</html>

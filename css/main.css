@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+
+    background: #101010;
+    color: #f0f0f0;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.site-header {
+    text-align: center;
+    padding: 40px 20px 20px;
+}
+
+.site-header h1 {
+    font-size: 42px;
+    letter-spacing: 4px;
+}
+
+.site-header p {
+    margin-top: 10px;
+    color: #999;
+}
+
+.map-selection {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px 60px;
+}
+
+.map-selection h2 {
+    text-align: center;
+    margin-bottom: 30px;
+
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+.map-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.map-card {
+    position: relative;
+
+    aspect-ratio: 16 / 10;
+
+    overflow: hidden;
+
+    border: 2px solid #333;
+    border-radius: 8px;
+
+    background: #181818;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.map-card:hover {
+    transform: translateY(-4px);
+    border-color: #888;
+}
+
+.map-card img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    opacity: 0.65;
+
+    transition:
+        opacity 0.2s ease,
+        transform 0.3s ease;
+}
+
+.map-card:hover img {
+    opacity: 0.85;
+    transform: scale(1.03);
+}
+
+.map-card span {
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    padding: 20px;
+
+    text-align: left;
+
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    background: linear-gradient(
+        transparent,
+        rgba(0, 0, 0, 0.9)
+    );
+}
+
+
+/* Responsive layout */
+
+@media (max-width: 800px) {
+
+    .map-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .site-header h1 {
+        font-size: 32px;
+    }
+
+    .map-grid {
+        grid-template-columns: 1fr;
+    }
+
+}

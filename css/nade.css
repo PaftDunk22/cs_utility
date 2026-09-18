@@ -1,0 +1,379 @@
+.nade-header {
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 30px;
+
+    border-bottom: 1px solid #333;
+
+    position: relative;
+}
+
+.nade-header h1 {
+    position: absolute;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    font-size: 24px;
+
+    letter-spacing: 3px;
+}
+
+.back-button {
+    color: #ccc;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: color 0.2s;
+}
+
+.back-button:hover {
+    color: white;
+}
+
+
+
+.nade-page {
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    padding: 50px 30px 80px;
+}
+
+
+.nade-title {
+    text-align: center;
+
+    margin-bottom: 40px;
+}
+
+.nade-title h2 {
+    margin-bottom: 15px;
+
+    font-size: 32px;
+
+    letter-spacing: 2px;
+}
+
+.nade-tags {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 8px;
+}
+
+.tag {
+    padding: 6px 12px;
+
+    border: 1px solid #444;
+
+    border-radius: 4px;
+
+    background: #181818;
+
+    color: #ccc;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+}
+
+
+.nade-content {
+    display: grid;
+
+    grid-template-columns:
+        minmax(400px, 1.3fr)
+        minmax(320px, 0.7fr);
+
+    gap: 45px;
+
+    align-items: start;
+}
+
+
+.media-area {
+    width: 100%;
+}
+
+
+.media-toggle {
+    display: flex;
+
+    width: fit-content;
+
+    margin: 0 auto 15px;
+
+    border: 1px solid #333;
+
+    border-radius: 5px;
+
+    overflow: hidden;
+
+    background: #151515;
+}
+
+.media-button {
+    padding: 9px 20px;
+
+    border: none;
+
+    background: transparent;
+
+    color: #888;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    transition:
+        background 0.15s,
+        color 0.15s;
+}
+
+.media-button:hover {
+    color: white;
+}
+
+.media-button.active {
+    background: #2a2a2a;
+
+    color: white;
+}
+
+
+
+.media-container {
+    display: none;
+
+    background: #050505;
+
+    border: 1px solid #333;
+
+    border-radius: 6px;
+
+    overflow: hidden;
+}
+
+.media-container.active {
+    display: block;
+}
+
+
+#nade-video {
+    width: 100%;
+
+    display: block;
+
+    background: #000;
+}
+
+
+.image-container {
+    position: relative;
+
+    cursor: crosshair;
+}
+
+.image-container img {
+    width: 100%;
+
+    height: auto;
+
+    display: block;
+}
+
+.image-container.zooming::after {
+    content: "";
+
+    position: absolute;
+
+    width: 220px;
+    height: 220px;
+
+    left: var(--mouse-x);
+    top: var(--mouse-y);
+
+    transform: translate(-50%, -50%);
+
+    border: 2px solid white;
+
+    border-radius: 50%;
+
+    background-image: var(--zoom-image);
+
+    background-repeat: no-repeat;
+
+    background-size: var(--zoom-size);
+
+    background-position: var(--zoom-position);
+
+    pointer-events: none;
+
+    box-shadow:
+        0 0 0 2px rgba(0, 0, 0, 0.6);
+
+    z-index: 5;
+}
+
+
+.details {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 30px;
+}
+
+.detail-section {
+    padding-bottom: 25px;
+
+    border-bottom: 1px solid #333;
+}
+
+.detail-section:last-child {
+    border-bottom: none;
+}
+
+.detail-section h3 {
+    margin-bottom: 12px;
+
+    color: #999;
+
+    font-size: 12px;
+
+    letter-spacing: 1.5px;
+}
+
+.detail-section p {
+    color: #ccc;
+
+    line-height: 1.6;
+
+    font-size: 15px;
+}
+
+
+.commands-header {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 12px;
+}
+
+.commands-header h3 {
+    margin-bottom: 0;
+}
+
+.combined-command {
+    display: block;
+
+    width: 100%;
+
+    padding: 13px 14px;
+
+    background: #0d0d0d;
+
+    border: 1px solid #333;
+
+    border-radius: 4px;
+
+    color: #ddd;
+
+    font-family: Consolas, monospace;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+
+    overflow-x: auto;
+
+    white-space: normal;
+
+    word-break: break-word;
+}
+
+
+.copy-button {
+    padding: 6px 11px;
+
+    border: 1px solid #444;
+
+    border-radius: 3px;
+
+    background: #202020;
+
+    color: #aaa;
+
+    font-size: 9px;
+
+    font-weight: bold;
+
+    letter-spacing: 0.8px;
+
+    cursor: pointer;
+
+    transition:
+        background 0.15s,
+        color 0.15s;
+}
+
+.copy-button:hover {
+    background: #2d2d2d;
+
+    color: white;
+}
+
+
+@media (max-width: 900px) {
+
+    .nade-content {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+    .nade-page {
+        padding: 35px 20px 60px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .nade-header {
+        padding: 0 20px;
+    }
+
+    .nade-header h1 {
+        display: none;
+    }
+
+    .nade-title h2 {
+        font-size: 25px;
+    }
+
+    .nade-page {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+}

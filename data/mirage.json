@@ -1,0 +1,50 @@
+[
+    {
+        "id": "mirage-window-smoke-01",
+        "landingSpotId": "mirage-window-smoke",
+        "name": "Window Smoke",
+        "team": "T",
+        "type": "smoke",
+        "difficulty": "basic",
+        "situation": ["default"],
+        "instant": false,
+        "description": "Very simple mid window smoke",
+        "technique": "Stand next to the edge of the stairs, aim at the reference point and jumpthrow.",
+        "landingPosition": {
+            "x": 36,
+            "y": 53
+        },
+        "originPosition": {
+            "x": 91,
+            "y": 36
+        },
+        "setpos/setang": "setpos 1422.97 -55.96 -104;setang -20.67 -168.42 0",
+        "lineupImage": "lineups/mirage/window-smoke.jpg",
+        "video": "lineups/mirage/window-smoke.mp4"
+    },
+
+    {
+        "id": "mirage-window-nade-01",
+        "landingSpotId": "mirage-window-nade",
+        "name": "Window Grenade",
+        "team": "CT",
+        "type": "grenade",
+        "difficulty": "advanced",
+        "situation": ["default"],
+        "instant": false,
+        "description": "Nade off the mid window smoke, ideal to set up your AWPer",
+        "technique": "Normal throw, target the small black spot on the wood",
+        "landingPosition": {
+            "x": 36.91,
+            "y": 53
+        },
+        "originPosition": {
+            "x": 36.91,
+            "y": 55
+        },
+        "setpos/setang": "setpos -1120.03894 -967.453186 -104;setang -42.410126 86.603905 0",
+        "lineupImage": "lineups/mirage/window-nade.jpg",
+        "video": "lineups/mirage/window-nade.mp4"
+    }
+
+]

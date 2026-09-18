@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CS Utility - Map</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/map.css">
+</head>
+
+<body>
+
+    <header class="map-header">
+
+        <a href="index.html" class="back-button">
+            ← Maps
+        </a>
+
+        <h1 id="map-name">MAP</h1>
+
+    </header>
+
+
+    <main class="map-page">
+
+        <!-- FILTER PANEL -->
+
+        <aside class="filter-panel">
+
+            <div class="search-container">
+
+                <label for="search">SEARCH</label>
+
+                <input
+                    type="text"
+                    id="search"
+                    placeholder="Search nades..."
+                >
+
+            </div>
+
+
+            <div class="filter-section">
+
+                <h3>TEAM</h3>
+
+                <label>
+                    <input type="checkbox" value="CT" class="team-filter">
+                    CT
+                </label>
+
+                <label>
+                    <input type="checkbox" value="T" class="team-filter">
+                    T
+                </label>
+
+            </div>
+
+
+            <div class="filter-section">
+
+                <h3>NADE TYPE</h3>
+
+                <label>
+                    <input type="checkbox" value="smoke" class="type-filter">
+                    Smoke
+                </label>
+
+                <label>
+                    <input type="checkbox" value="flash" class="type-filter">
+                    Flash
+                </label>
+
+                <label>
+                    <input type="checkbox" value="grenade" class="type-filter">
+                    HE Grenade
+                </label>
+
+                <label>
+                    <input type="checkbox" value="molotov" class="type-filter">
+                    Molotov / Incendiary
+                </label>
+
+            </div>
+
+
+            <div class="filter-section">
+
+                <h3>DIFFICULTY</h3>
+
+                <label>
+                    <input type="checkbox" value="basic" class="difficulty-filter">
+                    Basic
+                </label>
+
+                <label>
+                    <input type="checkbox" value="advanced" class="difficulty-filter">
+                    Advanced
+                </label>
+
+            </div>
+
+
+            <div class="filter-section">
+
+                <h3>SITUATION</h3>
+
+                <label>
+                    <input type="checkbox" value="retake" class="situation-filter">
+                    Retake
+                </label>
+
+                <label>
+                    <input type="checkbox" value="post-plant" class="situation-filter">
+                    Post-plant
+                </label>
+
+                <label>
+                    <input type="checkbox" value="execute" class="situation-filter">
+                    Execute
+                </label>
+
+                <label>
+                    <input type="checkbox" value="default" class="situation-filter">
+                    Default
+                </label>
+
+            </div>
+
+
+            <div class="filter-section">
+
+                <h3>INSTANT NADE</h3>
+
+                <label>
+                    <input type="radio" name="instant" value="all" checked>
+                    All
+                </label>
+
+                <label>
+                    <input type="radio" name="instant" value="true">
+                    Yes
+                </label>
+
+                <label>
+                    <input type="radio" name="instant" value="false">
+                    No
+                </label>
+
+            </div>
+
+
+            <button id="clear-filters" class="clear-button">
+                CLEAR FILTERS
+            </button>
+
+        </aside>
+
+
+        <!-- RADAR -->
+
+        <section class="radar-container">
+
+            <div class="radar">
+
+                <img id="radar-image" src="" alt="Map radar">
+
+                <svg id="throw-lines"></svg>
+
+                <div id="nade-markers"></div>
+                <div id="nade-origins"></div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="js/map.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,335 @@
+.map-header {
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 30px;
+
+    border-bottom: 1px solid #333;
+
+    position: relative;
+}
+
+.map-header h1 {
+    position: absolute;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    font-size: 24px;
+    letter-spacing: 3px;
+}
+
+.back-button {
+    color: #ccc;
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: color 0.2s;
+}
+
+.back-button:hover {
+    color: white;
+}
+
+
+/* Main layout */
+
+.map-page {
+    display: flex;
+
+    min-height: calc(100vh - 80px);
+}
+
+
+/* Filter panel */
+
+.filter-panel {
+    width: 280px;
+
+    flex-shrink: 0;
+
+    padding: 25px;
+
+    background: #151515;
+
+    border-right: 1px solid #333;
+}
+
+.search-container {
+    margin-bottom: 30px;
+}
+
+.search-container label,
+.filter-section h3 {
+    display: block;
+
+    margin-bottom: 12px;
+
+    font-size: 13px;
+    letter-spacing: 1.5px;
+
+    color: #aaa;
+}
+
+.search-container input[type="text"] {
+    width: 100%;
+
+    padding: 11px 12px;
+
+    border: 1px solid #444;
+    border-radius: 4px;
+
+    background: #0d0d0d;
+    color: white;
+
+    outline: none;
+}
+
+.search-container input[type="text"]:focus {
+    border-color: #888;
+}
+
+.filter-section {
+    margin-bottom: 28px;
+}
+
+.filter-section label {
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+
+    margin-bottom: 10px;
+
+    color: #ccc;
+
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+.filter-section input {
+    cursor: pointer;
+}
+
+.clear-button {
+    width: 100%;
+
+    padding: 11px;
+
+    border: 1px solid #444;
+    border-radius: 4px;
+
+    background: #222;
+    color: #ccc;
+
+    cursor: pointer;
+
+    font-weight: bold;
+    font-size: 12px;
+
+    letter-spacing: 1px;
+}
+
+.clear-button:hover {
+    background: #2d2d2d;
+    color: white;
+}
+
+
+/* Radar */
+
+.radar-container {
+    flex: 1;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+
+    overflow: auto;
+
+    background: #0b0b0b;
+}
+
+.radar {
+    position: relative;
+
+    width: min(80vh, 900px);
+
+    aspect-ratio: 1 / 1;
+}
+
+.radar > img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: contain;
+}
+
+
+/* Throw lines */
+
+#throw-lines {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    pointer-events: none;
+
+    z-index: 5;
+}
+
+.throw-line {
+    stroke: #ffffff;
+
+    stroke-width: 2;
+
+    stroke-dasharray: 6 6;
+
+    opacity: 0.7;
+}
+
+
+/* Landing spot markers */
+
+#nade-markers {
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 10;
+}
+
+.nade-marker {
+    position: absolute;
+
+    width: 34px;
+    height: 34px;
+
+    transform: translate(-50%, -50%);
+
+    border: none;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    z-index: 10;
+
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition:
+        transform 0.15s,
+        filter 0.15s;
+}
+
+.nade-marker:hover {
+    transform: translate(-50%, -50%) scale(1.25);
+
+    z-index: 30;
+
+    filter: brightness(1.3);
+}
+
+.nade-marker img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    display: block;
+
+    pointer-events: none;
+}
+
+
+/* Throw origins */
+
+#nade-origins {
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 20;
+
+    pointer-events: none;
+}
+
+.nade-origin {
+    position: absolute;
+
+    width: 24px;
+    height: 24px;
+
+    transform: translate(-50%, -50%);
+
+    border: 2px solid white;
+    border-radius: 50%;
+
+    background: #151515;
+    color: white;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    font-size: 11px;
+    font-weight: bold;
+
+    pointer-events: auto;
+
+    transition:
+        transform 0.15s,
+        background 0.15s;
+}
+
+.nade-origin:hover {
+    transform: translate(-50%, -50%) scale(1.25);
+
+    background: #333;
+}
+
+
+/* Mobile */
+
+@media (max-width: 800px) {
+
+    .map-page {
+        flex-direction: column;
+    }
+
+    .filter-panel {
+        width: 100%;
+
+        border-right: none;
+        border-bottom: 1px solid #333;
+    }
+
+    .radar-container {
+        min-height: 70vh;
+    }
+
+    .radar {
+        width: min(90vw, 700px);
+    }
+}
