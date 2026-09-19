@@ -1,0 +1,233 @@
+[
+    {
+        "id": "inferno-ct-smoke-01",
+        "landingSpotId": "inferno-ct-smoke",
+        "name": "CT Smoke",
+        "team": "T",
+        "type": "smoke",
+        "difficulty": "advanced",
+        "situation": ["execute"],
+        "instant": false,
+        "description": "CT smoke that also covers boost from halfwall",
+        "technique": "Both Clicks, Tap W + Jumpthrow",
+        "landingPosition": {
+            "x": 61,
+            "y": 22.5
+        },
+        "originPosition": {
+            "x": 49.5,
+            "y": 43.5
+        },
+        "setpos/setang": "setpos 369.527100 1664.045532 196.453186;setang -11.998800 65.742264 0",
+        "lineupImage": "lineups/inferno/ct-smoke.jpg",
+        "video": "lineups/inferno/ct-smoke.mp4"
+    },
+    {
+        "id": "inferno-ct-smoke-02",
+        "landingSpotId": "inferno-ct-smoke",
+        "name": "CT Smoke",
+        "team": "T",
+        "type": "smoke",
+        "difficulty": "basic",
+        "situation": ["execute"],
+        "instant": false,
+        "description": "Basic CT smoke from front halfwall",
+        "technique": "Left Click",
+        "landingPosition": {
+            "x": 61,
+            "y": 22.5
+        },
+        "originPosition": {
+            "x": 51,
+            "y": 40
+        },
+        "setpos/setang": "setpos 457.268433 1833.312744 199.999969;setang -22.660917 64.345535 0",
+        "lineupImage": "lineups/inferno/ct-smoke2.jpg",
+        "video": "lineups/inferno/ct-smoke2.mp4"
+    },
+    {
+        "id": "inferno-coffin-smoke-01",
+        "landingSpotId": "inferno-coffin-smoke",
+        "name": "Coffin Smoke",
+        "team": "T",
+        "type": "smoke",
+        "difficulty": "advanced",
+        "situation": ["execute"],
+        "instant": false,
+        "description": "Coffin smoke from halfwall",
+        "technique": "Both Clicks, Jumpthrow",
+        "landingPosition": {
+            "x": 50.8,
+            "y": 14
+        },
+        "originPosition": {
+            "x": 49.5,
+            "y": 43.5
+        },
+        "setpos/setang": "setpos 369.525604 1664.042847 196.453186;setang -13.127393 87.304428 0",
+        "lineupImage": "lineups/inferno/coffin-smoke.jpg",
+        "video": "lineups/inferno/coffin-smoke.mp4"
+    },
+    {
+        "id": "inferno-coffin-smoke-02",
+        "landingSpotId": "inferno-coffin-smoke",
+        "name": "Coffin Smoke",
+        "team": "T",
+        "type": "smoke",
+        "difficulty": "basic",
+        "situation": ["execute"],
+        "instant": false,
+        "description": "Coffin smoke from front halfwall",
+        "technique": "Both Clicks, Jumpthrow",
+        "landingPosition": {
+            "x": 50.8,
+            "y": 14
+        },
+        "originPosition": {
+            "x": 51,
+            "y": 40
+        },
+        "setpos/setang": "setpos 457.286072 1833.340210 199.999969;setang -2.673046 91.286171 0",
+        "lineupImage": "lineups/inferno/coffin-smoke2.jpg",
+        "video": "lineups/inferno/coffin-smoke2.mp4"
+    },
+    {
+        "id": "inferno-moto-smoke",
+        "landingSpotId": "inferno-moto-smoke",
+        "name": "Moto Smoke",
+        "team": "T",
+        "type": "smoke",
+        "difficulty": "basic",
+        "situation": ["execute"],
+        "instant": false,
+        "description": "Moto smoke from underpass",
+        "technique": "Left Click, Jumpthrow",
+        "landingPosition": {
+            "x": 87.5,
+            "y": 60
+        },
+        "originPosition": {
+            "x": 47.5,
+            "y": 64
+        },
+        "setpos/setang": "setpos 285.413269 648.031250 77.048752;setang -41.847340 3.946764 0",
+        "lineupImage": "lineups/inferno/moto-smoke.jpg",
+        "video": "lineups/inferno/moto-smoke.mp4"
+    },
+    {
+        "id": "inferno-second-molotov-01",
+        "landingSpotId": "inferno-second-molotov",
+        "name": "Second molotov",
+        "team": "T",
+        "type": "molotov",
+        "difficulty": "advanced",
+        "situation": ["execute"],
+        "instant": false,
+        "description": "Second molotov from barrels/car",
+        "technique": "Both Clicks, Jumpthrow",
+        "landingPosition": {
+            "x": 49.5,
+            "y": 27
+        },
+        "originPosition": {
+            "x": 50,
+            "y": 37
+        },
+        "setpos/setang": "setpos 479.019409 2016.948730 199.999954;setang -14.256001 99.214127 0",
+        "lineupImage": "lineups/inferno/second-molotov.jpg",
+        "video": "lineups/inferno/second-molotov.mp4"
+    },
+    {
+        "id": "inferno-newbox-molotov-01",
+        "landingSpotId": "inferno-newbox-molotov",
+        "name": "Newbox molotov",
+        "team": "T",
+        "type": "molotov",
+        "difficulty": "basic",
+        "situation": ["execute"],
+        "instant": false,
+        "description": "Newbox/triple molotov from barrles/car",
+        "technique": "Left Click, Jumpthrow",
+        "landingPosition": {
+            "x": 43.5,
+            "y": 25
+        },
+        "originPosition": {
+            "x": 50,
+            "y": 37
+        },
+        "setpos/setang": "setpos 479.019409 2016.948730 199.999954;setang -10.810796 123.360321 0",
+        "lineupImage": "lineups/inferno/newbox-molotov.jpg",
+        "video": "lineups/inferno/newbox-molotov.mp4"
+    },
+    {
+        "id": "inferno-ct-flash",
+        "landingSpotId": "inferno-ct-flash",
+        "name": "CT Flash",
+        "team": "T",
+        "type": "flashbang",
+        "difficulty": "basic",
+        "situation": ["execute"],
+        "instant": false,
+        "description": "Flash that pops behind CT wall not flashing your teammates",
+        "technique": "Left Click",
+        "landingPosition": {
+            "x": 58.5,
+            "y": 22.5
+        },
+        "originPosition": {
+            "x": 51,
+            "y": 40
+        },
+        "setpos/setang": "setpos 457.275513 1833.364014 199.999969;setang -24.918062 62.112152 0",
+        "lineupImage": "lineups/inferno/ct-flash.jpg",
+        "video": "lineups/inferno/ct-flash.mp4"
+    },
+    {
+        "id": "inferno-halfwall-flash",
+        "landingSpotId": "inferno-halfwall-flash",
+        "name": "Halfwall Flash",
+        "team": "T",
+        "type": "flashbang",
+        "difficulty": "basic",
+        "situation": ["default"],
+        "instant": false,
+        "description": "Halfwall flash for taking upper banana",
+        "technique": "Left Click",
+        "landingPosition": {
+            "x": 49,
+            "y": 38.5
+        },
+        "originPosition": {
+            "x": 43,
+            "y": 59
+        },
+        "setpos/setang": "setpos 41.150780 912.456909 144.429398;setang -12.622346 70.047768 0",
+        "lineupImage": "lineups/inferno/halfwall-flash.jpg",
+        "video": "lineups/inferno/halfwall-flash.mp4"
+    },
+    {
+        "id": "inferno-halfwall-flash-02",
+        "landingSpotId": "inferno-halfwall-flash",
+        "name": "Halfwall Flash",
+        "team": "T",
+        "type": "flashbang",
+        "difficulty": "basic",
+        "situation": ["default"],
+        "instant": false,
+        "description": "Halfwall flash for taking upper banana",
+        "technique": "Both Clicks",
+        "landingPosition": {
+            "x": 49,
+            "y": 38.5
+        },
+        "originPosition": {
+            "x": 42,
+            "y": 49
+        },
+        "setpos/setang": "setpos 22.098736 1420.688965 168.171875;setang -14.523388 49.192875 0",
+        "lineupImage": "lineups/inferno/halfwall-flash2.jpg",
+        "video": "lineups/inferno/halfwall-flash2.mp4"
+    }
+
+]

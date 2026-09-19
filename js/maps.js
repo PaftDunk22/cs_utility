@@ -1,48 +1,48 @@
 const maps = [
     {
-        id: "mirage",
-        name: "Mirage",
-        image: "images/maps/mirage.png"
-    },
-    {
         id: "inferno",
         name: "Inferno",
-        image: "images/maps/inferno.png"
-    },
-    {
-        id: "ancient",
-        name: "Ancient",
-        image: "images/maps/ancient.png"
-    },
-    {
-        id: "anubis",
-        name: "Anubis",
-        image: "images/maps/anubis.png"
-    },
-    {
-        id: "nuke",
-        name: "Nuke",
-        image: "images/maps/nuke.png"
-    },
-    {
-        id: "overpass",
-        name: "Overpass",
-        image: "images/maps/overpass.png"
-    },
-    {
-        id: "vertigo",
-        name: "Vertigo",
-        image: "images/maps/vertigo.png"
+        image: "images/maps/inferno.jpg"
     },
     {
         id: "cache",
         name: "Cache",
-        image: "images/maps/cache.png"
+        image: "images/maps/cache.jpg"
+    },
+    {
+        id: "nuke",
+        name: "Nuke",
+        image: "images/maps/nuke.jpg"
+    },
+    {
+        id: "ancient",
+        name: "Ancient",
+        image: "images/maps/ancient.jpg"
     },
     {
         id: "dust2",
         name: "Dust 2",
-        image: "images/maps/dust2.png"
+        image: "images/maps/dust2.jpg"
+    },
+    {
+        id: "mirage",
+        name: "Mirage",
+        image: "images/maps/mirage.jpg"
+    },
+    {
+        id: "anubis",
+        name: "Anubis",
+        image: "images/maps/anubis.jpg"
+    },
+    {
+        id: "overpass",
+        name: "Overpass",
+        image: "images/maps/overpass.jpg"
+    },
+    {
+        id: "vertigo",
+        name: "Vertigo",
+        image: "images/maps/vertigo.jpg"
     }
 ];
 

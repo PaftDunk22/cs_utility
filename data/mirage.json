@@ -9,7 +9,7 @@
         "situation": ["default"],
         "instant": false,
         "description": "Very simple mid window smoke",
-        "technique": "Stand next to the edge of the stairs, aim at the reference point and jumpthrow.",
+        "technique": "Left Click, Jumpthrow",
         "landingPosition": {
             "x": 36,
             "y": 53
@@ -32,8 +32,8 @@
         "difficulty": "advanced",
         "situation": ["default"],
         "instant": false,
-        "description": "Nade off the mid window smoke, ideal to set up your AWPer",
-        "technique": "Normal throw, target the small black spot on the wood",
+        "description": "Nade off the mid window smoke, target the small black spot on the wood, ideal to set up your AWPer",
+        "technique": "Left Click",
         "landingPosition": {
             "x": 36.91,
             "y": 53
