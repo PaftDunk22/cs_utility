@@ -8,6 +8,17 @@ const markerContainer = document.getElementById("nade-markers");
 const originContainer = document.getElementById("nade-origins");
 const throwLines = document.getElementById("throw-lines");
 
+const radarCoordinates =
+    document.getElementById("radar-coordinates");
+
+const isDevMode =
+    new URLSearchParams(window.location.search).get("dev") === "true";
+
+if (isDevMode) {
+    document.querySelector(".radar").classList.add("dev-mode");
+    console.log("RADAR DEV MODE ENABLED");
+}
+
 const searchInput = document.getElementById("search");
 
 const teamFilters =
@@ -45,8 +56,7 @@ async function loadMap() {
 
     try {
 
-        const response =
-            await fetch(`data/${mapId}.json`);
+        const response = await fetch(`data/${mapId}.json`);
 
         if (!response.ok) {
             throw new Error("Could not load map data.");
@@ -60,8 +70,7 @@ async function loadMap() {
 
         console.error(error);
 
-        markerContainer.innerHTML =
-            "<p>Could not load nade data.</p>";
+        markerContainer.innerHTML = "<p>Could not load nade data.</p>";
     }
 }
 
@@ -76,8 +85,7 @@ function getCheckedValues(elements) {
 
 function matchesFilters(nade) {
 
-    const search =
-        searchInput.value.trim().toLowerCase();
+    const search = searchInput.value.trim().toLowerCase();
 
     if (search) {
 
@@ -93,41 +101,27 @@ function matchesFilters(nade) {
     }
 
 
-    const selectedTeams =
-        getCheckedValues(teamFilters);
+    const selectedTeams = getCheckedValues(teamFilters);
 
-    if (
-        selectedTeams.length > 0 &&
-        !selectedTeams.includes(nade.team)
+    if (selectedTeams.length > 0 && !selectedTeams.includes(nade.team)
     ) {
         return false;
     }
 
+    const selectedTypes = getCheckedValues(typeFilters);
 
-    const selectedTypes =
-        getCheckedValues(typeFilters);
+    if (selectedTypes.length > 0 && !selectedTypes.includes(nade.type)) {
+        return false;
+    }
 
-    if (
-        selectedTypes.length > 0 &&
-        !selectedTypes.includes(nade.type)
-    ) {
+    const selectedDifficulties = getCheckedValues(difficultyFilters);
+
+    if (selectedDifficulties.length > 0 && !selectedDifficulties.includes(nade.difficulty)) {
         return false;
     }
 
 
-    const selectedDifficulties =
-        getCheckedValues(difficultyFilters);
-
-    if (
-        selectedDifficulties.length > 0 &&
-        !selectedDifficulties.includes(nade.difficulty)
-    ) {
-        return false;
-    }
-
-
-    const selectedSituations =
-        getCheckedValues(situationFilters);
+    const selectedSituations = getCheckedValues(situationFilters);
 
     if (selectedSituations.length > 0) {
 
@@ -143,15 +137,11 @@ function matchesFilters(nade) {
     }
 
 
-    const instantValue =
-        document.querySelector(
-            'input[name="instant"]:checked'
-        ).value;
+    const instantValue = document.querySelector('input[name="instant"]:checked').value;
 
     if (instantValue !== "all") {
 
-        const wantedValue =
-            instantValue === "true";
+        const wantedValue = instantValue === "true";
 
         if (nade.instant !== wantedValue) {
             return false;
@@ -170,13 +160,7 @@ function renderNades() {
 
     selectedLandingSpot = null;
 
-    const filteredNades =
-        nades.filter(matchesFilters);
-
-
-    /*
-     * Group lineups by landing spot.
-     */
+    const filteredNades = nades.filter(matchesFilters);
 
     const landingSpots = new Map();
 
@@ -184,163 +168,89 @@ function renderNades() {
 
         if (!landingSpots.has(nade.landingSpotId)) {
 
-            landingSpots.set(
-                nade.landingSpotId,
-                []
-            );
+            landingSpots.set(nade.landingSpotId,[]);
         }
 
-        landingSpots
-            .get(nade.landingSpotId)
-            .push(nade);
+        landingSpots.get(nade.landingSpotId).push(nade);
     });
-
-
-    /*
-     * Create one marker for each landing spot.
-     */
 
     landingSpots.forEach((spotNades, landingSpotId) => {
 
         const firstNade = spotNades[0];
 
-        const marker =
-        document.createElement("button");
+        const marker = document.createElement("button");
 
-        marker.classList.add(
-            "nade-marker",
-            firstNade.type
-        );
+        marker.classList.add("nade-marker",firstNade.type);
 
-        marker.style.left =
-            `${firstNade.landingPosition.x}%`;
+        marker.style.left = `${firstNade.landingPosition.x}%`;
 
-        marker.style.top =
-            `${firstNade.landingPosition.y}%`;
+        marker.style.top = `${firstNade.landingPosition.y}%`;
 
-        marker.title =
-            `${firstNade.name} (${spotNades.length} lineups)`;
-
-
-        /*
-        * Add nade icon.
-        */
+        marker.title = `${firstNade.name} (${spotNades.length} lineups)`;
 
         const icon = document.createElement("img");
 
-        icon.src =
-            `images/icons/${firstNade.team.toLowerCase()}/${firstNade.type}.png`;
+        icon.src = `images/icons/${firstNade.team.toLowerCase()}/${firstNade.type}.png`;
 
-        icon.alt =
-            `${firstNade.team} ${firstNade.type}`;
+        icon.alt =  `${firstNade.team} ${firstNade.type}`;
 
         marker.appendChild(icon);
 
-
         marker.addEventListener("click", () => {
 
-            showOrigins(
-                landingSpotId,
-                spotNades,
-                marker
-            );
-
+            showOrigins(landingSpotId,spotNades,marker);
         });
 
-
         markerContainer.appendChild(marker);
-
     });
 
 }
 
 
-function showOrigins(
-    landingSpotId,
-    spotNades,
-    marker
-) {
+function showOrigins(landingSpotId,spotNades,marker) 
+{
 
     originContainer.innerHTML = "";
     throwLines.innerHTML = "";
 
     selectedLandingSpot = landingSpotId;
 
-
     const landingPosition =
         spotNades[0].landingPosition;
 
-
-    /*
-     * Create one dashed line for every lineup.
-     */
-
     spotNades.forEach((nade, index) => {
 
-        const line =
-            document.createElementNS(
-                "http://www.w3.org/2000/svg",
-                "line"
-            );
+        const line = document.createElementNS("http://www.w3.org/2000/svg","line");
 
         line.classList.add("throw-line");
 
+        line.setAttribute("x1",`${nade.originPosition.x}%`);
 
-        line.setAttribute(
-            "x1",
-            `${nade.originPosition.x}%`
-        );
+        line.setAttribute("y1",`${nade.originPosition.y}%`);
 
-        line.setAttribute(
-            "y1",
-            `${nade.originPosition.y}%`
-        );
+        line.setAttribute("x2",`${landingPosition.x}%`);
 
-        line.setAttribute(
-            "x2",
-            `${landingPosition.x}%`
-        );
-
-        line.setAttribute(
-            "y2",
-            `${landingPosition.y}%`
-        );
-
+        line.setAttribute("y2",`${landingPosition.y}%`);
 
         throwLines.appendChild(line);
 
-
-        /*
-         * Create clickable origin.
-         */
-
-        const origin =
-            document.createElement("button");
+        const origin = document.createElement("button");
 
         origin.classList.add("nade-origin");
 
-        origin.style.left =
-            `${nade.originPosition.x}%`;
+        origin.style.left = `${nade.originPosition.x}%`;
 
-        origin.style.top =
-            `${nade.originPosition.y}%`;
+        origin.style.top = `${nade.originPosition.y}%`;
 
+        origin.innerHTML = `<span>${index + 1}</span>`;
 
-        origin.innerHTML =
-            `<span>${index + 1}</span>`;
-
-
-        origin.title =
-            `${nade.name} - Lineup ${index + 1}`;
-
+        origin.title = `${nade.name} - Lineup ${index + 1}`;
 
         origin.addEventListener("click", () => {
 
-            window.location.href =
-                `nade.html?map=${mapId}&nade=${nade.id}`;
+            window.location.href = `nade.html?map=${mapId}&nade=${nade.id}`;
 
         });
-
 
         originContainer.appendChild(origin);
 
@@ -349,10 +259,7 @@ function showOrigins(
 }
 
 
-searchInput.addEventListener(
-    "input",
-    renderNades
-);
+searchInput.addEventListener( "input",renderNades);
 
 
 [
@@ -363,18 +270,13 @@ searchInput.addEventListener(
     ...instantFilters
 ].forEach(filter => {
 
-    filter.addEventListener(
-        "change",
-        renderNades
-    );
-
+    filter.addEventListener("change",renderNades);
 });
 
 
 clearButton.addEventListener("click", () => {
 
     searchInput.value = "";
-
 
     [
         ...teamFilters,
@@ -384,18 +286,67 @@ clearButton.addEventListener("click", () => {
     ].forEach(filter => {
 
         filter.checked = false;
-
     });
 
-
-    document.querySelector(
-        'input[name="instant"][value="all"]'
-    ).checked = true;
-
+    document.querySelector('input[name="instant"][value="all"]').checked = true;
 
     renderNades();
 
 });
+
+if (isDevMode) {
+
+    radarImage.addEventListener("mousemove", event => {
+        const rect = radarImage.getBoundingClientRect();
+
+        const x = ((event.clientX - rect.left) / rect.width) * 100;
+
+        const y = ((event.clientY - rect.top) / rect.height) * 100;
+
+        const clampedX = Math.max(0, Math.min(100, x));
+
+        const clampedY = Math.max(0, Math.min(100, y));
+
+        radarCoordinates.textContent = `X: ${clampedX.toFixed(2)}%    Y: ${clampedY.toFixed(2)}%`;
+    });
+
+    radarImage.addEventListener("mouseleave", () => {
+        radarCoordinates.textContent = "X: --%    Y: --%";
+    });
+
+    radarImage.addEventListener("click", async event => {
+        const rect = radarImage.getBoundingClientRect();
+
+        const x = ((event.clientX - rect.left) / rect.width) * 100;
+
+        const y = ((event.clientY - rect.top) / rect.height) * 100;
+
+        const clampedX = Math.max(0, Math.min(100, x));
+
+        const clampedY = Math.max(0, Math.min(100, y));
+
+        const text =
+        `"x": ${clampedX.toFixed(2)},
+        \t"y": ${clampedY.toFixed(2)}`;
+
+        console.log(text);
+
+        try {
+            await navigator.clipboard.writeText(text);
+
+            radarCoordinates.textContent = "COPIED!";
+
+            setTimeout(() => {
+                radarCoordinates.textContent =
+                    `X: ${clampedX.toFixed(2)}%    Y: ${clampedY.toFixed(2)}%`;
+            }, 1000);
+
+        } catch (error) {
+            console.error("Clipboard failed:", error);
+            radarCoordinates.textContent = "COPY FAILED";
+        }
+    });
+}
 
 
 loadMap();

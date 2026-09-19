@@ -115,9 +115,6 @@ body {
     );
 }
 
-
-/* Responsive layout */
-
 @media (max-width: 800px) {
 
     .map-grid {

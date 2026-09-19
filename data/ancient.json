@@ -1,0 +1,189 @@
+[
+    {
+        "id": "b-long-smoke-01",
+        "landingSpotId": "b-long-smoke",
+        "name": "B site long Smoke",
+        "team": "T",
+        "type": "smoke",
+        "difficulty": "basic",
+        "situation": ["execute"],
+        "instant": false,
+        "description": "Very simple B long smoke",
+        "technique": "Left Click, Jumpthrow",
+        "landingPosition": {
+            "x": 87,
+            "y": 33
+        },
+        "originPosition": {
+            "x": 86.73,
+            "y": 75.37
+        },
+        "setpos/setang": "setpos 1255.971069 -1483.968750 90.341301;setang -3.445516 87.446358 0",
+        "lineupImage": "lineups/ancient/b-long-smoke.jpg",
+        "video": "lineups/ancient/b-long-smoke.mp4"
+    },
+    {
+        "id": "b-long-smoke-02",
+        "landingSpotId": "b-long-smoke",
+        "name": "B site long Smoke",
+        "team": "T",
+        "type": "smoke",
+        "difficulty": "basic",
+        "situation": ["execute"],
+        "instant": false,
+        "description": "Very simple B long smoke",
+        "technique": "Left Click",
+        "landingPosition": {
+            "x": 87,
+            "y": 33
+        },
+        "originPosition": {
+            "x": 72.72,
+        	"y": 58.37
+            
+        },
+        "setpos/setang": "setpos 608.031250 -676.031372 171.040497;setang -27.888496 47.782322 0",
+        "lineupImage": "lineups/ancient/b-long-smoke2.jpg",
+        "video": "lineups/ancient/b-long-smoke2.mp4"
+    },
+    {
+        "id": "b-short-smoke-01",
+        "landingSpotId": "b-short-smoke",
+        "name": "B site short Smoke",
+        "team": "T",
+        "type": "smoke",
+        "difficulty": "basic",
+        "situation": ["execute"],
+        "instant": false,
+        "description": "B site short smoke",
+        "technique": "Left Click, Jumpthrow",
+        "landingPosition": {
+            "x": 74.7,
+            "y": 32
+        },
+        "originPosition": {
+            "x": 86.73,
+            "y": 75.37
+        
+        },
+        "setpos/setang": "setpos 1255.960571 -1483.927490 90.338150;setang -6.237229 108.815872 0",
+        "lineupImage": "lineups/ancient/b-short-smoke.jpg",
+        "video": "lineups/ancient/b-short-smoke.mp4"
+    },
+    {
+        "id": "b-short-smoke-02",
+        "landingSpotId": "b-short-smoke",
+        "name": "B site short Smoke",
+        "team": "T",
+        "type": "smoke",
+        "difficulty": "advanced",
+        "situation": ["execute"],
+        "instant": false,
+        "description": "B site short smoke",
+        "technique": "Both Clicks, Jumpthrow",
+        "landingPosition": {
+            "x": 74.7,
+            "y": 32
+        },
+        "originPosition": {
+            "x": 72.72,
+        	"y": 58.37
+        },
+        "setpos/setang": "setpos 608.031250 -676.031372 171.040497;setang 0.564111 86.541000 0",
+        "lineupImage": "lineups/ancient/b-short-smoke2.jpg",
+        "video": "lineups/ancient/b-short-smoke2.mp4"
+    },
+    {
+        "id": "a-donut-smoke-01",
+        "landingSpotId": "a-donut-smoke",
+        "name": "A site donut Smoke",
+        "team": "T",
+        "type": "smoke",
+        "difficulty": "basic",
+        "situation": ["execute"],
+        "instant": false,
+        "description": "A donut smoke",
+        "technique": "Left Click, Jumpthrow",
+        "landingPosition": {
+            "x": 28.5,
+            "y": 31
+        },
+        "originPosition": {
+            "x": 15.18,
+        	"y": 58.77
+        },
+        "setpos/setang": "setpos -1933.165527 -862.031250 51.144958;setang -31.600910 75.077538 0",
+        "lineupImage": "lineups/ancient/a-donut-smoke.jpg",
+        "video": "lineups/ancient/a-donut-smoke.mp4"
+    },
+    {
+        "id": "a-ct-smoke-01",
+        "landingSpotId": "a-ct-smoke",
+        "name": "A site CT Smoke",
+        "team": "T",
+        "type": "smoke",
+        "difficulty": "basic",
+        "situation": ["execute"],
+        "instant": false,
+        "description": "A site CT smoke",
+        "technique": "Left Click, Jumpthrow",
+        "landingPosition": {
+            "x": 34.5,
+            "y": 17
+        },
+        "originPosition": {
+            "x": 15.18,
+        	"y": 58.77
+        },
+        "setpos/setang": "setpos -1933.165527 -862.031250 51.144958;setang -43.243298 67.028740 0",
+        "lineupImage": "lineups/ancient/a-ct-smoke.jpg",
+        "video": "lineups/ancient/a-ct-smoke.mp4"
+    },
+    {
+        "id": "mid-red-smoke-01",
+        "landingSpotId": "mid-red-smoke",
+        "name": "Mid red Smoke",
+        "team": "T",
+        "type": "smoke",
+        "difficulty": "basic",
+        "situation": ["default"],
+        "instant": false,
+        "description": "Mid red smoke",
+        "technique": "Left Click, Jumpthrow",
+        "landingPosition": {
+            "x": 47.32,
+        	"y": 38.34
+        },
+        "originPosition": {
+            "x": 50.51,
+        	"y": 90.20
+        },
+        "setpos/setang": "setpos -409.172241 -2128.031250 -89.742676;setang -32.313591 91.573997 0",
+        "lineupImage": "lineups/ancient/mid-red-smoke.jpg",
+        "video": "lineups/ancient/mid-red-smoke.mp4"
+    },
+    {
+        "id": "mid-flash-01",
+        "landingSpotId": "mid-flash",
+        "name": "Mid flash",
+        "team": "T",
+        "type": "flashbang",
+        "difficulty": "basic",
+        "situation": ["default"],
+        "instant": false,
+        "description": "Mid flash",
+        "technique": "Left Click, Tap W Jumpthrow",
+        "landingPosition": {
+            "x": 43.70,
+        	"y": 61.66
+        },
+        "originPosition": {
+            "x": 42.83,
+        	"y": 90.49
+        },
+        "setpos/setang": "setpos -735.970032 -2135.968750 -103.488525;setang -20.166315 89.401749 0",
+        "lineupImage": "lineups/ancient/mid-flash-smoke.jpg",
+        "video": "lineups/ancient/mid-flash-smoke.mp4"
+    }
+
+]

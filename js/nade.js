@@ -1,109 +1,73 @@
-const params = new URLSearchParams(
-    window.location.search
-);
+const params = new URLSearchParams(window.location.search);
 
 const mapId = params.get("map");
 const nadeId = params.get("nade");
 
+const nadeName = document.getElementById("nade-name");
 
-const nadeName =
-    document.getElementById("nade-name");
+const title = document.getElementById("title");
 
-const title =
-    document.getElementById("title");
+const teamTag = document.getElementById("team-tag");
 
-const teamTag =
-    document.getElementById("team-tag");
+const typeTag = document.getElementById("type-tag");
 
-const typeTag =
-    document.getElementById("type-tag");
+const difficultyTag = document.getElementById("difficulty-tag");
 
-const difficultyTag =
-    document.getElementById("difficulty-tag");
+const description = document.getElementById("description");
 
-const description =
-    document.getElementById("description");
+const technique = document.getElementById("technique");
 
-const technique =
-    document.getElementById("technique");
+const combinedCommand = document.getElementById("setpos-setang");
 
-const combinedCommand =
-    document.getElementById("setpos-setang");
+const copyCommandButton =document.getElementById("copy-command");
 
-const copyCommandButton =
-    document.getElementById("copy-command");
+const lineupImage = document.getElementById("lineup-image");
 
-const lineupImage =
-    document.getElementById("lineup-image");
+const backButton = document.getElementById("back-button");
 
-const backButton =
-    document.getElementById("back-button");
+const videoButton = document.getElementById("video-button");
 
+const imageButton = document.getElementById("image-button");
 
-/* Media */
+const videoContainer = document.getElementById("video-container");
 
-const videoButton =
-    document.getElementById("video-button");
+const imageContainer = document.getElementById("image-container");
 
-const imageButton =
-    document.getElementById("image-button");
-
-const videoContainer =
-    document.getElementById("video-container");
-
-const imageContainer =
-    document.getElementById("image-container");
-
-const video =
-    document.getElementById("nade-video");
+const video = document.getElementById("nade-video");
 
 
 let currentNade = null;
 
-
-/*
- * Load nade data.
- */
+async function mediaExists(url) {
+    try {
+        const response = await fetch(url, { method: "HEAD" });
+        return response.ok;
+    } catch {
+        return false;
+    }
+}
 
 async function loadNade() {
 
     if (!mapId || !nadeId) {
 
-        window.location.href =
-            "index.html";
+        window.location.href = "index.html";
 
         return;
     }
 
-
-    backButton.href =
-        `map.html?map=${mapId}`;
-
+    backButton.href =`map.html?map=${mapId}`;
 
     try {
-
-        const response =
-            await fetch(`data/${mapId}.json`);
-
+        const response = await fetch(`data/${mapId}.json`);
 
         if (!response.ok) {
-
-            throw new Error(
-                "Could not load map data."
-            );
-
+            throw new Error("Could not load map data.");
         }
 
+        const nades = await response.json();
 
-        const nades =
-            await response.json();
-
-
-        const nade =
-            nades.find(
-                item => item.id === nadeId
-            );
-
+        const nade = nades.find(item => item.id === nadeId);
 
         if (!nade) {
 
@@ -113,48 +77,23 @@ async function loadNade() {
 
         }
 
-
         currentNade = nade;
 
+        nadeName.textContent = nade.name;
 
-        /*
-         * Basic information.
-         */
+        title.textContent = nade.name;
 
-        nadeName.textContent =
-            nade.name;
+        teamTag.textContent = nade.team;
 
-        title.textContent =
-            nade.name;
+        typeTag.textContent = nade.type.toUpperCase();
 
-        teamTag.textContent =
-            nade.team;
-
-        typeTag.textContent =
-            nade.type.toUpperCase();
-
-        difficultyTag.textContent =
-            nade.difficulty.toUpperCase();
-
-
-        /*
-         * Description and technique.
-         */
+        difficultyTag.textContent = nade.difficulty.toUpperCase();
 
         description.textContent = nade.description || "-";
 
         technique.textContent = nade.technique || "-";
 
-
-        /*
-         * Commands.
-         */
-
         combinedCommand.textContent = nade["setpos/setang"] || "-";
-        
-        /*
-         * Image.
-         */
 
         if (nade.lineupImage) {
 
@@ -172,58 +111,34 @@ async function loadNade() {
             imageContainer.classList.remove(
                 "active"
             );
-
         }
 
+        const hasVideo =
+        typeof nade.video === "string" &&
+        nade.video.trim() !== "" &&
+        await mediaExists(nade.video);
 
-        /*
-         * Video.
-         */
+        if (hasVideo) {
 
-        if (nade.video) {
-
-            video.src =
-                nade.video;
-
-            /*
-             * Video is the default when
-             * one is available.
-             */
-
+            video.src = nade.video;
             showVideo();
 
         } else {
-
-            /*
-             * No video:
-             * default to image.
-             */
-
-            videoButton.style.display =
-                "none";
-
+            videoButton.style.display = "none";
             showImage();
-
         }
 
     } catch (error) {
 
         console.error(error);
 
-        title.textContent =
-            "Could not load nade";
+        title.textContent =  "Could not load nade";
 
-        description.textContent =
-            error.message;
+        description.textContent = error.message;
 
     }
 
 }
-
-
-/*
- * Show video.
- */
 
 function showVideo() {
 
@@ -239,11 +154,6 @@ function showVideo() {
 
 }
 
-
-/*
- * Show image.
- */
-
 function showImage() {
 
     imageButton.classList.add("active");
@@ -258,35 +168,16 @@ function showImage() {
 
 }
 
+videoButton.addEventListener("click",showVideo);
 
-/*
- * Media buttons.
- */
+imageButton.addEventListener("click",showImage);
 
-videoButton.addEventListener(
-    "click",
-    showVideo
-);
-
-imageButton.addEventListener(
-    "click",
-    showImage
-);
-
-
-/*
- * Copy a command.
- */
-
-async function copyCommand(
-    command,
-    button
-) {
+async function copyCommand(command,button) 
+{
 
     if (!command || command === "-") {
         return;
     }
-
 
     try {
 
@@ -294,22 +185,13 @@ async function copyCommand(
             command
         );
 
+        const originalText = button.textContent;
 
-        const originalText =
-            button.textContent;
-
-
-        button.textContent =
-            "COPIED";
-
+        button.textContent = "COPIED";
 
         setTimeout(() => {
-
-            button.textContent =
-                originalText;
-
+            button.textContent =originalText;
         }, 1200);
-
 
     } catch (error) {
 
@@ -317,15 +199,9 @@ async function copyCommand(
             "Could not copy command:",
             error
         );
-
     }
 
 }
-
-
-/*
- * Individual copy buttons.
- */
 
 copyCommandButton.addEventListener("click", async () => {
 
@@ -335,20 +211,15 @@ copyCommandButton.addEventListener("click", async () => {
 
     try {
 
-        await navigator.clipboard.writeText(
-            currentNade["setpos/setang"]
-        );
+        await navigator.clipboard.writeText(currentNade["setpos/setang"]);
 
-        const originalText =
-            copyCommandButton.textContent;
+        const originalText = copyCommandButton.textContent;
 
-        copyCommandButton.textContent =
-            "COPIED";
+        copyCommandButton.textContent = "COPIED";
 
         setTimeout(() => {
 
-            copyCommandButton.textContent =
-                originalText;
+            copyCommandButton.textContent =originalText;
 
         }, 1200);
 
@@ -358,52 +229,24 @@ copyCommandButton.addEventListener("click", async () => {
             "Could not copy command:",
             error
         );
-
     }
-
 });
-
-/*
- * Image zoom.
- *
- * Creates a circular magnifying area
- * following the mouse.
- */
 
 function setupImageZoom() {
 
-    imageContainer.style.setProperty(
-        "--zoom-image",
-        `url("${lineupImage.src}")`
-    );
+    imageContainer.style.setProperty("--zoom-image",`url("${lineupImage.src}")`);
 
+    lineupImage.addEventListener("mousemove",handleZoom);
 
-    lineupImage.addEventListener(
-        "mousemove",
-        handleZoom
-    );
-
-
-    lineupImage.addEventListener(
-        "mouseenter",
-        () => {
-
-            imageContainer.classList.add(
-                "zooming"
-            );
-
+    lineupImage.addEventListener("mouseenter",() => 
+        {
+            imageContainer.classList.add("zooming");
         }
     );
 
-
-    lineupImage.addEventListener(
-        "mouseleave",
-        () => {
-
-            imageContainer.classList.remove(
-                "zooming"
-            );
-
+    lineupImage.addEventListener("mouseleave",() => 
+        {
+            imageContainer.classList.remove("zooming");
         }
     );
 
@@ -412,63 +255,25 @@ function setupImageZoom() {
 
 function handleZoom(event) {
 
-    const rect =
-        lineupImage.getBoundingClientRect();
+    const rect = lineupImage.getBoundingClientRect();
 
+    const x = event.clientX - rect.left;
 
-    const x =
-        event.clientX - rect.left;
+    const y = event.clientY - rect.top;
+        
+    const percentX = (x / rect.width) * 100;
 
-    const y =
-        event.clientY - rect.top;
+    const percentY = (y / rect.height) * 100;
 
+    imageContainer.style.setProperty("--mouse-x",`${x}px`);
 
-    /*
-     * Position of the mouse
-     * inside the image.
-     */
+    imageContainer.style.setProperty("--mouse-y",`${y}px`);
 
-    const percentX =
-        (x / rect.width) * 100;
+    const zoom = 2.5;
 
-    const percentY =
-        (y / rect.height) * 100;
+    imageContainer.style.setProperty("--zoom-size",`${rect.width * zoom}px ${rect.height * zoom}px`);
 
-
-    /*
-     * Position the magnifying circle.
-     */
-
-    imageContainer.style.setProperty(
-        "--mouse-x",
-        `${x}px`
-    );
-
-    imageContainer.style.setProperty(
-        "--mouse-y",
-        `${y}px`
-    );
-
-
-    /*
-     * Enlarge the image inside
-     * the magnifying circle.
-     */
-
-    const zoom =
-        2.5;
-
-
-    imageContainer.style.setProperty(
-        "--zoom-size",
-        `${rect.width * zoom}px ${rect.height * zoom}px`
-    );
-
-
-    imageContainer.style.setProperty(
-        "--zoom-position",
-        `${percentX}% ${percentY}%`
-    );
+    imageContainer.style.setProperty("--zoom-position",`${percentX}% ${percentY}%`);
 
 }
 

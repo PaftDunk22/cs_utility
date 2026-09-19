@@ -38,7 +38,6 @@
 }
 
 
-
 .nade-page {
     max-width: 1400px;
 
@@ -88,7 +87,6 @@
     letter-spacing: 1px;
 }
 
-
 .nade-content {
     display: grid;
 
@@ -101,11 +99,9 @@
     align-items: start;
 }
 
-
 .media-area {
     width: 100%;
 }
-
 
 .media-toggle {
     display: flex;
@@ -156,7 +152,6 @@
 }
 
 
-
 .media-container {
     display: none;
 
@@ -173,7 +168,6 @@
     display: block;
 }
 
-
 #nade-video {
     width: 100%;
 
@@ -181,7 +175,6 @@
 
     background: #000;
 }
-
 
 .image-container {
     position: relative;
@@ -229,7 +222,6 @@
 
     z-index: 5;
 }
-
 
 .details {
     display: flex;
@@ -310,7 +302,6 @@
     word-break: break-word;
 }
 
-
 .copy-button {
     padding: 6px 11px;
 
@@ -341,7 +332,6 @@
     color: white;
 }
 
-
 @media (max-width: 900px) {
 
     .nade-content {
@@ -355,7 +345,6 @@
     }
 
 }
-
 
 @media (max-width: 500px) {
 
