@@ -115,6 +115,52 @@
         "video": "lineups/inferno/moto-smoke.mp4"
     },
     {
+        "id": "inferno-arch-smoke",
+        "landingSpotId": "inferno-arch-smoke",
+        "name": "Arch Smoke",
+        "team": "T",
+        "type": "smoke",
+        "difficulty": "basic",
+        "situation": ["default"],
+        "instant": false,
+        "description": "Arch smoke from front halfwall above underpass",
+        "technique": "Left Click, Jumpthrow",
+        "landingPosition": {
+            "x": 77.88,
+        	"y": 50.88
+        },
+        "originPosition": {
+            "x": 46.19,
+        	"y": 68.16
+        },
+        "setpos/setang": "setpos 205.937332 436.790253 146.000000;setang -59.977520 20.307631 0",
+        "lineupImage": "lineups/inferno/arch-smoke.jpg",
+        "video": "lineups/inferno/arch-smoke.mp4"
+    },
+    {
+        "id": "inferno-library-smoke",
+        "landingSpotId": "inferno-library-smoke",
+        "name": "Library Smoke",
+        "team": "T",
+        "type": "smoke",
+        "difficulty": "basic",
+        "situation": ["default"],
+        "instant": false,
+        "description": "Library smoke from front halfwall above underpass",
+        "technique": "Left Click, Jumpthrow",
+        "landingPosition": {
+            "x": 92.71,
+        	"y": 54.42
+        },
+        "originPosition": {
+            "x": 46.19,
+        	"y": 68.16
+        },
+        "setpos/setang": "setpos 205.937332 436.790253 146.000000;setang -32.889992 17.667635 0",
+        "lineupImage": "lineups/inferno/library-smoke.jpg",
+        "video": "lineups/inferno/library-smoke.mp4"
+    },
+    {
         "id": "inferno-second-molotov-01",
         "landingSpotId": "inferno-second-molotov",
         "name": "Second molotov",
@@ -228,6 +274,29 @@
         "setpos/setang": "setpos 22.098736 1420.688965 168.171875;setang -14.523388 49.192875 0",
         "lineupImage": "lineups/inferno/halfwall-flash2.jpg",
         "video": "lineups/inferno/halfwall-flash2.mp4"
+    },
+    {
+        "id": "inferno-banana-flash-01",
+        "landingSpotId": "inferno-banana-flash",
+        "name": "Banana Flash",
+        "team": "T",
+        "type": "flashbang",
+        "difficulty": "basic",
+        "situation": ["default"],
+        "instant": false,
+        "description": "Fast early flash for taking banana",
+        "technique": "Left Click",
+        "landingPosition": {
+            "x": 45.78,
+        	"y": 40.95
+        },
+        "originPosition": {
+            "x": 44.97,
+        	"y": 59.73
+        },
+        "setpos/setang": "setpos 152.937332 888.966614 144.003723;setang -25.575001 86.940041 0",
+        "lineupImage": "lineups/inferno/banana-flash.jpg",
+        "video": "lineups/inferno/banana-flash.mp4"
     }
 
 ]

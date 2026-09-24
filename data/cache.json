@@ -55,7 +55,7 @@
         "situation": ["execute"],
         "instant": false,
         "description": "A site smoke for control, place 1x on the black dot",
-        "technique": "Left Click, Jumpthrow",
+        "technique": "Left Click",
         "landingPosition": {
             "x": 30,
             "y": 32

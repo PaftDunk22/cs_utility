@@ -182,8 +182,8 @@
         	"y": 90.49
         },
         "setpos/setang": "setpos -735.970032 -2135.968750 -103.488525;setang -20.166315 89.401749 0",
-        "lineupImage": "lineups/ancient/mid-flash-smoke.jpg",
-        "video": "lineups/ancient/mid-flash-smoke.mp4"
+        "lineupImage": "lineups/ancient/mid-flash.jpg",
+        "video": "lineups/ancient/mid-flash.mp4"
     }
 
 ]

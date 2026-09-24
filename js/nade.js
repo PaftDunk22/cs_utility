@@ -3,8 +3,6 @@ const params = new URLSearchParams(window.location.search);
 const mapId = params.get("map");
 const nadeId = params.get("nade");
 
-const nadeName = document.getElementById("nade-name");
-
 const title = document.getElementById("title");
 
 const teamTag = document.getElementById("team-tag");
@@ -79,8 +77,6 @@ async function loadNade() {
 
         currentNade = nade;
 
-        nadeName.textContent = nade.name;
-
         title.textContent = nade.name;
 
         teamTag.textContent = nade.team;
@@ -97,20 +93,15 @@ async function loadNade() {
 
         if (nade.lineupImage) {
 
-            lineupImage.src =
-                nade.lineupImage;
+            lineupImage.src = nade.lineupImage;
 
-            lineupImage.onload =
-                setupImageZoom;
+            lineupImage.onload = setupImageZoom;
 
         } else {
 
-            imageButton.style.display =
-                "none";
+            imageButton.style.display = "none";
 
-            imageContainer.classList.remove(
-                "active"
-            );
+            imageContainer.classList.remove("active");
         }
 
         const hasVideo =

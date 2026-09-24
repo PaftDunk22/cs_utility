@@ -1,0 +1,141 @@
+[
+    {
+        "id": "outside-smoke-01",
+        "landingSpotId": "outside-smoke-far-",
+        "name": "Outside cross Smoke",
+        "team": "T",
+        "type": "smoke",
+        "difficulty": "basic",
+        "situation": ["default"],
+        "instant": false,
+        "description": "Outside smoke to cross secret, lineup that falls closer to secret, stand in front of bottom left edge of the back of the truck",
+        "technique": "Left Click, Jumpthrow",
+        "landingPosition": {
+            "x": 61.83,
+        	"y": 47.76
+        },
+        "originPosition": {
+            "x": 28.10,
+        	"y": 32.79
+        },
+        "setpos/setang": "setpos -1268.031250 -1162.067261 -352.000000;setang -37.977219 -23.194790 0",
+        "lineupImage": "lineups/nuke/outside-cross-smoke-dot.jpg",
+        "video": "lineups/nuke/outside-cross-smoke-dot.mp4"
+    },
+    {
+        "id": "outside-smoke-02",
+        "landingSpotId": "outside-smoke-far",
+        "name": "Outside cross Smoke",
+        "team": "T",
+        "type": "smoke",
+        "difficulty": "basic",
+        "situation": ["default"],
+        "instant": false,
+        "description": "Outside smoke to cross secret, lineup that falls closer to secret, stand in front of bottom left edge of the back of the truck",
+        "technique": "Left Click, Jumpthrow",
+        "landingPosition": {
+            "x": 59.11,
+        	"y": 47.76
+        },
+        "originPosition": {
+            "x": 28.10,
+        	"y": 32.79
+        },
+        "setpos/setang": "setpos -1268.031250 -1162.067261 -352.000000;setang -45.292259 -25.119801 0",
+        "lineupImage": "lineups/nuke/outside-cross-smoke-window.jpg",
+        "video": "lineups/nuke/outside-cross-smoke-window.mp4"
+    },
+    {
+        "id": "outside-smoke-03",
+        "landingSpotId": "outside-smoke-close-",
+        "name": "Outside cross Smoke",
+        "team": "T",
+        "type": "smoke",
+        "difficulty": "basic",
+        "situation": ["default"],
+        "instant": false,
+        "description": "Outside smoke to cross secret, lineup that falls further from secret, stand next to the steps in front of the door",
+        "technique": "Left Click, Jumpthrow",
+        "landingPosition": {
+            "x": 59.66,
+        	"y": 42.18
+        },
+        "originPosition": {
+            "x": 27.56,
+        	"y": 31.03
+        },
+        "setpos/setang": "setpos -1350.706299 -1039.988892 -352.000000;setang -44.109737 -19.647318 0",
+        "lineupImage": "lineups/nuke/outside-smoke-top.jpg",
+        "video": "lineups/nuke/outside-smoke-top.mp4"
+    },
+    {
+        "id": "outside-smoke-04",
+        "landingSpotId": "outside-smoke-close",
+        "name": "Outside cross Smoke",
+        "team": "T",
+        "type": "smoke",
+        "difficulty": "basic",
+        "situation": ["default"],
+        "instant": false,
+        "description": "Outside smoke to cross secret, lineup that falls further from to secret, stand next to the steps in front of the door",
+        "technique": "Left Click, Jumpthrow",
+        "landingPosition": {
+            "x": 62.24,
+        	"y": 43.95
+        },
+        "originPosition": {
+            "x": 27.56,
+        	"y": 31.03
+        },
+        "setpos/setang": "setpos -1350.706299 -1039.988892 -352.000000;setang -26.812193 -22.452333 0",
+        "lineupImage": "lineups/nuke/outside-smoke-right.jpg",
+        "video": "lineups/nuke/outside-smoke-right.mp4"
+    },
+    {
+        "id": "top-a-main-smoke",
+        "landingSpotId": "a-main-smoke",
+        "name": "A main Smoke",
+        "team": "T",
+        "type": "smoke",
+        "difficulty": "basic",
+        "situation": ["default"],
+        "instant": false,
+        "description": "A main smoke that falls on top and overflows downwards, stand on the back of the truck, next to the box",
+        "technique": "Left Click, Jumpthrow",
+        "landingPosition": {
+            "x": 57.89,
+        	"y": 39.46
+        },
+        "originPosition": {
+            "x": 29.87,
+        	"y": 32.93
+        },
+        "setpos/setang": "setpos -1180.030762 -1193.563721 -303.186279;setang -53.075016 -13.440761 0",
+        "lineupImage": "lineups/nuke/a-main-smoke.jpg",
+        "video": "lineups/nuke/a-main-smoke.mp4"
+    },
+    {
+        "id": "red-molotov",
+        "landingSpotId": "red-molotov",
+        "name": "Red box molotov",
+        "team": "T",
+        "type": "molotov",
+        "difficulty": "basic",
+        "situation": ["default"],
+        "instant": false,
+        "description": "Molotov for both back red box and glaive",
+        "technique": "Left Click",
+        "landingPosition": {
+            "x": 56.80,
+        	"y": 46.12
+        },
+        "originPosition": {
+            "x": 40.80,
+        	"y": 41.53
+        },
+        "setpos/setang": "setpos -1180.030762 -1193.563721 -303.186279;setang -53.075016 -13.440761 0",
+        "lineupImage": "lineups/nuke/red-molotov.jpg",
+        "video": "lineups/nuke/red-molotov.mp4"
+    }
+
+]

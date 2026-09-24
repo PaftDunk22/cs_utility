@@ -1,0 +1,141 @@
+[
+    {
+        "id": "xbox-smoke-01",
+        "landingSpotId": "xbox-smoke",
+        "name": "Xbox Smoke",
+        "team": "T",
+        "type": "smoke",
+        "difficulty": "basic",
+        "situation": ["default"],
+        "instant": false,
+        "description": "Xbox smoke from T-spawn",
+        "technique": "Left Click, Jumpthrow",
+        "landingPosition": {
+            "x": 48.10,
+        	"y": 39.73
+        },
+        "originPosition": {
+            "x": 48.37,
+        	"y": 97.54
+        },
+        "setpos/setang": "setpos -299.960083 -1163.968750 136.883896;setang -12.292516 90.186089 0",
+        "lineupImage": "lineups/dust2/xbox-smoke.jpg",
+        "video": "lineups/dust2/xbox-smoke.mp4"
+    },
+    {
+        "id": "xbox-smoke-02",
+        "landingSpotId": "xbox-smoke",
+        "name": "Xbox Smoke",
+        "team": "T",
+        "type": "smoke",
+        "difficulty": "basic",
+        "situation": ["default"],
+        "instant": false,
+        "description": "Xbox smoke from T-spawn",
+        "technique": "Left Click, Jumpthrow",
+        "landingPosition": {
+            "x": 48.10,
+        	"y": 39.73
+        },
+        "originPosition": {
+            "x": 46.06,
+        	"y": 95.09
+        },
+        "setpos/setang": "setpos -403.817688 -1051.942993 165.393082;setang -7.921006 87.598480 0",
+        "lineupImage": "lineups/dust2/xbox-smoke2.jpg",
+        "video": "lineups/dust2/xbox-smoke2.mp4"
+    },
+    {
+        "id": "b-door-smoke-01",
+        "landingSpotId": "b-door-smoke",
+        "name": "B door smoke",
+        "team": "T",
+        "type": "smoke",
+        "difficulty": "basic",
+        "situation": ["execute"],
+        "instant": false,
+        "description": "B door smoke from outside tunnel",
+        "technique": "Left Click, Jumpthrow",
+        "landingPosition": {
+            "x": 25.79,
+        	"y": 22.86
+        },
+        "originPosition": {
+            "x": 25.11,
+        	"y": 60.95
+        },
+        "setpos/setang": "setpos -1332.032471 491.968750 72;setang -54.835423 88.040054 0",
+        "lineupImage": "lineups/dust2/b-door-smoke.jpg",
+        "video": "lineups/dust2/b-door-smoke.mp4"
+    },
+    {
+        "id": "b-door-smoke-02",
+        "landingSpotId": "b-door-smoke",
+        "name": "B door smoke",
+        "team": "T",
+        "type": "smoke",
+        "difficulty": "basic",
+        "situation": ["execute"],
+        "instant": false,
+        "description": "B door smoke from inside tunnel",
+        "technique": "Left Click",
+        "landingPosition": {
+            "x": 25.79,
+        	"y": 22.86
+        },
+        "originPosition": {
+            "x": 15.31,
+        	"y": 48.98
+        },
+        "setpos/setang": "setpos -1783.031250 1025.782959 102.031250;setang -58.025917 68.934082 0",
+        "lineupImage": "lineups/dust2/b-door-smoke2.jpg",
+        "video": "lineups/dust2/b-door-smoke2.mp4"
+    },
+    {
+        "id": "b-window-smoke-01",
+        "landingSpotId": "b-window-smoke",
+        "name": "B door smoke",
+        "team": "T",
+        "type": "smoke",
+        "difficulty": "basic",
+        "situation": ["execute"],
+        "instant": false,
+        "description": "B window smoke from outside tunnel",
+        "technique": "Left Click, Jumpthrow",
+        "landingPosition": {
+            "x": 26.06,
+        	"y": 12.66
+        },
+        "originPosition": {
+            "x": 25.11,
+        	"y": 60.95
+        },
+        "setpos/setang": "setpos -1332.024170 491.958801 72;setang -46.558506 88.679405 0",
+        "lineupImage": "lineups/dust2/b-window-smoke.jpg",
+        "video": "lineups/dust2/b-window-smoke.mp4"
+    },
+    {
+        "id": "long-door-smoke",
+        "landingSpotId": "long-door",
+        "name": "Long door smoke",
+        "team": "CT",
+        "type": "smoke",
+        "difficulty": "basic",
+        "situation": ["default"],
+        "instant": false,
+        "description": "Long door smoke from elevator",
+        "technique": "Left Click, Jumpthrow",
+        "landingPosition": {
+            "x": 68.77,
+        	"y": 56.19
+        },
+        "originPosition": {
+            "x": 77.07,
+        	"y": 19.19
+        },
+        "setpos/setang": "setpos 1004.968750 2379.968750 85.217896;setang -24.640936 -102.092026 0",
+        "lineupImage": "lineups/dust2/long-door-smoke.jpg",
+        "video": "lineups/dust2/long-door-smoke2.mp4"
+    }
+
+]
