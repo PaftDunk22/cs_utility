@@ -38,8 +38,8 @@
         "y": 53
     },
     "originPosition": {
-        "x": 87.01,
-        "y": 32.76
+        "x": 88.67,
+        "y": 40
     },
     "setpos/setang": "setpos 1296 -352 -104.13;setang -42.455078 -173.246902 0",
     "lineupImage": "lineups/mirage/window_smoke_instant_pos2.jpg",
@@ -62,7 +62,7 @@
         },
         "originPosition": {
             "x": 87.01,
-            "y": 35.36
+            "y": 32.76
         },
         "setpos/setang": "setpos 1216.06 -16.06 -101.94;setang -44.370251 -165.333908 0",
         "lineupImage": "lineups/mirage/window_smoke_instant_pos3.jpg",
@@ -85,7 +85,7 @@
         },
         "originPosition": {
             "x": 87.01,
-            "y": 37.86
+            "y": 35.36
         },
         "setpos/setang": "setpos 1216 -115 -101.94;setang -44.461876 -167.666443 0",
         "lineupImage": "lineups/mirage/window_smoke_instant_pos4.jpg",
@@ -107,8 +107,8 @@
             "y": 53
         },
         "originPosition": {
-            "x": 88.67,
-        	"y": 40
+            "x": 87.01,
+            "y": 37.86
         },
         "setpos/setang": "setpos 1216 -211 -100.840805;setang -46.031891 -170.316223 0",
         "lineupImage": "lineups/mirage/window_smoke_instant_pos5.jpg",
