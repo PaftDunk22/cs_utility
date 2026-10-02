@@ -41,7 +41,7 @@
             "x": 46.06,
         	"y": 95.09
         },
-        "setpos/setang": "setpos -403.817688 -1051.942993 165.393082;setang -7.921006 87.598480 0",
+        "setpos/setang": "setpos -403.817688 -1051.942993 115.393082;setang -7.921006 87.598480 0",
         "lineupImage": "lineups/dust2/xbox-smoke2.jpg",
         "video": "lineups/dust2/xbox-smoke2.mp4"
     },

@@ -7,6 +7,121 @@
         "type": "smoke",
         "difficulty": "basic",
         "situation": ["default"],
+        "instant": true,
+        "description": "Instant mid window smoke for position 1",
+        "technique": "Left Click, Tap W + Jumpthrow",
+        "landingPosition": {
+            "x": 36,
+            "y": 53
+        },
+        "originPosition": {
+            "x": 88.67,
+        	"y": 31.5
+        },
+        "setpos/setang": "setpos 1296.04 32.05 -104.13;setang -28.912655 -165.958206 0",
+        "lineupImage": "lineups/mirage/window_smoke_instant_pos1.jpg",
+        "video": "lineups/mirage/window_smoke_instant_pos1.mp4"
+    },
+    {
+    "id": "mirage-window-smoke-02",
+    "landingSpotId": "mirage-window-smoke",
+    "name": "Window Smoke",
+    "team": "T",
+    "type": "smoke",
+    "difficulty": "basic",
+    "situation": ["default"],
+    "instant": true,
+    "description": "Instant mid window smoke for position 2",
+    "technique": "Left Click, Tap W + Jumpthrow",
+    "landingPosition": {
+        "x": 36,
+        "y": 53
+    },
+    "originPosition": {
+        "x": 87.01,
+        "y": 32.76
+    },
+    "setpos/setang": "setpos 1296 -352 -104.13;setang -42.455078 -173.246902 0",
+    "lineupImage": "lineups/mirage/window_smoke_instant_pos2.jpg",
+    "video": "lineups/mirage/window_smoke_instant_pos2.mp4"
+    },
+    {
+        "id": "mirage-window-smoke-03",
+        "landingSpotId": "mirage-window-smoke",
+        "name": "Window Smoke",
+        "team": "T",
+        "type": "smoke",
+        "difficulty": "basic",
+        "situation": ["default"],
+        "instant": true,
+        "description": "Instant mid window smoke for position 3",
+        "technique": "Left Click, Tap W + Jumpthrow",
+        "landingPosition": {
+            "x": 36,
+            "y": 53
+        },
+        "originPosition": {
+            "x": 87.01,
+            "y": 35.36
+        },
+        "setpos/setang": "setpos 1216.06 -16.06 -101.94;setang -44.370251 -165.333908 0",
+        "lineupImage": "lineups/mirage/window_smoke_instant_pos3.jpg",
+        "video": "lineups/mirage/window_smoke_instant_pos3.mp4"
+    },
+    {
+        "id": "mirage-window-smoke-04",
+        "landingSpotId": "mirage-window-smoke",
+        "name": "Window Smoke",
+        "team": "T",
+        "type": "smoke",
+        "difficulty": "basic",
+        "situation": ["default"],
+        "instant": true,
+        "description": "Instant mid window smoke for position 4",
+        "technique": "Left Click, Tap W + Jumpthrow",
+        "landingPosition": {
+            "x": 36,
+            "y": 53
+        },
+        "originPosition": {
+            "x": 87.01,
+            "y": 37.86
+        },
+        "setpos/setang": "setpos 1216 -115 -101.94;setang -44.461876 -167.666443 0",
+        "lineupImage": "lineups/mirage/window_smoke_instant_pos4.jpg",
+        "video": "lineups/mirage/window_smoke_instant_pos4.mp4"
+    },
+    {
+        "id": "mirage-window-smoke-05",
+        "landingSpotId": "mirage-window-smoke",
+        "name": "Window Smoke",
+        "team": "T",
+        "type": "smoke",
+        "difficulty": "basic",
+        "situation": ["default"],
+        "instant": true,
+        "description": "Instant mid window smoke for position 5",
+        "technique": "Left Click, Tap W + Jumpthrow",
+        "landingPosition": {
+            "x": 36,
+            "y": 53
+        },
+        "originPosition": {
+            "x": 88.67,
+        	"y": 40
+        },
+        "setpos/setang": "setpos 1216 -211 -100.840805;setang -46.031891 -170.316223 0",
+        "lineupImage": "lineups/mirage/window_smoke_instant_pos5.jpg",
+        "video": "lineups/mirage/window_smoke_instant_pos5.mp4"
+    },
+    {
+        "id": "mirage-window-smoke-07",
+        "landingSpotId": "mirage-window-smoke",
+        "name": "Window Smoke",
+        "team": "T",
+        "type": "smoke",
+        "difficulty": "basic",
+        "situation": ["default"],
         "instant": false,
         "description": "Very simple mid window smoke",
         "technique": "Left Click, Jumpthrow",
@@ -22,7 +137,144 @@
         "lineupImage": "lineups/mirage/window-smoke.jpg",
         "video": "lineups/mirage/window-smoke.mp4"
     },
-
+    {
+        "id": "mirage-window-smoke-06",
+        "landingSpotId": "mirage-window-smoke",
+        "name": "Window Smoke",
+        "team": "T",
+        "type": "smoke",
+        "difficulty": "basic",
+        "situation": ["default"],
+        "instant": false,
+        "description": "Very simple mid window smoke",
+        "technique": "Left Click, Tap W + Jumpthrow",
+        "landingPosition": {
+            "x": 36,
+            "y": 53
+        },
+        "originPosition": {
+            "x": 84.97,
+        	"y": 20.21
+        },
+        "setpos/setang": "setpos 1135.951660 647.979858 -196.796082;setang -26.892029 -151.478683 0",
+        "lineupImage": "lineups/mirage/window-smoke2.jpg",
+        "video": "lineups/mirage/window-smoke2.mp4"
+    },
+    {
+        "id": "mirage-b-window-smoke-01",
+        "landingSpotId": "mirage-b-window-smoke",
+        "name": "Kitchen Window Smoke",
+        "team": "T",
+        "type": "smoke",
+        "difficulty": "basic",
+        "situation": ["execute"],
+        "instant": false,
+        "description": "Very simple Kitchen window smoke",
+        "technique": "Left Click, Jumpthrow",
+        "landingPosition": {
+            "x": 25.38,
+        	"y": 39.29
+        },
+        "originPosition": {
+            "x": 59.91,
+        	"y": 15.98
+        },
+        "setpos/setang": "setpos -160.062744 887.964905 -71.671753;setang -48.617676 -146.551346 0",
+        "lineupImage": "lineups/mirage/b-window-smoke.jpg",
+        "video": "lineups/mirage/b-window-smoke.mp4"
+    },
+    {
+        "id": "mirage-ct-smoke-01",
+        "landingSpotId": "mirage-ct-smoke",
+        "name": "CT Smoke",
+        "team": "T",
+        "type": "smoke",
+        "difficulty": "basic",
+        "situation": ["execute"],
+        "instant": false,
+        "description": "Very simple CT smoke",
+        "technique": "Left Click, Jumpthrow",
+        "landingPosition": {
+            "x": 44.61,
+        	"y": 79.50
+        },
+        "originPosition": {
+            "x": 87.59,
+        	"y": 47.01
+        },
+        "setpos/setang": "setpos 1257.993774 -871.968750 -80;setang -21.477549 -144.545197 0",
+        "lineupImage": "lineups/mirage/ct-smoke.jpg",
+        "video": "lineups/mirage/ct-smoke.mp4"
+    },
+    {
+        "id": "mirage-ct-smoke-01",
+        "landingSpotId": "mirage-ct-smoke",
+        "name": "CT Smoke",
+        "team": "T",
+        "type": "smoke",
+        "difficulty": "basic",
+        "situation": ["execute"],
+        "instant": false,
+        "description": "Very simple CT smoke",
+        "technique": "Left Click, Jumpthrow",
+        "landingPosition": {
+            "x": 44.61,
+        	"y": 79.50
+        },
+        "originPosition": {
+            "x": 87.59,
+        	"y": 47.01
+        },
+        "setpos/setang": "setpos 1257.993774 -871.968750 -80;setang -21.477549 -144.545197 0",
+        "lineupImage": "lineups/mirage/ct-smoke.jpg",
+        "video": "lineups/mirage/ct-smoke.mp4"
+    },
+    {
+        "id": "mirage-a-jungle-smoke-01",
+        "landingSpotId": "mirage-a-jungle-smoke",
+        "name": "A Jungle Smoke",
+        "team": "T",
+        "type": "smoke",
+        "difficulty": "basic",
+        "situation": ["execute"],
+        "instant": false,
+        "description": "Very simple jungle smoke",
+        "technique": "Left Click",
+        "landingPosition": {
+            "x": 49.56,
+        	"y": 65.08
+        },
+        "originPosition": {
+            "x": 78.99,
+        	"y": 64.06
+        },
+        "setpos/setang": "setpos 814.970215 -1548.700562 -45;setang -29.270134 -177.367325 0",
+        "lineupImage": "lineups/mirage/a-jungle-smoke.jpg",
+        "video": "lineups/mirage/a-jungle-smoke.mp4"
+    },
+    {
+        "id": "mirage-stairs-smoke-01",
+        "landingSpotId": "mirage-stairs-smoke",
+        "name": "A Stairs Smoke",
+        "team": "T",
+        "type": "smoke",
+        "difficulty": "basic",
+        "situation": ["execute"],
+        "instant": false,
+        "description": "Very simple stairs smoke",
+        "technique": "Both Clicks, Jumpthrow",
+        "landingPosition": {
+            "x": 53.79,
+        	"y": 64.21
+        },
+        "originPosition": {
+            "x": 78.99,
+        	"y": 64.06
+        },
+        "setpos/setang": "setpos 814.970215 -1548.700562 -45;setang -3.970103 179.937881 0",
+        "lineupImage": "lineups/mirage/stairs-smoke.jpg",
+        "video": "lineups/mirage/stairs-smoke.mp4"
+    },
     {
         "id": "mirage-window-nade-01",
         "landingSpotId": "mirage-window-nade",

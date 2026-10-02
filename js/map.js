@@ -215,8 +215,7 @@ function showOrigins(landingSpotId,spotNades,marker)
 
     selectedLandingSpot = landingSpotId;
 
-    const landingPosition =
-        spotNades[0].landingPosition;
+    const landingPosition = spotNades[0].landingPosition;
 
     spotNades.forEach((nade, index) => {
 
