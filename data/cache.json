@@ -159,6 +159,215 @@
         "setpos/setang": "setpos 1866.912842 587.968750 1672.000000;setang -3.990718 -172.332214 0",
         "lineupImage": "lineups/cache/mid-flash.jpg",
         "video": "lineups/cache/mid-flash.mp4"
+    },
+    {
+        "id": "b-default-incendiary",
+        "landingSpotId": "b-default-incendiary",
+        "name": "B Default Incendiary",
+        "team": "CT",
+        "type": "molotov",
+        "difficulty": "basic",
+        "situation": ["retake"],
+        "instant": false,
+        "description": "B site default incendiary for a retake, line up 1y with top of heaven platform",
+        "technique": "Left Click",
+        "landingPosition": {
+            "x": 31.3,
+            "y": 79.58
+        },
+        "originPosition": {
+            "x": 23.48,
+            "y": 60.95
+        },
+        "setpos/setang": "setpos -714.344238 -178.772766 1676;setang -26.335020 -63.352440 0",
+        "lineupImage": "lineups/cache/b-default-incendiary.jpg",
+        "video": "lineups/cache/b-default-incendiary.mp4"
+    },
+    {
+        "id": "b-default-nade",
+        "landingSpotId": "b-default-nade",
+        "name": "B Default Nade",
+        "team": "CT",
+        "type": "grenade",
+        "difficulty": "basic",
+        "situation": ["retake"],
+        "instant": false,
+        "description": "B site default grenade for a retake, aim at the dark spot",
+        "technique": "Left Click, Tap W + Jumpthrow",
+        "landingPosition": {
+            "x": 32.7,
+            "y": 79.58
+        },
+        "originPosition": {
+            "x": 23.48,
+            "y": 60.95
+        },
+        "setpos/setang": "setpos -714.344238 -178.772766 1676;setang 5.839983 -63.214954 0",
+        "lineupImage": "lineups/cache/b-default-nade.jpg",
+        "video": "lineups/cache/b-default-nade.mp4"
+    },
+    {
+        "id": "b-heaven-smoke-retake",
+        "landingSpotId": "b-heaven-smoke-retake",
+        "name": "B Retake Smoke",
+        "team": "CT",
+        "type": "smoke",
+        "difficulty": "advanced",
+        "situation": ["retake"],
+        "instant": false,
+        "description": "B heaven smoke for a retake, line up 1y with top right of dark line on the wall",
+        "technique": "Left Click",
+        "landingPosition": {
+            "x": 31.23,
+            "y": 71.02
+        },
+        "originPosition": {
+            "x": 25.52,
+            "y": 68.16
+        },
+        "setpos/setang": "setpos -568.031250 -600.275208 1815.444946;setang -31.725042 -162.021866 0",
+        "lineupImage": "lineups/cache/b-heaven-smoke-retake.jpg",
+        "video": "lineups/cache/b-heaven-smoke-retake.mp4"
+    },
+    {
+        "id": "a-defaullt-incendiary",
+        "landingSpotId": "a-defaullt-incendiary",
+        "name": "A Default Incendiary",
+        "team": "CT",
+        "type": "molotov",
+        "difficulty": "basic",
+        "situation": ["retake"],
+        "instant": false,
+        "description": "A site default incendiary for a retake",
+        "technique": "Left Click",
+        "landingPosition": {
+            "x": 34.5,
+            "y": 23.27
+        },
+        "originPosition": {
+            "x": 18.99,
+            "y": 39.73
+        },
+        "setpos/setang": "setpos -916.042908 970.034607 1740.439331;setang -20.257540 49.093048 0",
+        "lineupImage": "lineups/cache/a-defaullt-incendiary.jpg",
+        "video": "lineups/cache/a-defaullt-incendiary.mp4"
+    },
+    {
+        "id": "a-defaullt-nade",
+        "landingSpotId": "a-defaullt-nade",
+        "name": "A Default Nade",
+        "team": "CT",
+        "type": "grenade",
+        "difficulty": "basic",
+        "situation": ["retake"],
+        "instant": false,
+        "description": "A site default grenade for a retake",
+        "technique": "Left Click, Tap W + Jumpthrow",
+        "landingPosition": {
+            "x": 32.5,
+            "y": 23.27
+        },
+        "originPosition": {
+            "x": 18.99,
+            "y": 39.73
+        },
+        "setpos/setang": "setpos -916.042908 970.034607 1740.439331;setang 9.552470 47.195538 0",
+        "lineupImage": "lineups/cache/a-defaullt-nade.jpg",
+        "video": "lineups/cache/a-defaullt-nade.mp4"
+    },
+    {
+        "id": "a-main-flash",
+        "landingSpotId": "a-main-flash",
+        "name": "A Main Flash",
+        "team": "CT",
+        "type": "flashbang",
+        "difficulty": "basic",
+        "situation": ["default"],
+        "instant": false,
+        "description": "A main flash",
+        "technique": "Left Click",
+        "landingPosition": {
+            "x": 46.60,
+            "y": 27.76
+        },
+        "originPosition": {
+            "x": 27.01,
+            "y": 32
+        },
+        "setpos/setang": "setpos -444.625549 1437.968750 1752;setang -12.915030 13.809885 0",
+        "lineupImage": "lineups/cache/a-main-flash.jpg",
+        "video": "lineups/cache/a-main-flash.mp4"
+    },
+    {
+        "id": "b-main-smoke",
+        "landingSpotId": "b-main-smoke",
+        "name": "B Main Smoke",
+        "team": "T",
+        "type": "smoke",
+        "difficulty": "basic",
+        "situation": ["default"],
+        "instant": false,
+        "description": "B main smoke, can lurk in the corner after, throw after running for 1 or 2 steps",
+        "technique": "Left Click, Running",
+        "landingPosition": {
+            "x": 39.12,
+            "y": 68.57
+        },
+        "originPosition": {
+            "x": 57.89,
+            "y": 68.16
+        },
+        "setpos/setang": "setpos 1251.281982 -598.031250 1676.000488;setang -22.055033 -133.752930 0",
+        "lineupImage": "lineups/cache/b-main-smoke.jpg",
+        "video": "lineups/cache/b-main-smoke.mp4"
+    },
+    {
+        "id": "B-backsite-molotov",
+        "landingSpotId": "B-backsite-molotov",
+        "name": "B Backsite Molotov",
+        "team": "T",
+        "type": "molotov",
+        "difficulty": "basic",
+        "situation": ["execute"],
+        "instant": false,
+        "description": "B backsite molotov that covers box and pipes",
+        "technique": "Left Click, Jumpthrow",
+        "landingPosition": {
+            "x": 38.30,
+            "y": 81.49
+        },
+        "originPosition": {
+            "x": 46.46,
+        	"y": 83.53
+        },
+        "setpos/setang": "setpos 579.240601 -1449.843018 1676.265625;setang -11.495103 146.662613 0",
+        "lineupImage": "lineups/cache/b-backsite-molotov.jpg",
+        "video": "lineups/cache/b-backsite-molotov.mp4"
+    },
+    {
+        "id": "b-heaven-smoke",
+        "landingSpotId": "b-heaven-smoke",
+        "name": "B Heaven Smoke",
+        "team": "T",
+        "type": "smoke",
+        "difficulty": "basic",
+        "situation": ["execute"],
+        "instant": false,
+        "description": "B heaven smoke, line up 1y with bottom right of 'N'",
+        "technique": "Left Click, Jumpthrow",
+        "landingPosition": {
+            "x": 30.55,
+            "y": 70.47
+        },
+        "originPosition": {
+            "x": 56.26,
+            "y": 82.98
+        },
+        "setpos/setang": "setpos 1165.968750 -1435.949707 1676;setang -53.130108 141.574615 0",
+        "lineupImage": "lineups/cache/b-heaven-smoke.jpg",
+        "video": "lineups/cache/b-heaven-smoke.mp4"
     }
+
+
 
 ]
