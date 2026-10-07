@@ -297,6 +297,167 @@
         "setpos/setang": "setpos 152.937332 888.966614 144.003723;setang -25.575001 86.940041 0",
         "lineupImage": "lineups/inferno/banana-flash.jpg",
         "video": "lineups/inferno/banana-flash.mp4"
+    },
+    {
+        "id": "inferno-halfwall-smoke-01",
+        "landingSpotId": "inferno-halfwall-smoke",
+        "name": "Halfwall Smoke",
+        "team": "CT",
+        "type": "smoke",
+        "difficulty": "basic",
+        "situation": ["default"],
+        "instant": false,
+        "description": "Banana halfwall smoke from CT spawn",
+        "technique": "Left Click, Jumpthrow",
+        "landingPosition": {
+            "x": 47.42,
+            "y": 40.68
+        },
+        "originPosition": {
+            "x": 92.57,
+            "y": 30.21
+        },
+        "setpos/setang": "setpos 2537.785156 2468.324707 188.170273;setang -25.327517 -166.360046 0",
+        "lineupImage": "lineups/inferno/halfwall-smoke.jpg",
+        "video": "lineups/inferno/halfwall-smoke.mp4"
+    },
+    {
+        "id": "inferno-banana-flash-ct-01",
+        "landingSpotId": "inferno-banana-flash-ct",
+        "name": "Banana Flashbang",
+        "team": "CT",
+        "type": "flashbang",
+        "difficulty": "basic",
+        "situation": ["default"],
+        "instant": false,
+        "description": "Banana flashbang from CT for an early peek",
+        "technique": "Both Clicks, Jumpthrow",
+        "landingPosition": {
+            "x": 52.04,
+            "y": 33.61
+        },
+        "originPosition": {
+            "x": 61.02,
+            "y": 21.50
+        },
+        "setpos/setang": "setpos 972.994568 2779.968750 196.047424;setang -3.080018 -130.995544 0",
+        "lineupImage": "lineups/inferno/banana-flash-ct.jpg",
+        "video": "lineups/inferno/banana-flash-ct.mp4"
+    },
+    {
+        "id": "inferno-a-retake-molly-01",
+        "landingSpotId": "inferno-a-retake-molly",
+        "name": "A Retake Molly",
+        "team": "CT",
+        "type": "molotov",
+        "difficulty": "advanced",
+        "situation": ["retake"],
+        "instant": false,
+        "description": "A site retake incendiary",
+        "technique": "Both Clicks, Jumpthrow",
+        "landingPosition": {
+            "x": 79.52,
+            "y": 68.84
+        },
+        "originPosition": {
+            "x": 83.46,
+            "y": 52.65
+        },
+        "setpos/setang": "setpos 2073.167480 1235.968750 243.875;setang 11.027482 -103.055054 0",
+        "lineupImage": "lineups/inferno/a-retake-molly.jpg",
+        "video": "lineups/inferno/a-retake-molly.mp4"
+    },
+    {
+        "id": "inferno-a-backsite-retake-molly-01",
+        "landingSpotId": "inferno-a-backsite-retake-molly",
+        "name": "A Backsite Retake Molly",
+        "team": "CT",
+        "type": "molotov",
+        "difficulty": "advanced",
+        "situation": ["retake"],
+        "instant": false,
+        "description": "A backsite incendiary for a retake, lineup with -1y",
+        "technique": "Both Clicks",
+        "landingPosition": {
+            "x": 80.06,
+            "y": 64.62
+        },
+        "originPosition": {
+            "x": 83.46,
+            "y": 52.65
+        },
+        "setpos/setang": "setpos 2073.167480 1235.968750 243.875;setang -42.817547 -102.395142 0",
+        "lineupImage": "lineups/inferno/a-backsite-retake-molly.jpg",
+        "video": "lineups/inferno/a-backsite-retake-molly.mp4"
+    },
+    {
+        "id": "inferno-a-retake-smoke-01",
+        "landingSpotId": "inferno-a-retake-smoke",
+        "name": "A Retake Smoke",
+        "team": "CT",
+        "type": "smoke",
+        "difficulty": "advanced",
+        "situation": ["retake"],
+        "instant": false,
+        "description": "Pit smoke for an A retake",
+        "technique": "Left Click, Running",
+        "landingPosition": {
+            "x": 87.00,
+            "y": 79.04
+        },
+        "originPosition": {
+            "x": 83.46,
+            "y": 52.65
+        },
+        "setpos/setang": "setpos 2073.167480 1235.968750 243.875000;setang -4.812529 -66.480125 0",
+        "lineupImage": "lineups/inferno/a-retake-smoke.jpg",
+        "video": "lineups/inferno/a-retake-smoke.mp4"
+    },
+    {
+        "id": "inferno-halfwall-smoke-02",
+        "landingSpotId": "inferno-halfwall-smoke",
+        "name": "Halfwall Smoke",
+        "team": "CT",
+        "type": "smoke",
+        "difficulty": "basic",
+        "situation": ["default"],
+        "instant": false,
+        "description": "Halfwall smoke from coffin",
+        "technique": "Left Click",
+        "landingPosition": {
+            "x": 47.42,
+            "y": 40.68
+        },
+        "originPosition": {
+            "x": 52.31,
+            "y": 14.70
+        },
+        "setpos/setang": "setpos 537.220337 3094.029785 275.888245;setang -19.030039 -96.152634 0",
+        "lineupImage": "lineups/inferno/halfwall-smoke2.jpg",
+        "video": "lineups/inferno/halfwall-smoke2.mp4"
+    },
+    {
+        "id": "inferno-banana-flashbang-02",
+        "landingSpotId": "inferno-banana-flashbang-retake",
+        "name": "Banana Flashbang",
+        "team": "CT",
+        "type": "flashbang",
+        "difficulty": "basic",
+        "situation": ["default"],
+        "instant": false,
+        "description": "Banana retake flash from coffin",
+        "technique": "Left Click",
+        "landingPosition": {
+            "x": 54.22,
+            "y": 34.97
+        },
+        "originPosition": {
+            "x": 52.31,
+            "y": 14.70
+        },
+        "setpos/setang": "setpos 537.220337 3094.029785 275.888245;setang -20.625048 -89.057915 0",
+        "lineupImage": "lineups/inferno/banana-flash-ct2.jpg",
+        "video": "lineups/inferno/banana-flash-ct2.mp4"
     }
 
 ]

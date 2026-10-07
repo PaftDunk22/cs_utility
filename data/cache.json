@@ -169,7 +169,7 @@
         "difficulty": "basic",
         "situation": ["retake"],
         "instant": false,
-        "description": "B site default incendiary for a retake, line up 1y with top of heaven platform",
+        "description": "B site default incendiary for a retake, line up -1y with top of heaven platform",
         "technique": "Left Click",
         "landingPosition": {
             "x": 31.3,
@@ -215,7 +215,7 @@
         "difficulty": "advanced",
         "situation": ["retake"],
         "instant": false,
-        "description": "B heaven smoke for a retake, line up 1y with top right of dark line on the wall",
+        "description": "B heaven smoke for a retake, line up -1y with top right of dark line on the wall",
         "technique": "Left Click",
         "landingPosition": {
             "x": 31.23,
@@ -353,7 +353,7 @@
         "difficulty": "basic",
         "situation": ["execute"],
         "instant": false,
-        "description": "B heaven smoke, line up 1y with bottom right of 'N'",
+        "description": "B heaven smoke, line up -1y with bottom right of 'N'",
         "technique": "Left Click, Jumpthrow",
         "landingPosition": {
             "x": 30.55,
@@ -366,8 +366,29 @@
         "setpos/setang": "setpos 1165.968750 -1435.949707 1676;setang -53.130108 141.574615 0",
         "lineupImage": "lineups/cache/b-heaven-smoke.jpg",
         "video": "lineups/cache/b-heaven-smoke.mp4"
+    },
+    {
+        "id": "sandbag-molotov",
+        "landingSpotId": "sandbag-molotov",
+        "name": "Sandbag Molotov",
+        "team": "T",
+        "type": "molotov",
+        "difficulty": "basic",
+        "situation": ["default"],
+        "instant": false,
+        "description": "Sandbag molotov from vent, spreads late, making it seem like the corner is safe",
+        "technique": "Left Click",
+        "landingPosition": {
+            "x": 35.45,
+        	"y": 59.59
+        },
+        "originPosition": {
+            "x": 46.33,
+        	"y": 60.00
+        },
+        "setpos/setang": "setpos 614.028137 -142.950928 1770.735596;setang -7.864810 -176.931061 0",
+        "lineupImage": "lineups/cache/sandbag-molotov.jpg",
+        "video": "lineups/cache/sandbag-molotov.mp4"
     }
-
-
 
 ]
