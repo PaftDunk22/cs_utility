@@ -136,6 +136,143 @@
         "setpos/setang": "setpos 1004.968750 2379.968750 85.217896;setang -24.640936 -102.092026 0",
         "lineupImage": "lineups/dust2/long-door-smoke.jpg",
         "video": "lineups/dust2/long-door-smoke2.mp4"
+    },
+    {
+        "id": "b-split-smoke-01",
+        "landingSpotId": "b-split-smoke",
+        "name": "CT Smoke for B",
+        "team": "T",
+        "type": "smoke",
+        "difficulty": "basic",
+        "situation": ["execute"],
+        "instant": false,
+        "description": "CT Smoke for a B split, while crouched follow right part of the screwhead until you hit the darker part of the wood",
+        "technique": "Left Click, Crouch, Jumpthrow",
+        "landingPosition": {
+            "x": 49.59,
+            "y": 24.63
+        },
+        "originPosition": {
+            "x": 48.50,
+            "y": 42.04
+        },
+        "setpos/setang": "setpos -275.053894 1345.334351 -58.990112;setang -11.715240 129.429474 0",
+        "lineupImage": "lineups/dust2/b-split-smoke.jpg",
+        "video": "lineups/dust2/b-split-smoke.mp4"
+    },
+    {
+        "id": "a-ct-smoke-01",
+        "landingSpotId": "a-ct-smoke",
+        "name": "CT Smoke for A",
+        "team": "T",
+        "type": "smoke",
+        "difficulty": "basic",
+        "situation": ["execute"],
+        "instant": false,
+        "description": "CT smoke for A execute, aim at bottom of palm tree",
+        "technique": "Left Click",
+        "landingPosition": {
+            "x": 68.03,
+            "y": 23.28
+        },
+        "originPosition": {
+            "x": 59.63,
+            "y": 42.40
+        },
+        "setpos/setang": "setpos 267.937256 1348.030396 64.201874;setang -16.280230 71.486961 0",
+        "lineupImage": "lineups/dust2/a-ct-smoke.jpg",
+        "video": "lineups/dust2/a-ct-smoke.mp4"
+    },
+    {
+        "id": "a-cross-smoke-01",
+        "landingSpotId": "a-cross-smoke",
+        "name": "A Cross Smoke",
+        "team": "T",
+        "type": "smoke",
+        "difficulty": "basic",
+        "situation": ["execute"],
+        "instant": false,
+        "description": "Basic cross smoke for an A execute",
+        "technique": "Left Click",
+        "landingPosition": {
+            "x": 81.65,
+            "y": 23.71
+        },
+        "originPosition": {
+            "x": 74.41,
+            "y": 48.19
+        },
+        "setpos/setang": "setpos 897.581421 1070.969482 64.755753;setang -56.265305 80.864967 0",
+        "lineupImage": "lineups/dust2/a-cross-smoke.jpg",
+        "video": "lineups/dust2/a-cross-smoke.mp4"
+    },
+    {
+        "id": "a-cross-smoke-02",
+        "landingSpotId": "a-cross-smoke",
+        "name": "A Cross Smoke",
+        "team": "T",
+        "type": "smoke",
+        "difficulty": "advanced",
+        "situation": ["execute"],
+        "instant": false,
+        "description": "Alternative A cross smoke for an A execute, harder to block",
+        "technique": "Both Clicks, Tap W + Jumpthrow",
+        "landingPosition": {
+            "x": 81.65,
+            "y": 23.71
+        },
+        "originPosition": {
+            "x": 73.46,
+            "y": 54.49
+        },
+        "setpos/setang": "setpos 847.182983 790.062561 111;setang -30.415255 78.560211 0",
+        "lineupImage": "lineups/dust2/a-cross-smoke2.jpg",
+        "video": "lineups/dust2/a-cross-smoke2.mp4"
+    },
+    {
+        "id": "car-molotov-01",
+        "landingSpotId": "car-molotov",
+        "name": "Car Molotov",
+        "team": "T",
+        "type": "molotov",
+        "difficulty": "basic",
+        "situation": ["default"],
+        "instant": false,
+        "description": "Molotov for car",
+        "technique": "Left Click, Tap W + Jumpthrow",
+        "landingPosition": {
+            "x": 93.79,
+            "y": 28.57
+        },
+        "originPosition": {
+            "x": 73.46,
+            "y": 54.49
+        },
+        "setpos/setang": "setpos 847.182983 790.062561 111;setang 6.462260 53.177704 0",
+        "lineupImage": "lineups/dust2/car-molotov.jpg",
+        "video": "lineups/dust2/car-molotov.mp4"
+    },
+    {
+        "id": "a-short-smoke-01",
+        "landingSpotId": "a-short-smoke",
+        "name": "A Short Smoke",
+        "team": "T",
+        "type": "smoke",
+        "difficulty": "basic",
+        "situation": ["execute"],
+        "instant": false,
+        "description": "A short smoke for an A execute",
+        "technique": "Left Click, Jumpthrow",
+        "landingPosition": {
+            "x": 66.35,
+            "y": 22.31
+        },
+        "originPosition": {
+            "x": 63.81,
+            "y": 41.62
+        },
+        "setpos/setang": "setpos 409.965454 1365.031250 64.196747;setang -9.432798 117.695061 0",
+        "lineupImage": "lineups/dust2/a-short-smoke.jpg",
+        "video": "lineups/dust2/a-short-smoke.mp4"
     }
-
 ]

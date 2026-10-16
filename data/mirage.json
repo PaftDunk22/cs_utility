@@ -115,6 +115,29 @@
         "video": "lineups/mirage/window_smoke_instant_pos5.mp4"
     },
     {
+        "id": "mirage-window-smoke-06",
+        "landingSpotId": "mirage-window-smoke",
+        "name": "Window Smoke",
+        "team": "T",
+        "type": "smoke",
+        "difficulty": "basic",
+        "situation": ["default"],
+        "instant": false,
+        "description": "Very simple mid window smoke",
+        "technique": "Left Click, Tap W + Jumpthrow",
+        "landingPosition": {
+            "x": 36,
+            "y": 53
+        },
+        "originPosition": {
+            "x": 84.97,
+        	"y": 20.21
+        },
+        "setpos/setang": "setpos 1135.951660 647.979858 -196.796082;setang -26.892029 -151.478683 0",
+        "lineupImage": "lineups/mirage/window-smoke2.jpg",
+        "video": "lineups/mirage/window-smoke2.mp4"
+    },
+    {
         "id": "mirage-window-smoke-07",
         "landingSpotId": "mirage-window-smoke",
         "name": "Window Smoke",
@@ -138,27 +161,27 @@
         "video": "lineups/mirage/window-smoke.mp4"
     },
     {
-        "id": "mirage-window-smoke-06",
+        "id": "mirage-window-smoke-08",
         "landingSpotId": "mirage-window-smoke",
-        "name": "Window Smoke",
+        "name": "Mid Round Window Smoke",
         "team": "T",
         "type": "smoke",
         "difficulty": "basic",
         "situation": ["default"],
         "instant": false,
-        "description": "Very simple mid window smoke",
-        "technique": "Left Click, Tap W + Jumpthrow",
+        "description": "Mid round window smoke from top mid, while chrouched aim top left of box, move a bit to the left for a better spread",
+        "technique": "Left Click, Crouched",
         "landingPosition": {
             "x": 36,
             "y": 53
         },
         "originPosition": {
-            "x": 84.97,
-        	"y": 20.21
+            "x": 69.86,
+        	"y": 45.31
         },
-        "setpos/setang": "setpos 1135.951660 647.979858 -196.796082;setang -26.892029 -151.478683 0",
-        "lineupImage": "lineups/mirage/window-smoke2.jpg",
-        "video": "lineups/mirage/window-smoke2.mp4"
+        "setpos/setang": "setpos 343.315491 -621.632690 -99.035583;setang -39.655170 -178.534805 0",
+        "lineupImage": "lineups/mirage/window-smoke-mid.jpg",
+        "video": "lineups/mirage/window-smoke-mid.mp4"
     },
     {
         "id": "mirage-b-window-smoke-01",
@@ -184,6 +207,52 @@
         "video": "lineups/mirage/b-window-smoke.mp4"
     },
     {
+        "id": "mirage-conn-smoke-01",
+        "landingSpotId": "mirage-conn-smoke",
+        "name": "Connector Smoke",
+        "team": "T",
+        "type": "smoke",
+        "difficulty": "basic",
+        "situation": ["default"],
+        "instant": false,
+        "description": "Faster connector smoke, aim at the dark dot on the wall",
+        "technique": "Left Click, Tap W + Jumpthrow",
+        "landingPosition": {
+            "x": 50.00,
+        	"y": 50.48
+        },
+        "originPosition": {
+            "x": 89.58,
+        	"y": 23.14
+        },
+        "setpos/setang": "setpos 1359.641113 519.972229 -195.792236;setang -33.275124 -147.377396 0",
+        "lineupImage": "lineups/mirage/conn-smoke-spawn.jpg",
+        "video": "lineups/mirage/conn-smoke-spawn.mp4"
+    },
+    {
+        "id": "mirage-conn-smoke-02",
+        "landingSpotId": "mirage-conn-smoke",
+        "name": "Connector Smoke",
+        "team": "T",
+        "type": "smoke",
+        "difficulty": "basic",
+        "situation": ["default"],
+        "instant": false,
+        "description": "Simple mid round connector smoke",
+        "technique": "Left Click",
+        "landingPosition": {
+            "x": 50.00,
+        	"y": 50.48
+        },
+        "originPosition": {
+            "x": 72.99,
+        	"y": 36.87
+        },
+        "setpos/setang": "setpos 502.938904 -64.031250 -96.549927;setang -14.492629 -147.129761 0",
+        "lineupImage": "lineups/mirage/conn-smoke-mid.jpg",
+        "video": "lineups/mirage/conn-smoke-mid.mp4"
+    },
+    {
         "id": "mirage-ct-smoke-01",
         "landingSpotId": "mirage-ct-smoke",
         "name": "CT Smoke",
@@ -192,7 +261,7 @@
         "difficulty": "basic",
         "situation": ["execute"],
         "instant": false,
-        "description": "Very simple CT smoke",
+        "description": "Very simple CT smoke, stand in front of the fence",
         "technique": "Left Click, Jumpthrow",
         "landingPosition": {
             "x": 44.61,
