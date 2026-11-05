@@ -166,7 +166,7 @@
         "name": "Mid Round Window Smoke",
         "team": "T",
         "type": "smoke",
-        "difficulty": "basic",
+        "difficulty": "advanced",
         "situation": ["default"],
         "instant": false,
         "description": "Mid round window smoke from top mid, while chrouched aim top left of box, move a bit to the left for a better spread",
@@ -182,6 +182,29 @@
         "setpos/setang": "setpos 343.315491 -621.632690 -99.035583;setang -39.655170 -178.534805 0",
         "lineupImage": "lineups/mirage/window-smoke-mid.jpg",
         "video": "lineups/mirage/window-smoke-mid.mp4"
+    },
+    {
+        "id": "mirage-short-smoke-01",
+        "landingSpotId": "mirage-short-smoke",
+        "name": "Short Smoke",
+        "team": "T",
+        "type": "smoke",
+        "difficulty": "basic",
+        "situation": ["default"],
+        "instant": false,
+        "description": "Short smoke for start of round, can go for a fast A split afterwards",
+        "technique": "Left Click, Jumpthrow",
+        "landingPosition": {
+            "x": 47.01,
+        	"y": 37.42
+        },
+        "originPosition": {
+            "x": 91.08,
+        	"y": 41.09
+        },
+        "setpos/setang": "setpos 1422.933472 -367.933167 -104.000000;setang -32.225574 176.102905 0",
+        "lineupImage": "lineups/mirage/mid-short-smoke.jpg",
+        "video": "lineups/mirage/mid-short-smoke.mp4"
     },
     {
         "id": "mirage-b-window-smoke-01",
@@ -202,9 +225,32 @@
             "x": 59.91,
         	"y": 15.98
         },
-        "setpos/setang": "setpos -160.062744 887.964905 -71.671753;setang -48.617676 -146.551346 0",
+        "setpos/setang": "setpos -160.031250 887.965576 -71.671814;setang -48.258022 -146.631561 0.000000",
         "lineupImage": "lineups/mirage/b-window-smoke.jpg",
         "video": "lineups/mirage/b-window-smoke.mp4"
+    },
+    {
+        "id": "mirage-b-door-smoke-01",
+        "landingSpotId": "mirage-b-door-smoke",
+        "name": "Kitchen Door Smoke",
+        "team": "T",
+        "type": "smoke",
+        "difficulty": "advanced",
+        "situation": ["execute"],
+        "instant": false,
+        "description": "Very simple Kitchen door smoke",
+        "technique": "Left Click, Tap W + Jumpthrow",
+        "landingPosition": {
+            "x": 17.36,
+        	"y": 39.87
+        },
+        "originPosition": {
+            "x": 59.91,
+        	"y": 15.98
+        },
+        "setpos/setang": "setpos -160.055847 887.950684 -71.671509;setang -42.042988 -152.048798 0",
+        "lineupImage": "lineups/mirage/b-door-smoke.jpg",
+        "video": "lineups/mirage/b-door-smoke.mp4"
     },
     {
         "id": "mirage-conn-smoke-01",
@@ -235,7 +281,7 @@
         "name": "Connector Smoke",
         "team": "T",
         "type": "smoke",
-        "difficulty": "basic",
+        "difficulty": "advanced",
         "situation": ["default"],
         "instant": false,
         "description": "Simple mid round connector smoke",
@@ -251,6 +297,29 @@
         "setpos/setang": "setpos 502.938904 -64.031250 -96.549927;setang -14.492629 -147.129761 0",
         "lineupImage": "lineups/mirage/conn-smoke-mid.jpg",
         "video": "lineups/mirage/conn-smoke-mid.mp4"
+    },
+    {
+        "id": "mirage-conn-smoke-03",
+        "landingSpotId": "mirage-conn-smoke",
+        "name": "Connector Smoke from B",
+        "team": "T",
+        "type": "smoke",
+        "difficulty": "advanced",
+        "situation": ["default"],
+        "instant": false,
+        "description": "Mid round connector smoke from B, can go for a B split afterwards",
+        "technique": "Left Click",
+        "landingPosition": {
+            "x": 50.00,
+        	"y": 50.48
+        },
+        "originPosition": {
+            "x": 54.22,
+        	"y": 20.82
+        },
+        "setpos/setang": "setpos -460.372681 676.146667 -12.187500;setang -48.510033 -99.340134 0",
+        "lineupImage": "lineups/mirage/conn-smoke-b.jpg",
+        "video": "lineups/mirage/conn-smoke-b.mp4"
     },
     {
         "id": "mirage-ct-smoke-01",
@@ -276,27 +345,27 @@
         "video": "lineups/mirage/ct-smoke.mp4"
     },
     {
-        "id": "mirage-ct-smoke-01",
+        "id": "mirage-ct-smoke-02",
         "landingSpotId": "mirage-ct-smoke",
-        "name": "CT Smoke",
+        "name": "CT Smoke(top box)",
         "team": "T",
         "type": "smoke",
         "difficulty": "basic",
         "situation": ["execute"],
         "instant": false,
-        "description": "Very simple CT smoke",
+        "description": "Simple CT smoke that falls on top of CT box",
         "technique": "Left Click, Jumpthrow",
         "landingPosition": {
             "x": 44.61,
         	"y": 79.50
         },
         "originPosition": {
-            "x": 87.59,
-        	"y": 47.01
+            "x": 84.28,
+        	"y": 53.20
         },
-        "setpos/setang": "setpos 1257.993774 -871.968750 -80;setang -21.477549 -144.545197 0",
-        "lineupImage": "lineups/mirage/ct-smoke.jpg",
-        "video": "lineups/mirage/ct-smoke.mp4"
+        "setpos/setang": "setpos 1094.366089 -1009.709656 -194.876221;setang -28.847498 -144.081894 0",
+        "lineupImage": "lineups/mirage/ct-smoke2.jpg",
+        "video": "lineups/mirage/ct-smoke2.mp4"
     },
     {
         "id": "mirage-a-jungle-smoke-01",
@@ -333,7 +402,7 @@
         "description": "Very simple stairs smoke",
         "technique": "Both Clicks, Jumpthrow",
         "landingPosition": {
-            "x": 53.79,
+            "x": 54.9,
         	"y": 64.21
         },
         "originPosition": {
@@ -366,6 +435,166 @@
         "setpos/setang": "setpos -1120.03894 -967.453186 -104;setang -42.410126 86.603905 0",
         "lineupImage": "lineups/mirage/window-nade.jpg",
         "video": "lineups/mirage/window-nade.mp4"
+    },
+    {
+        "id": "mirage-top-conn-smoke",
+        "landingSpotId": "mirage-top-conn-smoke",
+        "name": "Top Connector Smoke",
+        "team": "T",
+        "type": "smoke",
+        "difficulty": "advanced",
+        "situation": ["default"],
+        "instant": false,
+        "description": "Top connector smoke from mid",
+        "technique": "Left Click",
+        "landingPosition": {
+            "x": 50.09,
+            "y": 59.27
+        },
+        "originPosition": {
+            "x": 69.51,
+            "y": 47.09
+        },
+        "setpos/setang": "setpos 360.076538 -691.967651 -100.042847;setang -42.570797 -153.895126 0",
+        "lineupImage": "lineups/mirage/top-conn-smoke.jpg",
+        "video": "lineups/mirage/top-conn-smoke.mp4"
+    },
+    {
+        "id": "mirage-jungle-smoke",
+        "landingSpotId": "mirage-jungle-smoke",
+        "name": "Jungle Smoke",
+        "team": "T",
+        "type": "smoke",
+        "difficulty": "advanced",
+        "situation": ["default"],
+        "instant": false,
+        "description": "Jungle smoke from mid, place -1y on the edge of the branch",
+        "technique": "Left Click",
+        "landingPosition": {
+            "x": 44.62,
+            "y": 61.39
+        },
+        "originPosition": {
+            "x": 69.51,
+            "y": 47.09
+        },
+        "setpos/setang": "setpos 360.075958 -691.968201 -100.042786;setang -57.475842 -151.337448 0",
+        "lineupImage": "lineups/mirage/jungle-smoke-mid.jpg",
+        "video": "lineups/mirage/jungle-smoke-mid.mp4"
+    },
+    {
+        "id": "mirage-conn-flash",
+        "landingSpotId": "mirage-conn-flash",
+        "name": "Connector Flashbang",
+        "team": "T",
+        "type": "flashbang",
+        "difficulty": "advanced",
+        "situation": ["execute"],
+        "instant": false,
+        "description": "Connector flash from mid boxes, flashes behind box",
+        "technique": "Left Click",
+        "landingPosition": {
+            "x": 50.80,
+            "y": 48.50
+        },
+        "originPosition": {
+            "x": 69.51,
+            "y": 45.15
+        },
+        "setpos/setang": "setpos 343.350952 -621.624268 -99.037781;setang -8.443328 -168.470291 0",
+        "lineupImage": "lineups/mirage/conn-flash.jpg",
+        "video": "lineups/mirage/conn-flash.mp4"
+    },
+    {
+        "id": "mirage-short-smoke-mid",
+        "landingSpotId": "mirage-short-smoke-mid",
+        "name": "Short Smoke",
+        "team": "T",
+        "type": "smoke",
+        "difficulty": "advanced",
+        "situation": ["default"],
+        "instant": false,
+        "description": "Short smoke from mid boxes, crouch and place -1x a bit left from the sticking tip of the box",
+        "technique": "Left Click",
+        "landingPosition": {
+            "x": 46.21,
+            "y": 32.79
+        },
+        "originPosition": {
+            "x": 69.51,
+            "y": 45.15
+        },
+        "setpos/setang": "setpos 343.350952 -621.624268 -99.037781;setang -50.380894 153.058075 0",
+        "lineupImage": "lineups/mirage/short-smoke-mid.jpg",
+        "video": "lineups/mirage/short-smoke-mid.mp4"
+    },
+    {
+        "id": "mirage-a-jungle-smoke",
+        "landingSpotId": "mirage-a-jungle-smoke",
+        "name": "Jungle Smoke",
+        "team": "T",
+        "type": "smoke",
+        "difficulty": "basic",
+        "situation": ["execute"],
+        "instant": false,
+        "description": "Jungle smoke for an A exec",
+        "technique": "Left Click, Jumpthrow",
+        "landingPosition": {
+            "x": 49.56,
+            "y": 65.08
+        },
+        "originPosition": {
+            "x": 87.34,
+            "y": 54.33
+        },
+        "setpos/setang": "setpos 1239.694702 -1127.758545 -192.149048;setang -56.238396 -166.624542 0",
+        "lineupImage": "lineups/mirage/jungle-smoke2.jpg",
+        "video": "lineups/mirage/jungle-smoke2.mp4"
+    },
+    {
+        "id": "mirage-stairs-molotov",
+        "landingSpotId": "mirage-stairs-molotov",
+        "name": "Stairs molotov",
+        "team": "T",
+        "type": "molotov",
+        "difficulty": "advanced",
+        "situation": ["execute"],
+        "instant": false,
+        "description": "A stairs molotov for a fast exec",
+        "technique": "Left Click, Walking",
+        "landingPosition": {
+            "x": 53.47,
+            "y": 64.04
+        },
+        "originPosition": {
+            "x": 87.34,
+            "y": 54.33
+        },
+        "setpos/setang": "setpos 1239.694702 -1127.758545 -192.149048;setang -3.630865 -164.066940 0",
+        "lineupImage": "lineups/mirage/stairs-molotov.jpg",
+        "video": "lineups/mirage/stairs-molotov.mp4"
+    },
+    {
+        "id": "mirage-shadow-molotov",
+        "landingSpotId": "mirage-shadow-molotov",
+        "name": "Shadow Molotov",
+        "team": "T",
+        "type": "molotov",
+        "difficulty": "advanced",
+        "situation": ["execute"],
+        "instant": false,
+        "description": "Shadow molotov from palace",
+        "technique": "Left Click, Running",
+        "landingPosition": {
+            "x": 64.27,
+            "y": 72.51
+        },
+        "originPosition": {
+            "x": 75.34,
+            "y": 76.75
+        },
+        "setpos/setang": "setpos 631.469360 -2224.052246 24;setang -8.635860 -165.332092 0",
+        "lineupImage": "lineups/mirage/shadow-molotov.jpg",
+        "video": "lineups/mirage/shadow-molotov.mp4"
     }
-
 ]

@@ -91,54 +91,39 @@ async function loadNade() {
 
         combinedCommand.textContent = nade["setpos/setang"] || "-";
 
-        if (nade.lineupImage) {
+        const hasVideo = await hasMedia("video")
+        const hasImage = await hasMedia("lineupImage")
 
+        videoButton.style.display = hasVideo ? "" : "none";
+        imageButton.style.display = hasImage ? "" : "none";
+
+        if (hasVideo) video.src = nade.video;
+        if (hasImage) {
             lineupImage.src = nade.lineupImage;
-
             lineupImage.onload = setupImageZoom;
-
-        } else {
-
-            imageButton.style.display = "none";
-
-            imageContainer.classList.remove("active");
         }
 
-        const hasVideo =
-        typeof nade.video === "string" &&
-        nade.video.trim() !== "" &&
-        await mediaExists(nade.video);
-
-        if (hasVideo) {
-
-            video.src = nade.video;
-            showVideo();
-
-        } else {
-            videoButton.style.display = "none";
-            showImage();
-        }
+        if (hasVideo) showVideo();
+        else showImage();
 
     } catch (error) {
 
         console.error(error);
-
         title.textContent =  "Could not load nade";
-
         description.textContent = error.message;
 
     }
 
 }
 
+videoButton.addEventListener("click",showVideo);
+imageButton.addEventListener("click",showImage);
+
 function showVideo() {
 
     videoButton.classList.add("active");
-
     imageButton.classList.remove("active");
-
     videoContainer.classList.add("active");
-
     imageContainer.classList.remove("active");
 
     video.play().catch(() => {});
@@ -148,20 +133,23 @@ function showVideo() {
 function showImage() {
 
     imageButton.classList.add("active");
-
     videoButton.classList.remove("active");
-
     imageContainer.classList.add("active");
-
     videoContainer.classList.remove("active");
 
     video.pause();
 
 }
 
-videoButton.addEventListener("click",showVideo);
+async function hasMedia(mediaType)
+{
+    const media = currentNade[mediaType];
 
-imageButton.addEventListener("click",showImage);
+    if (typeof media !== "string") return false;
+    if (media.trim() === "") return false;
+
+    return mediaExists(media);
+}
 
 async function copyCommand(command,button) 
 {
@@ -181,7 +169,7 @@ async function copyCommand(command,button)
         button.textContent = "COPIED";
 
         setTimeout(() => {
-            button.textContent =originalText;
+            button.textContent = originalText;
         }, 1200);
 
     } catch (error) {
