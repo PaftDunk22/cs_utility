@@ -1,25 +1,54 @@
 [
     {
-        "id": "b-cross-smoke-01",
-        "landingSpotId": "b-cross-smoke",
-        "name": "B site cross Smoke",
-        "team": "T",
-        "type": "smoke",
-        "difficulty": "basic",
-        "situation": ["execute"],
-        "instant": false,
-        "description": "Very simple B cross smoke",
-        "technique": "Both Clicks, Jumpthrow",
-        "landingPosition": {
-            "x": 40.48,
-        	"y": 13.75
-        },
-        "originPosition": {
-            "x": 30.96,
-        	"y": 27.35
-        },
-        "setpos/setang": "setpos -2374.268799 -112.944580 11616;setang -50.187592 56.992725 0",
-        "lineupImage": "lineups/vertigo/b-cross-smoke.jpg",
-        "video": "lineups/vertigo/b-cross-smoke.mp4"
+        "T": {
+            "smoke": [
+            {
+                "id": "b-cross-smoke-01",
+                "landingSpotId": "b-cross-smoke",
+                "name": "B site cross Smoke",
+                "difficulty": "basic",
+                "situation": ["execute"],
+                "instant": false,
+                "description": "Very simple B cross smoke",
+                "technique": "Both Clicks, Jumpthrow",
+                "landingPosition": {
+                    "x": 40.48,
+                    "y": 13.75
+                },
+                "originPosition": {
+                    "x": 30.96,
+                    "y": 27.35
+                },
+                "setpos/setang": "setpos -2374.268799 -112.944580 11616;setang -50.187592 56.992725 0",
+                "lineupImage": "lineups/vertigo/b-cross-smoke.jpg",
+                "video": "lineups/vertigo/b-cross-smoke.mp4"
+            }
+            ],
+            "molotov": [
+
+            ],
+            "flashbang": [
+
+            ],
+            "grenade": [
+                
+            ]
+        }
+    },
+    {
+        "CT": {
+            "smoke": [
+
+            ],
+            "molotov": [
+
+            ],
+            "flashbang": [
+
+            ],
+            "grenade": [
+
+            ]
+        }
     }
 ]

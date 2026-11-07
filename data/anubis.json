@@ -1,0 +1,33 @@
+[
+    {
+        "T": {
+            "smoke": [
+            ],
+            "molotov": [
+
+            ],
+            "flashbang": [
+
+            ],
+            "grenade": [
+                
+            ]
+        }
+    },
+    {
+        "CT": {
+            "smoke": [
+
+            ],
+            "molotov": [
+
+            ],
+            "flashbang": [
+
+            ],
+            "grenade": [
+
+            ]
+        }
+    }
+]

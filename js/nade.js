@@ -63,7 +63,19 @@ async function loadNade() {
             throw new Error("Could not load map data.");
         }
 
-        const nades = await response.json();
+        const data = await response.json();
+
+        const nades = data.flatMap(team =>
+            Object.entries(team).flatMap(([side, types]) =>
+                Object.entries(types).flatMap(([type, lineups]) =>
+                    lineups.map(nade => ({
+                        ...nade,
+                        team: side,
+                        type: type
+                    }))
+                )
+            )
+        );
 
         const nade = nades.find(item => item.id === nadeId);
 

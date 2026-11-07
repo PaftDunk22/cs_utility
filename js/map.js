@@ -8,36 +8,27 @@ const markerContainer = document.getElementById("nade-markers");
 const originContainer = document.getElementById("nade-origins");
 const throwLines = document.getElementById("throw-lines");
 
-const radarCoordinates =
-    document.getElementById("radar-coordinates");
+const radarCoordinates = document.getElementById("radar-coordinates");
 
-const isDevMode =
-    new URLSearchParams(window.location.search).get("dev") === "true";
+const isDevMode = new URLSearchParams(window.location.search).get("dev") === "true";
 
 if (isDevMode) {
     document.querySelector(".radar").classList.add("dev-mode");
-    console.log("RADAR DEV MODE ENABLED");
 }
 
 const searchInput = document.getElementById("search");
 
-const teamFilters =
-    document.querySelectorAll(".team-filter");
+const teamFilters = document.querySelectorAll(".team-filter");
 
-const typeFilters =
-    document.querySelectorAll(".type-filter");
+const typeFilters = document.querySelectorAll(".type-filter");
 
-const difficultyFilters =
-    document.querySelectorAll(".difficulty-filter");
+const difficultyFilters =  document.querySelectorAll(".difficulty-filter");
 
-const situationFilters =
-    document.querySelectorAll(".situation-filter");
+const situationFilters = document.querySelectorAll(".situation-filter");
 
-const instantFilters =
-    document.querySelectorAll('input[name="instant"]');
+const instantFilters = document.querySelectorAll('input[name="instant"]');
 
-const clearButton =
-    document.getElementById("clear-filters");
+const clearButton = document.getElementById("clear-filters");
 
 let nades = [];
 let selectedLandingSpot = null;
@@ -62,7 +53,21 @@ async function loadMap() {
             throw new Error("Could not load map data.");
         }
 
-        nades = await response.json();
+        const data = await response.json();
+
+        nades = data.flatMap(team =>
+            Object.entries(team).flatMap(([side, types]) =>
+                Object.entries(types).flatMap(([type, lineups]) =>
+                    lineups.map(nade => ({
+                        ...nade,
+                        team: side,
+                        type: type
+                    }))
+                )
+            )
+        );
+
+        console.log(nades);
 
         renderNades();
 
@@ -84,7 +89,7 @@ function getCheckedValues(elements) {
 
 
 function matchesFilters(nade) {
-
+    
     const search = searchInput.value.trim().toLowerCase();
 
     if (search) {
