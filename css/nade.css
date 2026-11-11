@@ -169,6 +169,13 @@
     display: block;
 
     background: #000;
+
+    transition: transform 0.15s ease;
+}
+
+#video-container.zooming #nade-video {
+    transform: scale(2.5);
+    cursor: zoom-in;
 }
 
 .image-container {

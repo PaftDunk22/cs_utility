@@ -21,7 +21,7 @@
                     "y": 58
                 },
                 "setpos/setang": "setpos 2771.561035 19.305861 1672;setang -12.722548 -179.549637 0",
-                "lineupImage": "lineups/cache/connector-smoke.jpg",
+                "image": "lineups/cache/connector-smoke.jpg",
                 "video": "lineups/cache/connector-smoke.mp4"
             },
             "connector-smoke-02":
@@ -42,7 +42,7 @@
                     "y": 47.5
                 },
                 "setpos/setang": "setpos 1866.772949 587.968750 1672;setang -32.680904 -166.065689 0",
-                "lineupImage": "lineups/cache/connector-smoke2.jpg",
+                "image": "lineups/cache/connector-smoke2.jpg",
                 "video": "lineups/cache/connector-smoke2.mp4"
             },
             "a-smoke":
@@ -63,7 +63,7 @@
                     "y": 29
                 },
                 "setpos/setang": "setpos 1315.841553 1587.957642 1768;setang -47.768902 -173.415161 0",
-                "lineupImage": "lineups/cache/a-smoke.jpg",
+                "image": "lineups/cache/a-smoke.jpg",
                 "video": "lineups/cache/a-smoke.mp4"
             },
             "forklift-smoke":
@@ -84,7 +84,7 @@
                     "y": 29
                 },
                 "setpos/setang": "setpos 1315.841553 1587.957642 1768;setang -32.443714 -170.356384 0",
-                "lineupImage": "lineups/cache/forklift-smoke.jpg",
+                "image": "lineups/cache/forklift-smoke.jpg",
                 "video": "lineups/cache/forklift-smoke.mp4"
             },
             "forklift-smoke2":
@@ -105,7 +105,7 @@
                     "y": 29
                 },
                 "setpos/setang": "setpos 1315.955444 1587.968750 1768;setang -45.502769 -165.421143 0",
-                "lineupImage": "lineups/cache/forklift-smoke2.jpg",
+                "image": "lineups/cache/forklift-smoke2.jpg",
                 "video": "lineups/cache/forklift-smoke2.mp4"
             },
             "ct-smoke":
@@ -128,7 +128,7 @@
                     "y": 83
                 },
                 "setpos/setang": "setpos 823.938965 -1435.968750 1676;setang -2.714017 160.402161 0",
-                "lineupImage": "lineups/cache/ct-smoke.jpg",
+                "image": "lineups/cache/ct-smoke.jpg",
                 "video": "lineups/cache/ct-smoke.mp4"
             },
             "ct-smoke-long":
@@ -151,7 +151,7 @@
                     "y": 82.98
                 },
                 "setpos/setang": "setpos 1165.972168 -1435.958862 1676;setang -54.312859 159.914581 0",
-                "lineupImage": "lineups/cache/ct-smoke-long.jpg",
+                "image": "lineups/cache/ct-smoke-long.jpg",
                 "video": "lineups/cache/ct-smoke-long.mp4"
             },
             "ct-smoke-closer":
@@ -174,7 +174,7 @@
                     "y": 83.53
                 },
                 "setpos/setang": "setpos 579.217529 -1449.968750 1676.265625;setang -2.805003 151.226105 0",
-                "lineupImage": "lineups/cache/ct-smoke2.jpg",
+                "image": "lineups/cache/ct-smoke2.jpg",
                 "video": "lineups/cache/ct-smoke2.mp4"
             },
             "b-main-smoke":
@@ -197,7 +197,7 @@
                     "y": 68.16
                 },
                 "setpos/setang": "setpos 1251.281982 -598.031250 1676.000488;setang -22.055033 -133.752930 0",
-                "lineupImage": "lineups/cache/b-main-smoke.jpg",
+                "image": "lineups/cache/b-main-smoke.jpg",
                 "video": "lineups/cache/b-main-smoke.mp4"
             },
             "b-heaven-smoke":
@@ -220,7 +220,7 @@
                     "y": 82.98
                 },
                 "setpos/setang": "setpos 1165.968750 -1435.949707 1676;setang -53.130108 141.574615 0",
-                "lineupImage": "lineups/cache/b-heaven-smoke.jpg",
+                "image": "lineups/cache/b-heaven-smoke.jpg",
                 "video": "lineups/cache/b-heaven-smoke.mp4"
             },
             "b-heaven-smoke-fast":
@@ -243,7 +243,7 @@
                     "y": 83.53
                 },
                 "setpos/setang": "setpos 579.236572 -1449.944092 1676.265625;setang -35.750267 147.566879 0",
-                "lineupImage": "lineups/cache/b-heaven-smoke2.jpg",
+                "image": "lineups/cache/b-heaven-smoke2.jpg",
                 "video": "lineups/cache/b-heaven-smoke2.mp4"
             }
         },
@@ -269,7 +269,7 @@
                     "y": 83.53
                 },
                 "setpos/setang": "setpos 579.240601 -1449.843018 1676.265625;setang -11.495103 146.662613 0",
-                "lineupImage": "lineups/cache/b-backsite-molotov.jpg",
+                "image": "lineups/cache/b-backsite-molotov.jpg",
                 "video": "lineups/cache/b-backsite-molotov.mp4"
             },
             "sandbag-molotov":
@@ -292,7 +292,7 @@
                     "y": 60
                 },
                 "setpos/setang": "setpos 614.028137 -142.950928 1770.735596;setang -7.864810 -176.931061 0",
-                "lineupImage": "lineups/cache/sandbag-molotov.jpg",
+                "image": "lineups/cache/sandbag-molotov.jpg",
                 "video": "lineups/cache/sandbag-molotov.mp4"
             },
             "sandbag-molotov2":
@@ -315,7 +315,7 @@
                     "y": 40.14
                 },
                 "setpos/setang": "setpos 1372.562866 957.968750 1676;setang 4.299859 -142.621460 0",
-                "lineupImage": "lineups/cache/sandbag-molotov2.jpg",
+                "image": "lineups/cache/sandbag-molotov2.jpg",
                 "video": "lineups/cache/sandbag-molotov2.mp4"
             },
             "whitebox-molotov":
@@ -338,7 +338,7 @@
                     "y": 48.30
                 },
                 "setpos/setang": "setpos 1251.533447 539.851379 1718.300781;setang 10.570022 -176.089157 0",
-                "lineupImage": "lineups/cache/whitebox-molotov.jpg",
+                "image": "lineups/cache/whitebox-molotov.jpg",
                 "video": "lineups/cache/whitebox-molotov.mp4"
             },
             "vent-molotov":
@@ -361,7 +361,7 @@
                     "y": 38.51
                 },
                 "setpos/setang": "setpos 1315.937500 1106.255615 1711.048828;setang 5.059602 -121.695007 0",
-                "lineupImage": "lineups/cache/vent-molotov.jpg",
+                "image": "lineups/cache/vent-molotov.jpg",
                 "video": "lineups/cache/vent-molotov.mp4"
             },
             "underboost-molotov":
@@ -384,7 +384,7 @@
                     "y": 48.30
                 },
                 "setpos/setang": "setpos 1315.937500 1106.255615 1711.048828;setang 5.059602 -121.695007 0",
-                "lineupImage": "lineups/cache/underboost-molotov.jpg",
+                "image": "lineups/cache/underboost-molotov.jpg",
                 "video": "lineups/cache/underboost-molotov.mp4"
             },
             "headshot-molotov":
@@ -407,7 +407,7 @@
                     "y": 83
                 },
                 "setpos/setang": "setpos 797.474548 -1449.968750 1676.265625;setang -26.647537 169.045670 0",
-                "lineupImage": "lineups/cache/headshot-molotov.jpg",
+                "image": "lineups/cache/headshot-molotov.jpg",
                 "video": "lineups/cache/headshot-molotov.mp4"
             }
         },
@@ -433,7 +433,7 @@
                     "y": 29
                 },
                 "setpos/setang": "setpos 1315.940186 1350.970459 1768;setang -25.015083 162.659103 0",
-                "lineupImage": "lineups/cache/a-flash.jpg",
+                "image": "lineups/cache/a-flash.jpg",
                 "video": "lineups/cache/a-flash.mp4"
             },
             "mid-flash":
@@ -456,7 +456,7 @@
                     "y": 47.5
                 },
                 "setpos/setang": "setpos 1866.912842 587.968750 1672;setang -3.990718 -172.332214 0",
-                "lineupImage": "lineups/cache/mid-flash.jpg",
+                "image": "lineups/cache/mid-flash.jpg",
                 "video": "lineups/cache/mid-flash.mp4"
             }
         },
@@ -489,7 +489,7 @@
                     "y": 68.16
                 },
                 "setpos/setang": "setpos -568.031250 -600.275208 1815.444946;setang -31.725042 -162.021866 0",
-                "lineupImage": "lineups/cache/b-heaven-smoke-retake.jpg",
+                "image": "lineups/cache/b-heaven-smoke-retake.jpg",
                 "video": "lineups/cache/b-heaven-smoke-retake.mp4"
             }
         },
@@ -515,7 +515,7 @@
                     "y": 60.95
                 },
                 "setpos/setang": "setpos -714.344238 -178.772766 1676;setang -26.335020 -63.352440 0",
-                "lineupImage": "lineups/cache/b-default-incendiary.jpg",
+                "image": "lineups/cache/b-default-incendiary.jpg",
                 "video": "lineups/cache/b-default-incendiary.mp4"
             },
             "a-defaullt-incendiary":
@@ -538,7 +538,7 @@
                     "y": 39.73
                 },
                 "setpos/setang": "setpos -916.042908 970.034607 1740.439331;setang -20.257540 49.093048 0",
-                "lineupImage": "lineups/cache/a-defaullt-incendiary.jpg",
+                "image": "lineups/cache/a-defaullt-incendiary.jpg",
                 "video": "lineups/cache/a-defaullt-incendiary.mp4"
             }
         },
@@ -564,7 +564,7 @@
                     "y": 32
                 },
                 "setpos/setang": "setpos -444.625549 1437.968750 1752;setang -12.915030 13.809885 0",
-                "lineupImage": "lineups/cache/a-main-flash.jpg",
+                "image": "lineups/cache/a-main-flash.jpg",
                 "video": "lineups/cache/a-main-flash.mp4"
             }
         },
@@ -590,7 +590,7 @@
                     "y": 60.95
                 },
                 "setpos/setang": "setpos -714.344238 -178.772766 1676;setang 5.839983 -63.214954 0",
-                "lineupImage": "lineups/cache/b-default-nade.jpg",
+                "image": "lineups/cache/b-default-nade.jpg",
                 "video": "lineups/cache/b-default-nade.mp4"
             },
             "a-defaullt-nade":
@@ -613,7 +613,7 @@
                     "y": 39.73
                 },
                 "setpos/setang": "setpos -916.042908 970.034607 1740.439331;setang 9.552470 47.195538 0",
-                "lineupImage": "lineups/cache/a-defaullt-nade.jpg",
+                "image": "lineups/cache/a-defaullt-nade.jpg",
                 "video": "lineups/cache/a-defaullt-nade.mp4"
             }
         }

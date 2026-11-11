@@ -21,7 +21,7 @@
                     "y": 32.79
                 },
                 "setpos/setang": "setpos -1268.031250 -1162.067261 -352.000000;setang -37.977219 -23.194790 0",
-                "lineupImage": "lineups/nuke/outside-cross-smoke-dot.jpg",
+                "image": "lineups/nuke/outside-cross-smoke-dot.jpg",
                 "video": "lineups/nuke/outside-cross-smoke-dot.mp4"
             },
             "outside-smoke-02":
@@ -42,7 +42,7 @@
                     "y": 32.79
                 },
                 "setpos/setang": "setpos -1268.031250 -1162.067261 -352.000000;setang -45.292259 -25.119801 0",
-                "lineupImage": "lineups/nuke/outside-cross-smoke-window.jpg",
+                "image": "lineups/nuke/outside-cross-smoke-window.jpg",
                 "video": "lineups/nuke/outside-cross-smoke-window.mp4"
             },
             "outside-smoke-03":
@@ -63,7 +63,7 @@
                     "y": 31.03
                 },
                 "setpos/setang": "setpos -1350.706299 -1039.988892 -352.000000;setang -44.109737 -19.647318 0",
-                "lineupImage": "lineups/nuke/outside-smoke-top.jpg",
+                "image": "lineups/nuke/outside-smoke-top.jpg",
                 "video": "lineups/nuke/outside-smoke-top.mp4"
             },
             "outside-smoke-04":
@@ -84,7 +84,7 @@
                     "y": 31.03
                 },
                 "setpos/setang": "setpos -1350.706299 -1039.988892 -352.000000;setang -26.812193 -22.452333 0",
-                "lineupImage": "lineups/nuke/outside-smoke-right.jpg",
+                "image": "lineups/nuke/outside-smoke-right.jpg",
                 "video": "lineups/nuke/outside-smoke-right.mp4"
             },
             "top-a-main-smoke":
@@ -105,7 +105,7 @@
                     "y": 32.93
                 },
                 "setpos/setang": "setpos -1180.030762 -1193.563721 -303.186279;setang -53.075016 -13.440761 0",
-                "lineupImage": "lineups/nuke/a-main-smoke.jpg",
+                "image": "lineups/nuke/a-main-smoke.jpg",
                 "video": "lineups/nuke/a-main-smoke.mp4"
             }  
         },
@@ -129,7 +129,7 @@
                     "y": 41.53
                 },
                 "setpos/setang": "setpos -1180.030762 -1193.563721 -303.186279;setang -53.075016 -13.440761 0",
-                "lineupImage": "lineups/nuke/red-molotov.jpg",
+                "image": "lineups/nuke/red-molotov.jpg",
                 "video": "lineups/nuke/red-molotov.mp4"
             }        
         },

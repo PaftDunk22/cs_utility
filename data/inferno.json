@@ -21,7 +21,7 @@
                     "y": 43.5
                 },
                 "setpos/setang": "setpos 369.527100 1664.045532 196.453186;setang -11.998800 65.742264 0",
-                "lineupImage": "lineups/inferno/ct-smoke.jpg",
+                "image": "lineups/inferno/ct-smoke.jpg",
                 "video": "lineups/inferno/ct-smoke.mp4"
             },
             "inferno-ct-smoke-02": 
@@ -42,7 +42,7 @@
                     "y": 40
                 },
                 "setpos/setang": "setpos 457.268433 1833.312744 199.999969;setang -22.660917 64.345535 0",
-                "lineupImage": "lineups/inferno/ct-smoke2.jpg",
+                "image": "lineups/inferno/ct-smoke2.jpg",
                 "video": "lineups/inferno/ct-smoke2.mp4"
             },
             "inferno-coffin-smoke-01": 
@@ -63,7 +63,7 @@
                     "y": 43.5
                 },
                 "setpos/setang": "setpos 369.525604 1664.042847 196.453186;setang -13.127393 87.304428 0",
-                "lineupImage": "lineups/inferno/coffin-smoke.jpg",
+                "image": "lineups/inferno/coffin-smoke.jpg",
                 "video": "lineups/inferno/coffin-smoke.mp4"
             },
             "inferno-coffin-smoke-02":
@@ -84,7 +84,7 @@
                     "y": 40
                 },
                 "setpos/setang": "setpos 457.286072 1833.340210 199.999969;setang -2.673046 91.286171 0",
-                "lineupImage": "lineups/inferno/coffin-smoke2.jpg",
+                "image": "lineups/inferno/coffin-smoke2.jpg",
                 "video": "lineups/inferno/coffin-smoke2.mp4"
             },
             "inferno-moto-smoke":
@@ -105,7 +105,7 @@
                     "y": 64
                 },
                 "setpos/setang": "setpos 285.413269 648.031250 77.048752;setang -41.847340 3.946764 0",
-                "lineupImage": "lineups/inferno/moto-smoke.jpg",
+                "image": "lineups/inferno/moto-smoke.jpg",
                 "video": "lineups/inferno/moto-smoke.mp4"
                 },
             "inferno-arch-smoke":
@@ -126,7 +126,7 @@
                     "y": 68.16
                 },
                 "setpos/setang": "setpos 205.937332 436.790253 146.000000;setang -59.977520 20.307631 0",
-                "lineupImage": "lineups/inferno/arch-smoke.jpg",
+                "image": "lineups/inferno/arch-smoke.jpg",
                 "video": "lineups/inferno/arch-smoke.mp4"
                 },
             "inferno-library-smoke":
@@ -147,7 +147,7 @@
                     "y": 68.16
                 },
                 "setpos/setang": "setpos 205.937332 436.790253 146.000000;setang -32.889992 17.667635 0",
-                "lineupImage": "lineups/inferno/library-smoke.jpg",
+                "image": "lineups/inferno/library-smoke.jpg",
                 "video": "lineups/inferno/library-smoke.mp4"
             }
         },
@@ -171,7 +171,7 @@
                     "y": 37
                 },
                 "setpos/setang": "setpos 479.019409 2016.948730 199.999954;setang -14.256001 99.214127 0",
-                "lineupImage": "lineups/inferno/second-molotov.jpg",
+                "image": "lineups/inferno/second-molotov.jpg",
                 "video": "lineups/inferno/second-molotov.mp4"
             },
         "inferno-newbox-molotov-01":
@@ -192,7 +192,7 @@
                 "y": 37
             },
             "setpos/setang": "setpos 479.019409 2016.948730 199.999954;setang -10.810796 123.360321 0",
-            "lineupImage": "lineups/inferno/newbox-molotov.jpg",
+            "image": "lineups/inferno/newbox-molotov.jpg",
             "video": "lineups/inferno/newbox-molotov.mp4"
             }
         },
@@ -216,7 +216,7 @@
                     "y": 40
                 },
                 "setpos/setang": "setpos 457.275513 1833.364014 199.999969;setang -24.918062 62.112152 0",
-                "lineupImage": "lineups/inferno/ct-flash.jpg",
+                "image": "lineups/inferno/ct-flash.jpg",
                 "video": "lineups/inferno/ct-flash.mp4"
             },
             "inferno-halfwall-flash":
@@ -237,7 +237,7 @@
                     "y": 59
                 },
                 "setpos/setang": "setpos 41.150780 912.456909 144.429398;setang -12.622346 70.047768 0",
-                "lineupImage": "lineups/inferno/halfwall-flash.jpg",
+                "image": "lineups/inferno/halfwall-flash.jpg",
                 "video": "lineups/inferno/halfwall-flash.mp4"
             },
             "inferno-halfwall-flash-02":
@@ -258,7 +258,7 @@
                     "y": 49
                 },
                 "setpos/setang": "setpos 22.098736 1420.688965 168.171875;setang -14.523388 49.192875 0",
-                "lineupImage": "lineups/inferno/halfwall-flash2.jpg",
+                "image": "lineups/inferno/halfwall-flash2.jpg",
                 "video": "lineups/inferno/halfwall-flash2.mp4"
             },
             "inferno-banana-flash-01":
@@ -279,7 +279,7 @@
                     "y": 59.73
                 },
                 "setpos/setang": "setpos 152.937332 888.966614 144.003723;setang -25.575001 86.940041 0",
-                "lineupImage": "lineups/inferno/banana-flash.jpg",
+                "image": "lineups/inferno/banana-flash.jpg",
                 "video": "lineups/inferno/banana-flash.mp4"
             }
         },
@@ -310,7 +310,7 @@
                     "y": 30.21
                 },
                 "setpos/setang": "setpos 2537.785156 2468.324707 188.170273;setang -25.327517 -166.360046 0",
-                "lineupImage": "lineups/inferno/halfwall-smoke.jpg",
+                "image": "lineups/inferno/halfwall-smoke.jpg",
                 "video": "lineups/inferno/halfwall-smoke.mp4"
             },
             "inferno-a-retake-smoke-01":
@@ -331,7 +331,7 @@
                     "y": 52.65
                 },
                 "setpos/setang": "setpos 2073.167480 1235.968750 243.875000;setang -4.812529 -66.480125 0",
-                "lineupImage": "lineups/inferno/a-retake-smoke.jpg",
+                "image": "lineups/inferno/a-retake-smoke.jpg",
                 "video": "lineups/inferno/a-retake-smoke.mp4"
             },
             "inferno-halfwall-smoke-02":
@@ -352,7 +352,7 @@
                     "y": 14.70
                 },
                 "setpos/setang": "setpos 537.220337 3094.029785 275.888245;setang -19.030039 -96.152634 0",
-                "lineupImage": "lineups/inferno/halfwall-smoke2.jpg",
+                "image": "lineups/inferno/halfwall-smoke2.jpg",
                 "video": "lineups/inferno/halfwall-smoke2.mp4"
             }
         },
@@ -376,7 +376,7 @@
                     "y": 52.65
                 },
                 "setpos/setang": "setpos 2073.167480 1235.968750 243.875;setang 11.027482 -103.055054 0",
-                "lineupImage": "lineups/inferno/a-retake-molly.jpg",
+                "image": "lineups/inferno/a-retake-molly.jpg",
                 "video": "lineups/inferno/a-retake-molly.mp4"
             },
              "inferno-a-backsite-retake-molly-01":
@@ -397,7 +397,7 @@
                     "y": 52.65
                 },
                 "setpos/setang": "setpos 2073.167480 1235.968750 243.875;setang -42.817547 -102.395142 0",
-                "lineupImage": "lineups/inferno/a-backsite-retake-molly.jpg",
+                "image": "lineups/inferno/a-backsite-retake-molly.jpg",
                 "video": "lineups/inferno/a-backsite-retake-molly.mp4"
             }
         },
@@ -421,7 +421,7 @@
                     "y": 21.50
                 },
                 "setpos/setang": "setpos 972.994568 2779.968750 196.047424;setang -3.080018 -130.995544 0",
-                "lineupImage": "lineups/inferno/banana-flash-ct.jpg",
+                "image": "lineups/inferno/banana-flash-ct.jpg",
                 "video": "lineups/inferno/banana-flash-ct.mp4"
             },
              "inferno-banana-flashbang-02":
@@ -442,7 +442,7 @@
                     "y": 14.70
                 },
                 "setpos/setang": "setpos 537.220337 3094.029785 275.888245;setang -20.625048 -89.057915 0",
-                "lineupImage": "lineups/inferno/banana-flash-ct2.jpg",
+                "image": "lineups/inferno/banana-flash-ct2.jpg",
                 "video": "lineups/inferno/banana-flash-ct2.mp4"
             }
         },

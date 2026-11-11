@@ -21,7 +21,7 @@
                     "y": 31.5
                 },
                 "setpos/setang": "setpos 1296.04 32.05 -104.13;setang -28.912655 -165.958206 0",
-                "lineupImage": "lineups/mirage/window_smoke_instant_pos1.jpg",
+                "image": "lineups/mirage/window_smoke_instant_pos1.jpg",
                 "video": "lineups/mirage/window_smoke_instant_pos1.mp4"
             },
             "mirage-window-smoke-02":
@@ -42,7 +42,7 @@
                     "y": 40
                 },
                 "setpos/setang": "setpos 1296 -352 -104.13;setang -42.455078 -173.246902 0",
-                "lineupImage": "lineups/mirage/window_smoke_instant_pos2.jpg",
+                "image": "lineups/mirage/window_smoke_instant_pos2.jpg",
                 "video": "lineups/mirage/window_smoke_instant_pos2.mp4"
             },
             "mirage-window-smoke-03":
@@ -63,7 +63,7 @@
                     "y": 32.76
                 },
                 "setpos/setang": "setpos 1216.06 -16.06 -101.94;setang -44.370251 -165.333908 0",
-                "lineupImage": "lineups/mirage/window_smoke_instant_pos3.jpg",
+                "image": "lineups/mirage/window_smoke_instant_pos3.jpg",
                 "video": "lineups/mirage/window_smoke_instant_pos3.mp4"
             },
             "mirage-window-smoke-04":
@@ -84,7 +84,7 @@
                     "y": 35.36
                 },
                 "setpos/setang": "setpos 1216 -115 -101.94;setang -44.461876 -167.666443 0",
-                "lineupImage": "lineups/mirage/window_smoke_instant_pos4.jpg",
+                "image": "lineups/mirage/window_smoke_instant_pos4.jpg",
                 "video": "lineups/mirage/window_smoke_instant_pos4.mp4"
             },
             "mirage-window-smoke-05":
@@ -105,7 +105,7 @@
                     "y": 37.86
                 },
                 "setpos/setang": "setpos 1216 -211 -100.840805;setang -46.031891 -170.316223 0",
-                "lineupImage": "lineups/mirage/window_smoke_instant_pos5.jpg",
+                "image": "lineups/mirage/window_smoke_instant_pos5.jpg",
                 "video": "lineups/mirage/window_smoke_instant_pos5.mp4"
             },
             "mirage-window-smoke-06":
@@ -126,7 +126,7 @@
                     "y": 20.21
                 },
                 "setpos/setang": "setpos 1135.951660 647.979858 -196.796082;setang -26.892029 -151.478683 0",
-                "lineupImage": "lineups/mirage/window-smoke2.jpg",
+                "image": "lineups/mirage/window-smoke2.jpg",
                 "video": "lineups/mirage/window-smoke2.mp4"
             },
             "mirage-window-smoke-07":
@@ -147,7 +147,7 @@
                     "y": 36
                 },
                 "setpos/setang": "setpos 1422.97 -55.96 -104;setang -20.67 -168.42 0",
-                "lineupImage": "lineups/mirage/window-smoke.jpg",
+                "image": "lineups/mirage/window-smoke.jpg",
                 "video": "lineups/mirage/window-smoke.mp4"
             },
             "mirage-window-smoke-08":
@@ -168,7 +168,7 @@
                     "y": 45.31
                 },
                 "setpos/setang": "setpos 343.315491 -621.632690 -99.035583;setang -39.655170 -178.534805 0",
-                "lineupImage": "lineups/mirage/window-smoke-mid.jpg",
+                "image": "lineups/mirage/window-smoke-mid.jpg",
                 "video": "lineups/mirage/window-smoke-mid.mp4"
             },
             "mirage-short-smoke-01":
@@ -189,7 +189,7 @@
                     "y": 41.09
                 },
                 "setpos/setang": "setpos 1422.933472 -367.933167 -104.000000;setang -32.225574 176.102905 0",
-                "lineupImage": "lineups/mirage/mid-short-smoke.jpg",
+                "image": "lineups/mirage/mid-short-smoke.jpg",
                 "video": "lineups/mirage/mid-short-smoke.mp4"
             },
             "mirage-b-window-smoke-01":
@@ -210,7 +210,7 @@
                     "y": 15.98
                 },
                 "setpos/setang": "setpos -160.031250 887.965576 -71.671814;setang -48.258022 -146.631561 0.000000",
-                "lineupImage": "lineups/mirage/b-window-smoke.jpg",
+                "image": "lineups/mirage/b-window-smoke.jpg",
                 "video": "lineups/mirage/b-window-smoke.mp4"
             },
             "mirage-b-door-smoke-01":
@@ -231,7 +231,7 @@
                     "y": 15.98
                 },
                 "setpos/setang": "setpos -160.055847 887.950684 -71.671509;setang -42.042988 -152.048798 0",
-                "lineupImage": "lineups/mirage/b-door-smoke.jpg",
+                "image": "lineups/mirage/b-door-smoke.jpg",
                 "video": "lineups/mirage/b-door-smoke.mp4"
             },
             "mirage-conn-smoke-01":
@@ -252,7 +252,7 @@
                     "y": 23.14
                 },
                 "setpos/setang": "setpos 1359.641113 519.972229 -195.792236;setang -33.275124 -147.377396 0",
-                "lineupImage": "lineups/mirage/conn-smoke-spawn.jpg",
+                "image": "lineups/mirage/conn-smoke-spawn.jpg",
                 "video": "lineups/mirage/conn-smoke-spawn.mp4"
             },
             "mirage-conn-smoke-02":
@@ -273,7 +273,7 @@
                     "y": 36.87
                 },
                 "setpos/setang": "setpos 502.938904 -64.031250 -96.549927;setang -14.492629 -147.129761 0",
-                "lineupImage": "lineups/mirage/conn-smoke-mid.jpg",
+                "image": "lineups/mirage/conn-smoke-mid.jpg",
                 "video": "lineups/mirage/conn-smoke-mid.mp4"
             },
             "mirage-conn-smoke-03":
@@ -294,7 +294,7 @@
                     "y": 20.82
                 },
                 "setpos/setang": "setpos -460.372681 676.146667 -12.187500;setang -48.510033 -99.340134 0",
-                "lineupImage": "lineups/mirage/conn-smoke-b.jpg",
+                "image": "lineups/mirage/conn-smoke-b.jpg",
                 "video": "lineups/mirage/conn-smoke-b.mp4"
             },
             "mirage-ct-smoke-01":
@@ -315,7 +315,7 @@
                     "y": 47.01
                 },
                 "setpos/setang": "setpos 1257.993774 -871.968750 -80;setang -21.477549 -144.545197 0",
-                "lineupImage": "lineups/mirage/ct-smoke.jpg",
+                "image": "lineups/mirage/ct-smoke.jpg",
                 "video": "lineups/mirage/ct-smoke.mp4"
             },
             "mirage-ct-smoke-02":
@@ -336,7 +336,7 @@
                     "y": 53.20
                 },
                 "setpos/setang": "setpos 1094.366089 -1009.709656 -194.876221;setang -28.847498 -144.081894 0",
-                "lineupImage": "lineups/mirage/ct-smoke2.jpg",
+                "image": "lineups/mirage/ct-smoke2.jpg",
                 "video": "lineups/mirage/ct-smoke2.mp4"
             },
             "mirage-a-jungle-smoke-01":
@@ -357,7 +357,7 @@
                     "y": 64.06
                 },
                 "setpos/setang": "setpos 814.970215 -1548.700562 -45;setang -29.270134 -177.367325 0",
-                "lineupImage": "lineups/mirage/a-jungle-smoke.jpg",
+                "image": "lineups/mirage/a-jungle-smoke.jpg",
                 "video": "lineups/mirage/a-jungle-smoke.mp4"
             },
             "mirage-stairs-smoke-01":
@@ -378,7 +378,7 @@
                     "y": 64.06
                 },
                 "setpos/setang": "setpos 814.970215 -1548.700562 -45;setang -3.970103 179.937881 0",
-                "lineupImage": "lineups/mirage/stairs-smoke.jpg",
+                "image": "lineups/mirage/stairs-smoke.jpg",
                 "video": "lineups/mirage/stairs-smoke.mp4"
             },
             "mirage-top-conn-smoke":
@@ -399,7 +399,7 @@
                     "y": 47.09
                 },
                 "setpos/setang": "setpos 360.076538 -691.967651 -100.042847;setang -42.570797 -153.895126 0",
-                "lineupImage": "lineups/mirage/top-conn-smoke.jpg",
+                "image": "lineups/mirage/top-conn-smoke.jpg",
                 "video": "lineups/mirage/top-conn-smoke.mp4"
             },
             "mirage-jungle-smoke":
@@ -420,7 +420,7 @@
                     "y": 47.09
                 },
                 "setpos/setang": "setpos 360.075958 -691.968201 -100.042786;setang -57.475842 -151.337448 0",
-                "lineupImage": "lineups/mirage/jungle-smoke-mid.jpg",
+                "image": "lineups/mirage/jungle-smoke-mid.jpg",
                 "video": "lineups/mirage/jungle-smoke-mid.mp4"
             },
             "mirage-short-smoke-mid":
@@ -441,7 +441,7 @@
                     "y": 45.15
                 },
                 "setpos/setang": "setpos 343.350952 -621.624268 -99.037781;setang -50.380894 153.058075 0",
-                "lineupImage": "lineups/mirage/short-smoke-mid.jpg",
+                "image": "lineups/mirage/short-smoke-mid.jpg",
                 "video": "lineups/mirage/short-smoke-mid.mp4"
             },
             "mirage-a-jungle-smoke":
@@ -462,7 +462,7 @@
                     "y": 54.33
                 },
                 "setpos/setang": "setpos 1239.694702 -1127.758545 -192.149048;setang -56.238396 -166.624542 0",
-                "lineupImage": "lineups/mirage/jungle-smoke2.jpg",
+                "image": "lineups/mirage/jungle-smoke2.jpg",
                 "video": "lineups/mirage/jungle-smoke2.mp4"
             }
         },
@@ -486,7 +486,7 @@
                     "y": 54.33
                 },
                 "setpos/setang": "setpos 1239.694702 -1127.758545 -192.149048;setang -3.630865 -164.066940 0",
-                "lineupImage": "lineups/mirage/stairs-molotov.jpg",
+                "image": "lineups/mirage/stairs-molotov.jpg",
                 "video": "lineups/mirage/stairs-molotov.mp4"
             },
             "mirage-shadow-molotov":
@@ -507,7 +507,7 @@
                     "y": 76.75
                 },
                 "setpos/setang": "setpos 631.469360 -2224.052246 24;setang -8.635860 -165.332092 0",
-                "lineupImage": "lineups/mirage/shadow-molotov.jpg",
+                "image": "lineups/mirage/shadow-molotov.jpg",
                 "video": "lineups/mirage/shadow-molotov.mp4"
             }
         },
@@ -531,7 +531,7 @@
                     "y": 45.15
                 },
                 "setpos/setang": "setpos 343.350952 -621.624268 -99.037781;setang -8.443328 -168.470291 0",
-                "lineupImage": "lineups/mirage/conn-flash.jpg",
+                "image": "lineups/mirage/conn-flash.jpg",
                 "video": "lineups/mirage/conn-flash.mp4"
             }
         },
@@ -574,7 +574,7 @@
                     "y": 55
                 },
                 "setpos/setang": "setpos -1120.03894 -967.453186 -104;setang -42.410126 86.603905 0",
-                "lineupImage": "lineups/mirage/window-nade.jpg",
+                "image": "lineups/mirage/window-nade.jpg",
                 "video": "lineups/mirage/window-nade.mp4"
             }
         }

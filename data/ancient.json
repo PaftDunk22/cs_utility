@@ -21,7 +21,7 @@
                     "y": 75.37
                 },
                 "setpos/setang": "setpos 1255.971069 -1483.968750 90.341301;setang -3.445516 87.446358 0",
-                "lineupImage": "lineups/ancient/b-long-smoke.jpg",
+                "image": "lineups/ancient/b-long-smoke.jpg",
                 "video": "lineups/ancient/b-long-smoke.mp4"
             },
             "b-long-smoke-02":
@@ -43,7 +43,7 @@
                     
                 },
                 "setpos/setang": "setpos 608.031250 -676.031372 171.040497;setang -27.888496 47.782322 0",
-                "lineupImage": "lineups/ancient/b-long-smoke2.jpg",
+                "image": "lineups/ancient/b-long-smoke2.jpg",
                 "video": "lineups/ancient/b-long-smoke2.mp4"
             },
             "b-short-smoke-01":
@@ -65,7 +65,7 @@
                 
                 },
                 "setpos/setang": "setpos 1255.960571 -1483.927490 90.338150;setang -6.237229 108.815872 0",
-                "lineupImage": "lineups/ancient/b-short-smoke.jpg",
+                "image": "lineups/ancient/b-short-smoke.jpg",
                 "video": "lineups/ancient/b-short-smoke.mp4"
             },
             "b-short-smoke-02":
@@ -86,7 +86,7 @@
                     "y": 58.37
                 },
                 "setpos/setang": "setpos 608.031250 -676.031372 171.040497;setang 0.564111 86.541000 0",
-                "lineupImage": "lineups/ancient/b-short-smoke2.jpg",
+                "image": "lineups/ancient/b-short-smoke2.jpg",
                 "video": "lineups/ancient/b-short-smoke2.mp4"
             },
             "a-donut-smoke-01":
@@ -107,7 +107,7 @@
                     "y": 58.77
                 },
                 "setpos/setang": "setpos -1933.165527 -862.031250 51.144958;setang -31.600910 75.077538 0",
-                "lineupImage": "lineups/ancient/a-donut-smoke.jpg",
+                "image": "lineups/ancient/a-donut-smoke.jpg",
                 "video": "lineups/ancient/a-donut-smoke.mp4"
             },
             "a-ct-smoke-01":
@@ -128,7 +128,7 @@
                     "y": 58.77
                 },
                 "setpos/setang": "setpos -1933.165527 -862.031250 51.144958;setang -43.243298 67.028740 0",
-                "lineupImage": "lineups/ancient/a-ct-smoke.jpg",
+                "image": "lineups/ancient/a-ct-smoke.jpg",
                 "video": "lineups/ancient/a-ct-smoke.mp4"
             },
             "mid-red-smoke-01":
@@ -149,7 +149,7 @@
                     "y": 90.20
                 },
                 "setpos/setang": "setpos -409.172241 -2128.031250 -89.742676;setang -32.313591 91.573997 0",
-                "lineupImage": "lineups/ancient/mid-red-smoke.jpg",
+                "image": "lineups/ancient/mid-red-smoke.jpg",
                 "video": "lineups/ancient/mid-red-smoke.mp4"
             }
         },
@@ -177,7 +177,7 @@
                     "y": 90.49
                 },
                 "setpos/setang": "setpos -735.970032 -2135.968750 -103.488525;setang -20.166315 89.401749 0",
-                "lineupImage": "lineups/ancient/mid-flash.jpg",
+                "image": "lineups/ancient/mid-flash.jpg",
                 "video": "lineups/ancient/mid-flash.mp4"
             }
         },

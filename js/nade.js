@@ -5,7 +5,7 @@ const nadeId = params.get("nade");
 const team = params.get("team");
 const type = params.get("type");
 
-const VIDEO_BASE_URL = "https://raw.githubusercontent.com/PaftDunk22/cs_utility/main/";
+const BASE_URL = "https://raw.githubusercontent.com/PaftDunk22/cs_utility/main/";
 
 const IS_LOCAL = location.hostname === "localhost" || location.hostname === "127.0.0.1";
 
@@ -41,15 +41,6 @@ const video = document.getElementById("nade-video");
 
 
 let currentNade = null;
-
-async function mediaExists(url) {
-    try {
-        const response = await fetch(url, { method: "HEAD" });
-        return response.ok;
-    } catch {
-        return false;
-    }
-}
 
 async function loadNade() {
 
@@ -108,16 +99,17 @@ async function loadNade() {
         combinedCommand.textContent = nade["setpos/setang"] || "-";
 
         const hasVideo = await hasMedia("video")
-        const hasImage = await hasMedia("lineupImage")
+        const hasImage = await hasMedia("image")
 
         videoButton.style.display = hasVideo ? "" : "none";
         imageButton.style.display = hasImage ? "" : "none";
 
         if (hasVideo){
-            video.src = IS_LOCAL ? nade.video : VIDEO_BASE_URL + nade.video;
+            video.src = IS_LOCAL ? nade.video : (BASE_URL + nade.video);
+            setupVideoZoom();
         } 
         if (hasImage) {
-            lineupImage.src = nade.lineupImage;
+            lineupImage.src = IS_LOCAL ? nade.image : (BASE_URL + nade.image);
             lineupImage.onload = setupImageZoom;
         }
 
@@ -159,14 +151,15 @@ function showImage() {
 
 }
 
-async function hasMedia(mediaType)
-{
-    const media = currentNade[mediaType];
+async function hasMedia(mediaType) {
+    const url = IS_LOCAL ? currentNade[mediaType] : BASE_URL + currentNade[mediaType];
 
-    if (typeof media !== "string") return false;
-    if (media.trim() === "") return false;
-
-    return mediaExists(media);
+    try {
+        const response = await fetch(url, { method: "HEAD" });
+        return response.ok;
+    } catch {
+        return false;
+    }
 }
 
 async function copyCommand(command,button) 
@@ -201,10 +194,6 @@ async function copyCommand(command,button)
 }
 
 copyCommandButton.addEventListener("click", async () => {
-
-    if (!currentNade || !currentNade["setpos/setang"]) {
-        return;
-    }
 
     try {
 
@@ -249,6 +238,143 @@ function setupImageZoom() {
 
 }
 
+function setupImageZoom() {
+
+    imageContainer.style.setProperty("--zoom-image", `url("${lineupImage.src}")`);
+
+    lineupImage.addEventListener("mousemove", event => {
+        handleZoom(event, lineupImage, imageContainer);
+    });
+
+    lineupImage.addEventListener("mouseenter", () => {
+        imageContainer.classList.add("zooming");
+    });
+
+    lineupImage.addEventListener("mouseleave", () => {
+        imageContainer.classList.remove("zooming");
+    });
+
+}
+
+function setupVideoZoom() {
+
+    video.addEventListener("mousemove", event => {
+
+    const rect = video.getBoundingClientRect();
+    const y = event.clientY - rect.top;
+
+    if (y > rect.height - 60) {
+        videoContainer.classList.remove("zooming");
+        return;
+    }
+
+    videoContainer.classList.add("zooming");
+    handleZoom(event, video, videoContainer);
+
+    });
+
+    video.addEventListener("mouseenter", () => {
+        videoContainer.classList.add("zooming");
+    });
+
+    video.addEventListener("mouseleave", () => {
+        videoContainer.classList.remove("zooming");
+        video.style.transformOrigin = "center center";
+    });
+
+}
+
+function handleZoom(event, element, container) {
+
+    const rect = element.getBoundingClientRect();
+
+    const x = event.clientX - rect.left;
+    const y = event.clientY - rect.top;
+
+    const percentX = (x / rect.width) * 100;
+    const percentY = (y / rect.height) * 100;
+
+    const zoom = 2.5;
+
+    if (element === video) {
+        video.style.transformOrigin = `${percentX}% ${percentY}%`;
+    } else {
+        container.style.setProperty("--mouse-x", `${x}px`);
+        container.style.setProperty("--mouse-y", `${y}px`);
+
+        container.style.setProperty(
+            "--zoom-size",
+            `${rect.width * zoom}px ${rect.height * zoom}px`
+        );
+
+        container.style.setProperty(
+            "--zoom-position",
+            `${percentX}% ${percentY}%`
+        );
+    }
+
+}
+
+/*
+
+function setupVideoZoom() {
+
+    video.addEventListener("mousemove", handleVideoZoom);
+
+    video.addEventListener("mouseenter", () => {
+        videoContainer.classList.add("zooming");
+    });
+
+    video.addEventListener("mouseleave", () => {
+        videoContainer.classList.remove("zooming");
+        video.style.transformOrigin = "center center";
+    });
+
+}
+
+function handleZoom(event, element, container) {
+
+    const rect = element.getBoundingClientRect();
+
+    const x = event.clientX - rect.left;
+    const y = event.clientY - rect.top;
+
+    const percentX = (x / rect.width) * 100;
+    const percentY = (y / rect.height) * 100;
+
+    container.style.setProperty("--mouse-x", `${x}px`);
+    container.style.setProperty("--mouse-y", `${y}px`);
+
+    const zoom = 2.5;
+
+    container.style.setProperty(
+        "--zoom-size",
+        `${rect.width * zoom}px ${rect.height * zoom}px`
+    );
+
+    container.style.setProperty(
+        "--zoom-position",
+        `${percentX}% ${percentY}%`
+    );
+}
+
+
+function handleVideoZoom(event) {
+
+    if (event.offsetY > video.clientHeight - 45) return;
+
+    const rect = video.getBoundingClientRect();
+
+    const x = event.clientX - rect.left;
+    const y = event.clientY - rect.top;
+
+    const percentX = (x / rect.width) * 100;
+    const percentY = (y / rect.height) * 100;
+
+    video.style.transformOrigin = `${percentX}% ${percentY}%`;
+
+}
+
 function handleZoom(event) {
 
     const rect = lineupImage.getBoundingClientRect();
@@ -272,5 +398,5 @@ function handleZoom(event) {
     imageContainer.style.setProperty("--zoom-position",`${percentX}% ${percentY}%`);
 
 }
-
+*/
 loadNade();
