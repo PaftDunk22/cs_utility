@@ -5,6 +5,10 @@ const nadeId = params.get("nade");
 const team = params.get("team");
 const type = params.get("type");
 
+const VIDEO_BASE_URL = "https://raw.githubusercontent.com/PaftDunk22/cs_utility/main/";
+
+const IS_LOCAL = location.hostname === "localhost" || location.hostname === "127.0.0.1";
+
 const title = document.getElementById("title");
 
 const teamTag = document.getElementById("team-tag");
@@ -109,7 +113,9 @@ async function loadNade() {
         videoButton.style.display = hasVideo ? "" : "none";
         imageButton.style.display = hasImage ? "" : "none";
 
-        if (hasVideo) video.src = nade.video;
+        if (hasVideo){
+            video.src = IS_LOCAL ? nade.video : VIDEO_BASE_URL + nade.video;
+        } 
         if (hasImage) {
             lineupImage.src = nade.lineupImage;
             lineupImage.onload = setupImageZoom;
