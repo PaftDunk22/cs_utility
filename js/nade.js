@@ -316,7 +316,6 @@ function handleZoom(event, element, container) {
 }
 
 /*
-
 function setupVideoZoom() {
 
     video.addEventListener("mousemove", handleVideoZoom);
