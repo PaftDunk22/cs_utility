@@ -1,13 +1,14 @@
-[
+{
+    "T": 
     {
-        "T": {
-            "smoke": [
+        "smoke": 
+        {
+            "inferno-ct-smoke-01": 
             {
-                "id": "inferno-ct-smoke-01",
                 "landingSpotId": "inferno-ct-smoke",
                 "name": "CT Smoke",
                 "difficulty": "advanced",
-                "situation": ["execute"],
+                "situation": "execute",
                 "instant": false,
                 "description": "CT smoke that also covers boost from halfwall",
                 "technique": "Both Clicks, Tap W + Jumpthrow",
@@ -23,12 +24,12 @@
                 "lineupImage": "lineups/inferno/ct-smoke.jpg",
                 "video": "lineups/inferno/ct-smoke.mp4"
             },
+            "inferno-ct-smoke-02": 
             {
-                "id": "inferno-ct-smoke-02",
                 "landingSpotId": "inferno-ct-smoke",
                 "name": "CT Smoke",
                 "difficulty": "basic",
-                "situation": ["execute"],
+                "situation": "execute",
                 "instant": false,
                 "description": "Basic CT smoke from front halfwall",
                 "technique": "Left Click",
@@ -44,12 +45,12 @@
                 "lineupImage": "lineups/inferno/ct-smoke2.jpg",
                 "video": "lineups/inferno/ct-smoke2.mp4"
             },
+            "inferno-coffin-smoke-01": 
             {
-                "id": "inferno-coffin-smoke-01",
                 "landingSpotId": "inferno-coffin-smoke",
                 "name": "Coffin Smoke",
                 "difficulty": "advanced",
-                "situation": ["execute"],
+                "situation": "execute",
                 "instant": false,
                 "description": "Coffin smoke from halfwall",
                 "technique": "Both Clicks, Jumpthrow",
@@ -65,12 +66,12 @@
                 "lineupImage": "lineups/inferno/coffin-smoke.jpg",
                 "video": "lineups/inferno/coffin-smoke.mp4"
             },
+            "inferno-coffin-smoke-02":
             {
-                "id": "inferno-coffin-smoke-02",
                 "landingSpotId": "inferno-coffin-smoke",
                 "name": "Coffin Smoke",
                 "difficulty": "basic",
-                "situation": ["execute"],
+                "situation": "execute",
                 "instant": false,
                 "description": "Coffin smoke from front halfwall",
                 "technique": "Both Clicks, Jumpthrow",
@@ -86,12 +87,12 @@
                 "lineupImage": "lineups/inferno/coffin-smoke2.jpg",
                 "video": "lineups/inferno/coffin-smoke2.mp4"
             },
-            {
-                "id": "inferno-moto-smoke",
+            "inferno-moto-smoke":
+                {
                 "landingSpotId": "inferno-moto-smoke",
                 "name": "Moto Smoke",
                 "difficulty": "basic",
-                "situation": ["execute"],
+                "situation": "execute",
                 "instant": false,
                 "description": "Moto smoke from underpass",
                 "technique": "Left Click, Jumpthrow",
@@ -106,13 +107,13 @@
                 "setpos/setang": "setpos 285.413269 648.031250 77.048752;setang -41.847340 3.946764 0",
                 "lineupImage": "lineups/inferno/moto-smoke.jpg",
                 "video": "lineups/inferno/moto-smoke.mp4"
-            },
-            {
-                "id": "inferno-arch-smoke",
+                },
+            "inferno-arch-smoke":
+                {
                 "landingSpotId": "inferno-arch-smoke",
                 "name": "Arch Smoke",
                 "difficulty": "basic",
-                "situation": ["default"],
+                "situation": "default",
                 "instant": false,
                 "description": "Arch smoke from front halfwall above underpass",
                 "technique": "Left Click, Jumpthrow",
@@ -127,13 +128,13 @@
                 "setpos/setang": "setpos 205.937332 436.790253 146.000000;setang -59.977520 20.307631 0",
                 "lineupImage": "lineups/inferno/arch-smoke.jpg",
                 "video": "lineups/inferno/arch-smoke.mp4"
-            },
+                },
+            "inferno-library-smoke":
             {
-                "id": "inferno-library-smoke",
                 "landingSpotId": "inferno-library-smoke",
                 "name": "Library Smoke",
                 "difficulty": "basic",
-                "situation": ["default"],
+                "situation": "default",
                 "instant": false,
                 "description": "Library smoke from front halfwall above underpass",
                 "technique": "Left Click, Jumpthrow",
@@ -149,14 +150,15 @@
                 "lineupImage": "lineups/inferno/library-smoke.jpg",
                 "video": "lineups/inferno/library-smoke.mp4"
             }
-            ],
-            "molotov": [
+        },
+        "molotov": 
+        {
+            "inferno-second-molotov-01":
             {
-                "id": "inferno-second-molotov-01",
                 "landingSpotId": "inferno-second-molotov",
                 "name": "Second molotov",
                 "difficulty": "advanced",
-                "situation": ["execute"],
+                "situation": "execute",
                 "instant": false,
                 "description": "Second molotov from barrels/car",
                 "technique": "Both Clicks, Jumpthrow",
@@ -172,35 +174,36 @@
                 "lineupImage": "lineups/inferno/second-molotov.jpg",
                 "video": "lineups/inferno/second-molotov.mp4"
             },
+        "inferno-newbox-molotov-01":
             {
-                "id": "inferno-newbox-molotov-01",
-                "landingSpotId": "inferno-newbox-molotov",
-                "name": "Newbox molotov",
-                "difficulty": "basic",
-                "situation": ["execute"],
-                "instant": false,
-                "description": "Newbox/triple molotov from barrles/car",
-                "technique": "Left Click, Jumpthrow",
-                "landingPosition": {
-                    "x": 43.5,
-                    "y": 25
-                },
-                "originPosition": {
-                    "x": 50,
-                    "y": 37
-                },
-                "setpos/setang": "setpos 479.019409 2016.948730 199.999954;setang -10.810796 123.360321 0",
-                "lineupImage": "lineups/inferno/newbox-molotov.jpg",
-                "video": "lineups/inferno/newbox-molotov.mp4"
+            "landingSpotId": "inferno-newbox-molotov",
+            "name": "Newbox molotov",
+            "difficulty": "basic",
+            "situation": "execute",
+            "instant": false,
+            "description": "Newbox/triple molotov from barrles/car",
+            "technique": "Left Click, Jumpthrow",
+            "landingPosition": {
+                "x": 43.5,
+                "y": 25
+            },
+            "originPosition": {
+                "x": 50,
+                "y": 37
+            },
+            "setpos/setang": "setpos 479.019409 2016.948730 199.999954;setang -10.810796 123.360321 0",
+            "lineupImage": "lineups/inferno/newbox-molotov.jpg",
+            "video": "lineups/inferno/newbox-molotov.mp4"
             }
-            ],
-            "flashbang": [
-            {
-                "id": "inferno-ct-flash",
+        },
+        "flashbang": 
+        {
+            "inferno-ct-flash":
+            {    
                 "landingSpotId": "inferno-ct-flash",
                 "name": "CT Flash",
                 "difficulty": "basic",
-                "situation": ["execute"],
+                "situation": "execute",
                 "instant": false,
                 "description": "Flash that pops behind CT wall not flashing your teammates",
                 "technique": "Left Click",
@@ -216,12 +219,12 @@
                 "lineupImage": "lineups/inferno/ct-flash.jpg",
                 "video": "lineups/inferno/ct-flash.mp4"
             },
+            "inferno-halfwall-flash":
             {
-                "id": "inferno-halfwall-flash",
                 "landingSpotId": "inferno-halfwall-flash",
                 "name": "Halfwall Flash",
                 "difficulty": "basic",
-                "situation": ["default"],
+                "situation": "default",
                 "instant": false,
                 "description": "Halfwall flash for taking upper banana",
                 "technique": "Left Click",
@@ -237,12 +240,12 @@
                 "lineupImage": "lineups/inferno/halfwall-flash.jpg",
                 "video": "lineups/inferno/halfwall-flash.mp4"
             },
+            "inferno-halfwall-flash-02":
             {
-                "id": "inferno-halfwall-flash-02",
                 "landingSpotId": "inferno-halfwall-flash",
                 "name": "Halfwall Flash",
                 "difficulty": "basic",
-                "situation": ["default"],
+                "situation": "default",
                 "instant": false,
                 "description": "Halfwall flash for taking upper banana",
                 "technique": "Both Clicks",
@@ -258,12 +261,12 @@
                 "lineupImage": "lineups/inferno/halfwall-flash2.jpg",
                 "video": "lineups/inferno/halfwall-flash2.mp4"
             },
+            "inferno-banana-flash-01":
             {
-                "id": "inferno-banana-flash-01",
                 "landingSpotId": "inferno-banana-flash",
                 "name": "Banana Flash",
                 "difficulty": "basic",
-                "situation": ["default"],
+                "situation": "default",
                 "instant": false,
                 "description": "Fast early flash for taking banana",
                 "technique": "Left Click",
@@ -279,21 +282,22 @@
                 "lineupImage": "lineups/inferno/banana-flash.jpg",
                 "video": "lineups/inferno/banana-flash.mp4"
             }
-            ],
-            "grenade": [
+        },
+        "grenade": 
+        {
 
-            ]
         }
     },
+    "CT": 
     {
-        "CT": {
-            "smoke": [
+        "smoke": 
+        {
+            "inferno-halfwall-smoke-01":
             {
-                "id": "inferno-halfwall-smoke-01",
                 "landingSpotId": "inferno-halfwall-smoke",
                 "name": "Halfwall Smoke",
                 "difficulty": "basic",
-                "situation": ["default"],
+                "situation": "default",
                 "instant": false,
                 "description": "Banana halfwall smoke from CT spawn",
                 "technique": "Left Click, Jumpthrow",
@@ -309,12 +313,12 @@
                 "lineupImage": "lineups/inferno/halfwall-smoke.jpg",
                 "video": "lineups/inferno/halfwall-smoke.mp4"
             },
+            "inferno-a-retake-smoke-01":
             {
-                "id": "inferno-a-retake-smoke-01",
                 "landingSpotId": "inferno-a-retake-smoke",
                 "name": "A Retake Smoke",
                 "difficulty": "advanced",
-                "situation": ["retake"],
+                "situation": "retake",
                 "instant": false,
                 "description": "Pit smoke for an A retake",
                 "technique": "Left Click, Running",
@@ -330,12 +334,12 @@
                 "lineupImage": "lineups/inferno/a-retake-smoke.jpg",
                 "video": "lineups/inferno/a-retake-smoke.mp4"
             },
+            "inferno-halfwall-smoke-02":
             {
-                "id": "inferno-halfwall-smoke-02",
                 "landingSpotId": "inferno-halfwall-smoke",
                 "name": "Halfwall Smoke",
                 "difficulty": "basic",
-                "situation": ["default"],
+                "situation": "default",
                 "instant": false,
                 "description": "Halfwall smoke from coffin",
                 "technique": "Left Click",
@@ -351,14 +355,15 @@
                 "lineupImage": "lineups/inferno/halfwall-smoke2.jpg",
                 "video": "lineups/inferno/halfwall-smoke2.mp4"
             }
-            ],
-            "molotov": [
+        },
+        "molotov": 
+        {
+             "inferno-a-retake-molly-01":
             {
-                "id": "inferno-a-retake-molly-01",
                 "landingSpotId": "inferno-a-retake-molly",
                 "name": "A Retake Molly",
                 "difficulty": "advanced",
-                "situation": ["retake"],
+                "situation": "retake",
                 "instant": false,
                 "description": "A site retake incendiary",
                 "technique": "Both Clicks, Jumpthrow",
@@ -374,12 +379,12 @@
                 "lineupImage": "lineups/inferno/a-retake-molly.jpg",
                 "video": "lineups/inferno/a-retake-molly.mp4"
             },
+             "inferno-a-backsite-retake-molly-01":
             {
-                "id": "inferno-a-backsite-retake-molly-01",
                 "landingSpotId": "inferno-a-backsite-retake-molly",
                 "name": "A Backsite Retake Molly",
                 "difficulty": "advanced",
-                "situation": ["retake"],
+                "situation": "retake",
                 "instant": false,
                 "description": "A backsite incendiary for a retake, lineup with -1y",
                 "technique": "Both Clicks",
@@ -395,14 +400,15 @@
                 "lineupImage": "lineups/inferno/a-backsite-retake-molly.jpg",
                 "video": "lineups/inferno/a-backsite-retake-molly.mp4"
             }
-            ],
-            "flashbang": [
+        },
+        "flashbang": 
+        {
+             "inferno-banana-flash-ct-01":
             {
-                "id": "inferno-banana-flash-ct-01",
                 "landingSpotId": "inferno-banana-flash-ct",
                 "name": "Banana Flashbang",
                 "difficulty": "basic",
-                "situation": ["default"],
+                "situation": "default",
                 "instant": false,
                 "description": "Banana flashbang from CT for an early peek",
                 "technique": "Both Clicks, Jumpthrow",
@@ -418,12 +424,12 @@
                 "lineupImage": "lineups/inferno/banana-flash-ct.jpg",
                 "video": "lineups/inferno/banana-flash-ct.mp4"
             },
+             "inferno-banana-flashbang-02":
             {
-                "id": "inferno-banana-flashbang-02",
                 "landingSpotId": "inferno-banana-flashbang-retake",
                 "name": "Banana Flashbang",
                 "difficulty": "basic",
-                "situation": ["default"],
+                "situation": "default",
                 "instant": false,
                 "description": "Banana retake flash from coffin",
                 "technique": "Left Click",
@@ -439,10 +445,10 @@
                 "lineupImage": "lineups/inferno/banana-flash-ct2.jpg",
                 "video": "lineups/inferno/banana-flash-ct2.mp4"
             }
-            ],
-            "grenade": [
+        },
+        "grenade": 
+        {
 
-            ]
         }
     }
-]
+}

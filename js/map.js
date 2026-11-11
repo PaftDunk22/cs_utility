@@ -47,6 +47,8 @@ async function loadMap() {
 
     try {
 
+        console.log("LOADING MAP DATA");
+
         const response = await fetch(`data/${mapId}.json`);
 
         if (!response.ok) {
@@ -55,19 +57,20 @@ async function loadMap() {
 
         const data = await response.json();
 
-        nades = data.flatMap(team =>
-            Object.entries(team).flatMap(([side, types]) =>
-                Object.entries(types).flatMap(([type, lineups]) =>
-                    lineups.map(nade => ({
-                        ...nade,
-                        team: side,
-                        type: type
-                    }))
-                )
-            )
-        );
+        nades = [];
 
-        console.log(nades);
+        for (const [team, types] of Object.entries(data)) {
+            for (const [type, lineups] of Object.entries(types)) {
+                for (const [id, nade] of Object.entries(lineups)) {
+                    nades.push({
+                        ...nade,
+                        id,
+                        team,
+                        type
+                    });
+                }
+            }
+        }
 
         renderNades();
 
@@ -125,22 +128,14 @@ function matchesFilters(nade) {
         return false;
     }
 
-
     const selectedSituations = getCheckedValues(situationFilters);
 
-    if (selectedSituations.length > 0) {
-
-        const matchesSituation =
-            selectedSituations.some(
-                situation =>
-                    nade.situation.includes(situation)
-            );
-
-        if (!matchesSituation) {
-            return false;
-        }
+    if (
+        selectedSituations.length > 0 &&
+        !selectedSituations.includes(nade.situation)
+    ) {
+        return false;
     }
-
 
     const instantValue = document.querySelector('input[name="instant"]:checked').value;
 
@@ -251,9 +246,7 @@ function showOrigins(landingSpotId,spotNades,marker)
         origin.title = `${nade.name} - Lineup ${index + 1}`;
 
         origin.addEventListener("click", () => {
-
-            window.location.href = `nade.html?map=${mapId}&nade=${nade.id}`;
-
+            window.location.href =`nade.html?map=${mapId}&team=${nade.team}&type=${nade.type}&nade=${nade.id}`;
         });
 
         originContainer.appendChild(origin);
@@ -351,6 +344,5 @@ if (isDevMode) {
         }
     });
 }
-
 
 loadMap();

@@ -2,6 +2,8 @@ const params = new URLSearchParams(window.location.search);
 
 const mapId = params.get("map");
 const nadeId = params.get("nade");
+const team = params.get("team");
+const type = params.get("type");
 
 const title = document.getElementById("title");
 
@@ -54,7 +56,16 @@ async function loadNade() {
         return;
     }
 
-    backButton.href =`map.html?map=${mapId}`;
+    backButton.addEventListener("click", event => {
+        event.preventDefault();
+
+        if (document.referrer.includes("map.html")) {
+            history.back();
+        } 
+        else {
+            window.location.href = `map.html?map=${mapId}`;
+        }
+    });
 
     try {
         const response = await fetch(`data/${mapId}.json`);
@@ -65,35 +76,24 @@ async function loadNade() {
 
         const data = await response.json();
 
-        const nades = data.flatMap(team =>
-            Object.entries(team).flatMap(([side, types]) =>
-                Object.entries(types).flatMap(([type, lineups]) =>
-                    lineups.map(nade => ({
-                        ...nade,
-                        team: side,
-                        type: type
-                    }))
-                )
-            )
-        );
-
-        const nade = nades.find(item => item.id === nadeId);
+        const nade = data[team]?.[type]?.[nadeId];
 
         if (!nade) {
-
-            throw new Error(
-                "Nade not found."
-            );
-
+            throw new Error("Nade not found.");
         }
 
-        currentNade = nade;
+        currentNade = {
+            ...nade,
+            id: nadeId,
+            team,
+            type
+        };
 
         title.textContent = nade.name;
 
-        teamTag.textContent = nade.team;
+        teamTag.textContent = team;
 
-        typeTag.textContent = nade.type.toUpperCase();
+        typeTag.textContent = type.toUpperCase();
 
         difficultyTag.textContent = nade.difficulty.toUpperCase();
 
@@ -243,7 +243,6 @@ function setupImageZoom() {
 
 }
 
-
 function handleZoom(event) {
 
     const rect = lineupImage.getBoundingClientRect();
@@ -267,6 +266,5 @@ function handleZoom(event) {
     imageContainer.style.setProperty("--zoom-position",`${percentX}% ${percentY}%`);
 
 }
-
 
 loadNade();

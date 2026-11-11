@@ -1,13 +1,14 @@
-[
+{
+    "T": 
     {
-        "T": {
-            "smoke": [
+        "smoke": 
+        {
+            "b-cross-smoke-01":
             {
-                "id": "b-cross-smoke-01",
                 "landingSpotId": "b-cross-smoke",
                 "name": "B site cross Smoke",
                 "difficulty": "basic",
-                "situation": ["execute"],
+                "situation": "execute",
                 "instant": false,
                 "description": "Very simple B cross smoke",
                 "technique": "Both Clicks, Jumpthrow",
@@ -23,32 +24,38 @@
                 "lineupImage": "lineups/vertigo/b-cross-smoke.jpg",
                 "video": "lineups/vertigo/b-cross-smoke.mp4"
             }
-            ],
-            "molotov": [
+        },
+        "molotov": 
+        {
 
-            ],
-            "flashbang": [
+        },
+        "flashbang": 
+        {
 
-            ],
-            "grenade": [
-                
-            ]
+        },
+        "grenade": 
+        {
+            
         }
     },
+
+    "CT": 
     {
-        "CT": {
-            "smoke": [
+        "smoke": 
+        {
 
-            ],
-            "molotov": [
+        },
+        "molotov": 
+        {
 
-            ],
-            "flashbang": [
+        },
+        "flashbang": 
+        {
 
-            ],
-            "grenade": [
+        },
+        "grenade": 
+        {
 
-            ]
         }
     }
-]
+}

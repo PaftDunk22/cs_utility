@@ -1,13 +1,14 @@
-[
+{
+    "T": 
     {
-        "T": {
-            "smoke": [
+        "smoke": 
+        {
+            "outside-smoke-01":
             {
-                "id": "outside-smoke-01",
                 "landingSpotId": "outside-smoke-far-",
                 "name": "Outside cross Smoke",
                 "difficulty": "basic",
-                "situation": ["default"],
+                "situation": "default",
                 "instant": false,
                 "description": "Outside smoke to cross secret, lineup that falls closer to secret, stand in front of bottom left edge of the back of the truck",
                 "technique": "Left Click, Jumpthrow",
@@ -23,12 +24,12 @@
                 "lineupImage": "lineups/nuke/outside-cross-smoke-dot.jpg",
                 "video": "lineups/nuke/outside-cross-smoke-dot.mp4"
             },
+            "outside-smoke-02":
             {
-                "id": "outside-smoke-02",
                 "landingSpotId": "outside-smoke-far",
                 "name": "Outside cross Smoke",
                 "difficulty": "basic",
-                "situation": ["default"],
+                "situation": "default",
                 "instant": false,
                 "description": "Outside smoke to cross secret, lineup that falls closer to secret, stand in front of bottom left edge of the back of the truck",
                 "technique": "Left Click, Jumpthrow",
@@ -44,12 +45,12 @@
                 "lineupImage": "lineups/nuke/outside-cross-smoke-window.jpg",
                 "video": "lineups/nuke/outside-cross-smoke-window.mp4"
             },
+            "outside-smoke-03":
             {
-                "id": "outside-smoke-03",
                 "landingSpotId": "outside-smoke-close-",
                 "name": "Outside cross Smoke",
                 "difficulty": "basic",
-                "situation": ["default"],
+                "situation": "default",
                 "instant": false,
                 "description": "Outside smoke to cross secret, lineup that falls further from secret, stand next to the steps in front of the door",
                 "technique": "Left Click, Jumpthrow",
@@ -65,12 +66,12 @@
                 "lineupImage": "lineups/nuke/outside-smoke-top.jpg",
                 "video": "lineups/nuke/outside-smoke-top.mp4"
             },
+            "outside-smoke-04":
             {
-                "id": "outside-smoke-04",
                 "landingSpotId": "outside-smoke-close",
                 "name": "Outside cross Smoke",
                 "difficulty": "basic",
-                "situation": ["default"],
+                "situation": "default",
                 "instant": false,
                 "description": "Outside smoke to cross secret, lineup that falls further from to secret, stand next to the steps in front of the door",
                 "technique": "Left Click, Jumpthrow",
@@ -86,12 +87,12 @@
                 "lineupImage": "lineups/nuke/outside-smoke-right.jpg",
                 "video": "lineups/nuke/outside-smoke-right.mp4"
             },
+            "top-a-main-smoke":
             {
-                "id": "top-a-main-smoke",
                 "landingSpotId": "a-main-smoke",
                 "name": "A main Smoke",
                 "difficulty": "basic",
-                "situation": ["default"],
+                "situation": "default",
                 "instant": false,
                 "description": "A main smoke that falls on top and overflows downwards, stand on the back of the truck, next to the box",
                 "technique": "Left Click, Jumpthrow",
@@ -107,14 +108,15 @@
                 "lineupImage": "lineups/nuke/a-main-smoke.jpg",
                 "video": "lineups/nuke/a-main-smoke.mp4"
             }  
-            ],
-            "molotov": [
+        },
+        "molotov": 
+        {
+            "red-molotov":
             {
-                "id": "red-molotov",
                 "landingSpotId": "red-molotov",
                 "name": "Red box molotov",
                 "difficulty": "basic",
-                "situation": ["default"],
+                "situation": "default",
                 "instant": false,
                 "description": "Molotov for both back red box and glaive",
                 "technique": "Left Click",
@@ -130,29 +132,33 @@
                 "lineupImage": "lineups/nuke/red-molotov.jpg",
                 "video": "lineups/nuke/red-molotov.mp4"
             }        
-            ],
-            "flashbang": [
+        },
+        "flashbang": 
+        {
 
-            ],
-            "grenade": [
+        },
+        "grenade": 
+        {
 
-            ]
         }
     },
+    "CT": 
     {
-        "CT": {
-            "smoke": [
+        "smoke": 
+        {
 
-            ],
-            "molotov": [
+        },
+        "molotov": 
+        {
 
-            ],
-            "flashbang": [
+        },
+        "flashbang": 
+        {
 
-            ],
-            "grenade": [
+        },
+        "grenade": 
+        {
 
-            ]
         }
     }
-]
+}

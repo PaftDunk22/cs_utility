@@ -1,13 +1,14 @@
-[
+{
+    "T": 
     {
-        "T": {
-            "smoke": [
+        "smoke": 
+        {
+            "b-long-smoke-01":
             {
-                "id": "b-long-smoke-01",
                 "landingSpotId": "b-long-smoke",
                 "name": "B site long Smoke",
                 "difficulty": "basic",
-                "situation": ["execute"],
+                "situation": "execute",
                 "instant": false,
                 "description": "Very simple B long smoke",
                 "technique": "Left Click, Jumpthrow",
@@ -23,12 +24,12 @@
                 "lineupImage": "lineups/ancient/b-long-smoke.jpg",
                 "video": "lineups/ancient/b-long-smoke.mp4"
             },
+            "b-long-smoke-02":
             {
-                "id": "b-long-smoke-02",
                 "landingSpotId": "b-long-smoke",
                 "name": "B site long Smoke",
                 "difficulty": "basic",
-                "situation": ["execute"],
+                "situation": "execute",
                 "instant": false,
                 "description": "Very simple B long smoke",
                 "technique": "Left Click",
@@ -45,12 +46,12 @@
                 "lineupImage": "lineups/ancient/b-long-smoke2.jpg",
                 "video": "lineups/ancient/b-long-smoke2.mp4"
             },
+            "b-short-smoke-01":
             {
-                "id": "b-short-smoke-01",
                 "landingSpotId": "b-short-smoke",
                 "name": "B site short Smoke",
                 "difficulty": "basic",
-                "situation": ["execute"],
+                "situation": "execute",
                 "instant": false,
                 "description": "B site short smoke",
                 "technique": "Left Click, Jumpthrow",
@@ -67,12 +68,12 @@
                 "lineupImage": "lineups/ancient/b-short-smoke.jpg",
                 "video": "lineups/ancient/b-short-smoke.mp4"
             },
+            "b-short-smoke-02":
             {
-                "id": "b-short-smoke-02",
                 "landingSpotId": "b-short-smoke",
                 "name": "B site short Smoke",
                 "difficulty": "advanced",
-                "situation": ["execute"],
+                "situation": "execute",
                 "instant": false,
                 "description": "B site short smoke",
                 "technique": "Both Clicks, Jumpthrow",
@@ -88,12 +89,12 @@
                 "lineupImage": "lineups/ancient/b-short-smoke2.jpg",
                 "video": "lineups/ancient/b-short-smoke2.mp4"
             },
+            "a-donut-smoke-01":
             {
-                "id": "a-donut-smoke-01",
                 "landingSpotId": "a-donut-smoke",
                 "name": "A site donut Smoke",
                 "difficulty": "basic",
-                "situation": ["execute"],
+                "situation": "execute",
                 "instant": false,
                 "description": "A donut smoke",
                 "technique": "Left Click, Jumpthrow",
@@ -109,12 +110,12 @@
                 "lineupImage": "lineups/ancient/a-donut-smoke.jpg",
                 "video": "lineups/ancient/a-donut-smoke.mp4"
             },
+            "a-ct-smoke-01":
             {
-                "id": "a-ct-smoke-01",
                 "landingSpotId": "a-ct-smoke",
                 "name": "A site CT Smoke",
                 "difficulty": "basic",
-                "situation": ["execute"],
+                "situation": "execute",
                 "instant": false,
                 "description": "A site CT smoke",
                 "technique": "Left Click, Jumpthrow",
@@ -130,12 +131,12 @@
                 "lineupImage": "lineups/ancient/a-ct-smoke.jpg",
                 "video": "lineups/ancient/a-ct-smoke.mp4"
             },
+            "mid-red-smoke-01":
             {
-                "id": "mid-red-smoke-01",
                 "landingSpotId": "mid-red-smoke",
                 "name": "Mid red Smoke",
                 "difficulty": "basic",
-                "situation": ["default"],
+                "situation": "default",
                 "instant": false,
                 "description": "Mid red smoke",
                 "technique": "Left Click, Jumpthrow",
@@ -151,17 +152,19 @@
                 "lineupImage": "lineups/ancient/mid-red-smoke.jpg",
                 "video": "lineups/ancient/mid-red-smoke.mp4"
             }
-            ],
-            "molotov": [
+        },
+        "molotov": 
+        {
 
-            ],
-            "flashbang": [
+        },
+        "flashbang": 
+        {
+            "mid-flash-01":
             {
-                "id": "mid-flash-01",
                 "landingSpotId": "mid-flash",
                 "name": "Mid flash",
                 "difficulty": "basic",
-                "situation": ["default"],
+                "situation": "default",
                 "instant": false,
                 "description": "Mid flash",
                 "technique": "Left Click, Tap W Jumpthrow",
@@ -177,26 +180,28 @@
                 "lineupImage": "lineups/ancient/mid-flash.jpg",
                 "video": "lineups/ancient/mid-flash.mp4"
             }
-            ],
-            "grenade": [
+        },
+        "grenade": 
+        {
 
-            ]
         }
     },
-    {
-        "CT": {
-            "smoke": [
+    "CT": {
+        "smoke": 
+        {
 
-            ],
-            "molotov": [
+        },
+        "molotov": 
+        {
 
-            ],
-            "flashbang": [
+        },
+        "flashbang": 
+        {
 
-            ],
-            "grenade": [
+        },
+        "grenade": 
+        {
 
-            ]
         }
     }
-]
+}

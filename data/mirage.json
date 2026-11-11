@@ -1,13 +1,14 @@
-[
+{
+    "T": 
     {
-        "T": {
-            "smoke": [
+        "smoke": 
+        {
+            "mirage-window-smoke-01":
             {
-                "id": "mirage-window-smoke-01",
                 "landingSpotId": "mirage-window-smoke",
                 "name": "Window Smoke",
                 "difficulty": "basic",
-                "situation": ["default"],
+                "situation": "default",
                 "instant": true,
                 "description": "Instant mid window smoke for position 1",
                 "technique": "Left Click, Tap W + Jumpthrow",
@@ -23,33 +24,33 @@
                 "lineupImage": "lineups/mirage/window_smoke_instant_pos1.jpg",
                 "video": "lineups/mirage/window_smoke_instant_pos1.mp4"
             },
+            "mirage-window-smoke-02":
             {
-            "id": "mirage-window-smoke-02",
-            "landingSpotId": "mirage-window-smoke",
-            "name": "Window Smoke",
-            "difficulty": "basic",
-            "situation": ["default"],
-            "instant": true,
-            "description": "Instant mid window smoke for position 2",
-            "technique": "Left Click, Tap W + Jumpthrow",
-            "landingPosition": {
-                "x": 36,
-                "y": 53
-            },
-            "originPosition": {
-                "x": 88.67,
-                "y": 40
-            },
-            "setpos/setang": "setpos 1296 -352 -104.13;setang -42.455078 -173.246902 0",
-            "lineupImage": "lineups/mirage/window_smoke_instant_pos2.jpg",
-            "video": "lineups/mirage/window_smoke_instant_pos2.mp4"
-            },
-            {
-                "id": "mirage-window-smoke-03",
                 "landingSpotId": "mirage-window-smoke",
                 "name": "Window Smoke",
                 "difficulty": "basic",
-                "situation": ["default"],
+                "situation": "default",
+                "instant": true,
+                "description": "Instant mid window smoke for position 2",
+                "technique": "Left Click, Tap W + Jumpthrow",
+                "landingPosition": {
+                    "x": 36,
+                    "y": 53
+                },
+                "originPosition": {
+                    "x": 88.67,
+                    "y": 40
+                },
+                "setpos/setang": "setpos 1296 -352 -104.13;setang -42.455078 -173.246902 0",
+                "lineupImage": "lineups/mirage/window_smoke_instant_pos2.jpg",
+                "video": "lineups/mirage/window_smoke_instant_pos2.mp4"
+            },
+            "mirage-window-smoke-03":
+            {
+                "landingSpotId": "mirage-window-smoke",
+                "name": "Window Smoke",
+                "difficulty": "basic",
+                "situation": "default",
                 "instant": true,
                 "description": "Instant mid window smoke for position 3",
                 "technique": "Left Click, Tap W + Jumpthrow",
@@ -65,12 +66,12 @@
                 "lineupImage": "lineups/mirage/window_smoke_instant_pos3.jpg",
                 "video": "lineups/mirage/window_smoke_instant_pos3.mp4"
             },
+            "mirage-window-smoke-04":
             {
-                "id": "mirage-window-smoke-04",
                 "landingSpotId": "mirage-window-smoke",
                 "name": "Window Smoke",
                 "difficulty": "basic",
-                "situation": ["default"],
+                "situation": "default",
                 "instant": true,
                 "description": "Instant mid window smoke for position 4",
                 "technique": "Left Click, Tap W + Jumpthrow",
@@ -86,12 +87,12 @@
                 "lineupImage": "lineups/mirage/window_smoke_instant_pos4.jpg",
                 "video": "lineups/mirage/window_smoke_instant_pos4.mp4"
             },
+            "mirage-window-smoke-05":
             {
-                "id": "mirage-window-smoke-05",
                 "landingSpotId": "mirage-window-smoke",
                 "name": "Window Smoke",
                 "difficulty": "basic",
-                "situation": ["default"],
+                "situation": "default",
                 "instant": true,
                 "description": "Instant mid window smoke for position 5",
                 "technique": "Left Click, Tap W + Jumpthrow",
@@ -107,12 +108,12 @@
                 "lineupImage": "lineups/mirage/window_smoke_instant_pos5.jpg",
                 "video": "lineups/mirage/window_smoke_instant_pos5.mp4"
             },
+            "mirage-window-smoke-06":
             {
-                "id": "mirage-window-smoke-06",
                 "landingSpotId": "mirage-window-smoke",
                 "name": "Window Smoke",
                 "difficulty": "basic",
-                "situation": ["default"],
+                "situation": "default",
                 "instant": false,
                 "description": "Very simple mid window smoke",
                 "technique": "Left Click, Tap W + Jumpthrow",
@@ -128,12 +129,12 @@
                 "lineupImage": "lineups/mirage/window-smoke2.jpg",
                 "video": "lineups/mirage/window-smoke2.mp4"
             },
+            "mirage-window-smoke-07":
             {
-                "id": "mirage-window-smoke-07",
                 "landingSpotId": "mirage-window-smoke",
                 "name": "Window Smoke",
                 "difficulty": "basic",
-                "situation": ["default"],
+                "situation": "default",
                 "instant": false,
                 "description": "Very simple mid window smoke",
                 "technique": "Left Click, Jumpthrow",
@@ -149,12 +150,12 @@
                 "lineupImage": "lineups/mirage/window-smoke.jpg",
                 "video": "lineups/mirage/window-smoke.mp4"
             },
+            "mirage-window-smoke-08":
             {
-                "id": "mirage-window-smoke-08",
                 "landingSpotId": "mirage-window-smoke",
                 "name": "Mid Round Window Smoke",
                 "difficulty": "advanced",
-                "situation": ["default"],
+                "situation": "default",
                 "instant": false,
                 "description": "Mid round window smoke from top mid, while chrouched aim top left of box, move a bit to the left for a better spread",
                 "technique": "Left Click, Crouched",
@@ -170,12 +171,12 @@
                 "lineupImage": "lineups/mirage/window-smoke-mid.jpg",
                 "video": "lineups/mirage/window-smoke-mid.mp4"
             },
+            "mirage-short-smoke-01":
             {
-                "id": "mirage-short-smoke-01",
                 "landingSpotId": "mirage-short-smoke",
                 "name": "Short Smoke",
                 "difficulty": "basic",
-                "situation": ["default"],
+                "situation": "default",
                 "instant": false,
                 "description": "Short smoke for start of round, can go for a fast A split afterwards",
                 "technique": "Left Click, Jumpthrow",
@@ -191,12 +192,12 @@
                 "lineupImage": "lineups/mirage/mid-short-smoke.jpg",
                 "video": "lineups/mirage/mid-short-smoke.mp4"
             },
+            "mirage-b-window-smoke-01":
             {
-                "id": "mirage-b-window-smoke-01",
                 "landingSpotId": "mirage-b-window-smoke",
                 "name": "Kitchen Window Smoke",
                 "difficulty": "basic",
-                "situation": ["execute"],
+                "situation": "execute",
                 "instant": false,
                 "description": "Very simple Kitchen window smoke",
                 "technique": "Left Click, Jumpthrow",
@@ -212,12 +213,12 @@
                 "lineupImage": "lineups/mirage/b-window-smoke.jpg",
                 "video": "lineups/mirage/b-window-smoke.mp4"
             },
+            "mirage-b-door-smoke-01":
             {
-                "id": "mirage-b-door-smoke-01",
                 "landingSpotId": "mirage-b-door-smoke",
                 "name": "Kitchen Door Smoke",
                 "difficulty": "advanced",
-                "situation": ["execute"],
+                "situation": "execute",
                 "instant": false,
                 "description": "Very simple Kitchen door smoke",
                 "technique": "Left Click, Tap W + Jumpthrow",
@@ -233,12 +234,12 @@
                 "lineupImage": "lineups/mirage/b-door-smoke.jpg",
                 "video": "lineups/mirage/b-door-smoke.mp4"
             },
+            "mirage-conn-smoke-01":
             {
-                "id": "mirage-conn-smoke-01",
                 "landingSpotId": "mirage-conn-smoke",
                 "name": "Connector Smoke",
                 "difficulty": "basic",
-                "situation": ["default"],
+                "situation": "default",
                 "instant": false,
                 "description": "Faster connector smoke, aim at the dark dot on the wall",
                 "technique": "Left Click, Tap W + Jumpthrow",
@@ -254,12 +255,12 @@
                 "lineupImage": "lineups/mirage/conn-smoke-spawn.jpg",
                 "video": "lineups/mirage/conn-smoke-spawn.mp4"
             },
+            "mirage-conn-smoke-02":
             {
-                "id": "mirage-conn-smoke-02",
                 "landingSpotId": "mirage-conn-smoke",
                 "name": "Connector Smoke",
                 "difficulty": "advanced",
-                "situation": ["default"],
+                "situation": "default",
                 "instant": false,
                 "description": "Simple mid round connector smoke",
                 "technique": "Left Click",
@@ -275,12 +276,12 @@
                 "lineupImage": "lineups/mirage/conn-smoke-mid.jpg",
                 "video": "lineups/mirage/conn-smoke-mid.mp4"
             },
+            "mirage-conn-smoke-03":
             {
-                "id": "mirage-conn-smoke-03",
                 "landingSpotId": "mirage-conn-smoke",
                 "name": "Connector Smoke from B",
                 "difficulty": "advanced",
-                "situation": ["default"],
+                "situation": "default",
                 "instant": false,
                 "description": "Mid round connector smoke from B, can go for a B split afterwards",
                 "technique": "Left Click",
@@ -296,12 +297,12 @@
                 "lineupImage": "lineups/mirage/conn-smoke-b.jpg",
                 "video": "lineups/mirage/conn-smoke-b.mp4"
             },
+            "mirage-ct-smoke-01":
             {
-                "id": "mirage-ct-smoke-01",
                 "landingSpotId": "mirage-ct-smoke",
                 "name": "CT Smoke",
                 "difficulty": "basic",
-                "situation": ["execute"],
+                "situation": "execute",
                 "instant": false,
                 "description": "Very simple CT smoke, stand in front of the fence",
                 "technique": "Left Click, Jumpthrow",
@@ -317,12 +318,12 @@
                 "lineupImage": "lineups/mirage/ct-smoke.jpg",
                 "video": "lineups/mirage/ct-smoke.mp4"
             },
+            "mirage-ct-smoke-02":
             {
-                "id": "mirage-ct-smoke-02",
                 "landingSpotId": "mirage-ct-smoke",
                 "name": "CT Smoke(top box)",
                 "difficulty": "basic",
-                "situation": ["execute"],
+                "situation": "execute",
                 "instant": false,
                 "description": "Simple CT smoke that falls on top of CT box",
                 "technique": "Left Click, Jumpthrow",
@@ -338,12 +339,12 @@
                 "lineupImage": "lineups/mirage/ct-smoke2.jpg",
                 "video": "lineups/mirage/ct-smoke2.mp4"
             },
+            "mirage-a-jungle-smoke-01":
             {
-                "id": "mirage-a-jungle-smoke-01",
                 "landingSpotId": "mirage-a-jungle-smoke",
                 "name": "A Jungle Smoke",
                 "difficulty": "basic",
-                "situation": ["execute"],
+                "situation": "execute",
                 "instant": false,
                 "description": "Very simple jungle smoke",
                 "technique": "Left Click",
@@ -359,12 +360,12 @@
                 "lineupImage": "lineups/mirage/a-jungle-smoke.jpg",
                 "video": "lineups/mirage/a-jungle-smoke.mp4"
             },
+            "mirage-stairs-smoke-01":
             {
-                "id": "mirage-stairs-smoke-01",
                 "landingSpotId": "mirage-stairs-smoke",
                 "name": "A Stairs Smoke",
                 "difficulty": "basic",
-                "situation": ["execute"],
+                "situation": "execute",
                 "instant": false,
                 "description": "Very simple stairs smoke",
                 "technique": "Both Clicks, Jumpthrow",
@@ -380,12 +381,12 @@
                 "lineupImage": "lineups/mirage/stairs-smoke.jpg",
                 "video": "lineups/mirage/stairs-smoke.mp4"
             },
+            "mirage-top-conn-smoke":
             {
-                "id": "mirage-top-conn-smoke",
                 "landingSpotId": "mirage-top-conn-smoke",
                 "name": "Top Connector Smoke",
                 "difficulty": "advanced",
-                "situation": ["default"],
+                "situation": "default",
                 "instant": false,
                 "description": "Top connector smoke from mid",
                 "technique": "Left Click",
@@ -401,12 +402,12 @@
                 "lineupImage": "lineups/mirage/top-conn-smoke.jpg",
                 "video": "lineups/mirage/top-conn-smoke.mp4"
             },
-            {
-                "id": "mirage-jungle-smoke",
+            "mirage-jungle-smoke":
+            {    
                 "landingSpotId": "mirage-jungle-smoke",
                 "name": "Jungle Smoke",
                 "difficulty": "advanced",
-                "situation": ["default"],
+                "situation": "default",
                 "instant": false,
                 "description": "Jungle smoke from mid, place -1y on the edge of the branch",
                 "technique": "Left Click",
@@ -422,12 +423,12 @@
                 "lineupImage": "lineups/mirage/jungle-smoke-mid.jpg",
                 "video": "lineups/mirage/jungle-smoke-mid.mp4"
             },
+            "mirage-short-smoke-mid":
             {
-                "id": "mirage-short-smoke-mid",
                 "landingSpotId": "mirage-short-smoke-mid",
                 "name": "Short Smoke",
                 "difficulty": "advanced",
-                "situation": ["default"],
+                "situation": "default",
                 "instant": false,
                 "description": "Short smoke from mid boxes, crouch and place -1x a bit left from the sticking tip of the box",
                 "technique": "Left Click",
@@ -443,12 +444,12 @@
                 "lineupImage": "lineups/mirage/short-smoke-mid.jpg",
                 "video": "lineups/mirage/short-smoke-mid.mp4"
             },
+            "mirage-a-jungle-smoke":
             {
-                "id": "mirage-a-jungle-smoke",
                 "landingSpotId": "mirage-a-jungle-smoke",
                 "name": "Jungle Smoke",
                 "difficulty": "basic",
-                "situation": ["execute"],
+                "situation": "execute",
                 "instant": false,
                 "description": "Jungle smoke for an A exec",
                 "technique": "Left Click, Jumpthrow",
@@ -464,14 +465,15 @@
                 "lineupImage": "lineups/mirage/jungle-smoke2.jpg",
                 "video": "lineups/mirage/jungle-smoke2.mp4"
             }
-            ],
-            "molotov": [
+        },
+        "molotov": 
+        {
+            "mirage-stairs-molotov":
             {
-                "id": "mirage-stairs-molotov",
                 "landingSpotId": "mirage-stairs-molotov",
                 "name": "Stairs molotov",
                 "difficulty": "advanced",
-                "situation": ["execute"],
+                "situation": "execute",
                 "instant": false,
                 "description": "A stairs molotov for a fast exec",
                 "technique": "Left Click, Walking",
@@ -487,12 +489,12 @@
                 "lineupImage": "lineups/mirage/stairs-molotov.jpg",
                 "video": "lineups/mirage/stairs-molotov.mp4"
             },
+            "mirage-shadow-molotov":
             {
-                "id": "mirage-shadow-molotov",
                 "landingSpotId": "mirage-shadow-molotov",
                 "name": "Shadow Molotov",
                 "difficulty": "advanced",
-                "situation": ["execute"],
+                "situation": "execute",
                 "instant": false,
                 "description": "Shadow molotov from palace",
                 "technique": "Left Click, Running",
@@ -508,14 +510,15 @@
                 "lineupImage": "lineups/mirage/shadow-molotov.jpg",
                 "video": "lineups/mirage/shadow-molotov.mp4"
             }
-            ],
-            "flashbang": [
+        },
+        "flashbang": 
+        {
+            "mirage-conn-flash":
             {
-                "id": "mirage-conn-flash",
                 "landingSpotId": "mirage-conn-flash",
                 "name": "Connector Flashbang",
                 "difficulty": "advanced",
-                "situation": ["execute"],
+                "situation": "execute",
                 "instant": false,
                 "description": "Connector flash from mid boxes, flashes behind box",
                 "technique": "Left Click",
@@ -531,30 +534,34 @@
                 "lineupImage": "lineups/mirage/conn-flash.jpg",
                 "video": "lineups/mirage/conn-flash.mp4"
             }
-            ],
-            "grenade": [
+        },
+        "grenade": 
+        {
 
-            ]
         }
     },
+    "CT": 
     {
-        "CT": {
-            "smoke": [
+        "smoke": 
+        {
 
-            ],
-            "molotov": [
+        },
+        "molotov": 
+        {
 
-            ],
-            "flashbang": [
+        },
+        "flashbang": 
+        {
 
-            ],
-            "grenade": [
+        },
+        "grenade": 
+        {
+            "mirage-window-nade-01":
             {
-                "id": "mirage-window-nade-01",
                 "landingSpotId": "mirage-window-nade",
                 "name": "Window Grenade",
                 "difficulty": "advanced",
-                "situation": ["default"],
+                "situation": "default",
                 "instant": false,
                 "description": "Nade off the mid window smoke, target the small black spot on the wood, ideal to set up your AWPer",
                 "technique": "Left Click",
@@ -570,7 +577,6 @@
                 "lineupImage": "lineups/mirage/window-nade.jpg",
                 "video": "lineups/mirage/window-nade.mp4"
             }
-            ]
         }
     }
-]
+}

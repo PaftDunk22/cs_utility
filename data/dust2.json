@@ -1,13 +1,14 @@
-[
+{
+    "T": 
     {
-        "T": {
-            "smoke": [
+        "smoke": 
+        {
+            "xbox-smoke-01":
             {
-                "id": "xbox-smoke-01",
                 "landingSpotId": "xbox-smoke",
                 "name": "Xbox Smoke",
                 "difficulty": "basic",
-                "situation": ["default"],
+                "situation": "default",
                 "instant": false,
                 "description": "Xbox smoke from T-spawn",
                 "technique": "Left Click, Jumpthrow",
@@ -23,12 +24,12 @@
                 "lineupImage": "lineups/dust2/xbox-smoke.jpg",
                 "video": "lineups/dust2/xbox-smoke.mp4"
             },
+            "xbox-smoke-02":
             {
-                "id": "xbox-smoke-02",
                 "landingSpotId": "xbox-smoke",
                 "name": "Xbox Smoke",
                 "difficulty": "basic",
-                "situation": ["default"],
+                "situation": "default",
                 "instant": false,
                 "description": "Xbox smoke from T-spawn",
                 "technique": "Left Click, Jumpthrow",
@@ -44,12 +45,12 @@
                 "lineupImage": "lineups/dust2/xbox-smoke2.jpg",
                 "video": "lineups/dust2/xbox-smoke2.mp4"
             },
+            "b-door-smoke-01":
             {
-                "id": "b-door-smoke-01",
                 "landingSpotId": "b-door-smoke",
                 "name": "B door smoke",
                 "difficulty": "basic",
-                "situation": ["execute"],
+                "situation": "execute",
                 "instant": false,
                 "description": "B door smoke from outside tunnel",
                 "technique": "Left Click, Jumpthrow",
@@ -65,12 +66,12 @@
                 "lineupImage": "lineups/dust2/b-door-smoke.jpg",
                 "video": "lineups/dust2/b-door-smoke.mp4"
             },
+            "b-door-smoke-02":
             {
-                "id": "b-door-smoke-02",
                 "landingSpotId": "b-door-smoke",
                 "name": "B door smoke",
                 "difficulty": "basic",
-                "situation": ["execute"],
+                "situation": "execute",
                 "instant": false,
                 "description": "B door smoke from inside tunnel",
                 "technique": "Left Click",
@@ -86,12 +87,12 @@
                 "lineupImage": "lineups/dust2/b-door-smoke2.jpg",
                 "video": "lineups/dust2/b-door-smoke2.mp4"
             },
+            "b-window-smoke-01":
             {
-                "id": "b-window-smoke-01",
                 "landingSpotId": "b-window-smoke",
                 "name": "B door smoke",
                 "difficulty": "basic",
-                "situation": ["execute"],
+                "situation": "execute",
                 "instant": false,
                 "description": "B window smoke from outside tunnel",
                 "technique": "Left Click, Jumpthrow",
@@ -107,12 +108,12 @@
                 "lineupImage": "lineups/dust2/b-window-smoke.jpg",
                 "video": "lineups/dust2/b-window-smoke.mp4"
             },
+            "b-split-smoke-01":
             {
-                "id": "b-split-smoke-01",
                 "landingSpotId": "b-split-smoke",
                 "name": "CT Smoke for B",
                 "difficulty": "basic",
-                "situation": ["execute"],
+                "situation": "execute",
                 "instant": false,
                 "description": "CT Smoke for a B split, while crouched follow right part of the screwhead until you hit the darker part of the wood",
                 "technique": "Left Click, Crouch, Jumpthrow",
@@ -128,12 +129,12 @@
                 "lineupImage": "lineups/dust2/b-split-smoke.jpg",
                 "video": "lineups/dust2/b-split-smoke.mp4"
             },
+            "a-ct-smoke-01":    
             {
-                "id": "a-ct-smoke-01",
                 "landingSpotId": "a-ct-smoke",
                 "name": "CT Smoke for A",
                 "difficulty": "basic",
-                "situation": ["execute"],
+                "situation": "execute",
                 "instant": false,
                 "description": "CT smoke for A execute, aim at bottom of palm tree",
                 "technique": "Left Click",
@@ -149,12 +150,12 @@
                 "lineupImage": "lineups/dust2/a-ct-smoke.jpg",
                 "video": "lineups/dust2/a-ct-smoke.mp4"
             },
+            "a-cross-smoke-01":    
             {
-                "id": "a-cross-smoke-01",
                 "landingSpotId": "a-cross-smoke",
                 "name": "A Cross Smoke",
                 "difficulty": "basic",
-                "situation": ["execute"],
+                "situation": "execute",
                 "instant": false,
                 "description": "Basic cross smoke for an A execute",
                 "technique": "Left Click",
@@ -170,12 +171,12 @@
                 "lineupImage": "lineups/dust2/a-cross-smoke.jpg",
                 "video": "lineups/dust2/a-cross-smoke.mp4"
             },
+            "a-cross-smoke-02":
             {
-                "id": "a-cross-smoke-02",
                 "landingSpotId": "a-cross-smoke",
                 "name": "A Cross Smoke",
                 "difficulty": "advanced",
-                "situation": ["execute"],
+                "situation": "execute",
                 "instant": false,
                 "description": "Alternative A cross smoke for an A execute, harder to block",
                 "technique": "Both Clicks, Tap W + Jumpthrow",
@@ -191,12 +192,12 @@
                 "lineupImage": "lineups/dust2/a-cross-smoke2.jpg",
                 "video": "lineups/dust2/a-cross-smoke2.mp4"
             },
+            "a-short-smoke-01":
             {
-                "id": "a-short-smoke-01",
                 "landingSpotId": "a-short-smoke",
                 "name": "A Short Smoke",
                 "difficulty": "basic",
-                "situation": ["execute"],
+                "situation": "execute",
                 "instant": false,
                 "description": "A short smoke for an A execute",
                 "technique": "Left Click, Jumpthrow",
@@ -212,14 +213,15 @@
                 "lineupImage": "lineups/dust2/a-short-smoke.jpg",
                 "video": "lineups/dust2/a-short-smoke.mp4"
             }
-            ],
-            "molotov": [
+        },
+        "molotov": 
+        {
+            "car-molotov-01":
             {
-                "id": "car-molotov-01",
                 "landingSpotId": "car-molotov",
                 "name": "Car Molotov",
                 "difficulty": "basic",
-                "situation": ["default"],
+                "situation": "default",
                 "instant": false,
                 "description": "Molotov for car",
                 "technique": "Left Click, Tap W + Jumpthrow",
@@ -235,24 +237,26 @@
                 "lineupImage": "lineups/dust2/car-molotov.jpg",
                 "video": "lineups/dust2/car-molotov.mp4"
             }
-            ],
-            "flashbang": [
+        },
+        "flashbang": 
+        {
 
-            ],
-            "grenade": [
+        },
+        "grenade": 
+        {
 
-            ]
         }
     },
+    "CT": 
     {
-        "CT": {
-            "smoke": [
+        "smoke": 
+        {
+            "long-door-smoke":
             {
-                "id": "long-door-smoke",
                 "landingSpotId": "long-door",
                 "name": "Long door smoke",
                 "difficulty": "basic",
-                "situation": ["default"],
+                "situation": "default",
                 "instant": false,
                 "description": "Long door smoke from elevator",
                 "technique": "Left Click, Jumpthrow",
@@ -268,16 +272,18 @@
                 "lineupImage": "lineups/dust2/long-door-smoke.jpg",
                 "video": "lineups/dust2/long-door-smoke2.mp4"
             }
-            ],
-            "molotov": [
+        },
+        "molotov": 
+        {
 
-            ],
-            "flashbang": [
+        },
+        "flashbang": 
+        {
 
-            ],
-            "grenade": [
+        },
+        "grenade": 
+        {
 
-            ]
         }
     }
-]
+}
