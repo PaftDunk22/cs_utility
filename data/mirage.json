@@ -115,7 +115,7 @@
                 "difficulty": "basic",
                 "situation": "default",
                 "instant": false,
-                "description": "Very simple mid window smoke",
+                "description": "Very simple mid window smoke, aim at the black dot on the wall",
                 "technique": "Left Click, Tap W + Jumpthrow",
                 "landingPosition": {
                     "x": 36,
@@ -136,7 +136,7 @@
                 "difficulty": "basic",
                 "situation": "default",
                 "instant": false,
-                "description": "Very simple mid window smoke",
+                "description": "Very simple mid window smoke, aim at the top left part of the second 'V' shape while standing next to the staircase",
                 "technique": "Left Click, Jumpthrow",
                 "landingPosition": {
                     "x": 36,
@@ -199,7 +199,7 @@
                 "difficulty": "basic",
                 "situation": "execute",
                 "instant": false,
-                "description": "Very simple Kitchen window smoke",
+                "description": "Very simple Kitchen window smoke, aim at the meeting lines at the edge of the tower",
                 "technique": "Left Click, Jumpthrow",
                 "landingPosition": {
                     "x": 25.38,
@@ -220,7 +220,7 @@
                 "difficulty": "advanced",
                 "situation": "execute",
                 "instant": false,
-                "description": "Very simple Kitchen door smoke",
+                "description": "Very simple Kitchen door smoke, aim at the top of the rightmost window",
                 "technique": "Left Click, Tap W + Jumpthrow",
                 "landingPosition": {
                     "x": 17.36,
@@ -346,7 +346,7 @@
                 "difficulty": "basic",
                 "situation": "execute",
                 "instant": false,
-                "description": "Very simple jungle smoke",
+                "description": "Very simple jungle smoke, aim a bit to the right from the top left edge",
                 "technique": "Left Click",
                 "landingPosition": {
                     "x": 49.56,
@@ -367,7 +367,7 @@
                 "difficulty": "basic",
                 "situation": "execute",
                 "instant": false,
-                "description": "Very simple stairs smoke",
+                "description": "Very simple stairs smoke, aim at the top left of the black line",
                 "technique": "Both Clicks, Jumpthrow",
                 "landingPosition": {
                     "x": 54.9,

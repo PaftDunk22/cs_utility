@@ -23,9 +23,7 @@ const technique = document.getElementById("technique");
 
 const combinedCommand = document.getElementById("setpos-setang");
 
-const copyCommandButton =document.getElementById("copy-command");
-
-const lineupImage = document.getElementById("lineup-image");
+const copyButton = document.getElementById("copy-button");
 
 const backButton = document.getElementById("back-button");
 
@@ -36,6 +34,8 @@ const imageButton = document.getElementById("image-button");
 const videoContainer = document.getElementById("video-container");
 
 const imageContainer = document.getElementById("image-container");
+
+const image = document.getElementById("nade-image");
 
 const video = document.getElementById("nade-video");
 
@@ -106,11 +106,12 @@ async function loadNade() {
 
         if (hasVideo){
             video.src = IS_LOCAL ? nade.video : (BASE_URL + nade.video);
-            setupVideoZoom();
+            setupZoom(video);
+        
         } 
         if (hasImage) {
-            lineupImage.src = IS_LOCAL ? nade.image : (BASE_URL + nade.image);
-            lineupImage.onload = setupImageZoom;
+            image.src = IS_LOCAL ? nade.image : (BASE_URL + nade.image);
+            setupZoom(image);
         }
 
         if (hasVideo) showVideo();
@@ -133,10 +134,8 @@ function showVideo() {
 
     videoButton.classList.add("active");
     imageButton.classList.remove("active");
-    videoContainer.classList.add("active");
-    imageContainer.classList.remove("active");
-
-    video.play().catch(() => {});
+    videoContainer.style.display = "block";
+    imageContainer.style.display = "none";
 
 }
 
@@ -144,9 +143,8 @@ function showImage() {
 
     imageButton.classList.add("active");
     videoButton.classList.remove("active");
-    imageContainer.classList.add("active");
-    videoContainer.classList.remove("active");
-
+    videoContainer.style.display = "none";
+    imageContainer.style.display = "block";
     video.pause();
 
 }
@@ -162,240 +160,44 @@ async function hasMedia(mediaType) {
     }
 }
 
-async function copyCommand(command,button) 
-{
+copyButton.addEventListener("click", async () => {
 
-    if (!command || command === "-") {
-        return;
-    }
+    await navigator.clipboard.writeText(currentNade["setpos/setang"]);
 
-    try {
+    copyButton.textContent = "COPIED";
 
-        await navigator.clipboard.writeText(
-            command
-        );
+    setTimeout(() => {
+        copyButton.textContent = "COPY COMMAND";
+    }, 1200);
 
-        const originalText = button.textContent;
-
-        button.textContent = "COPIED";
-
-        setTimeout(() => {
-            button.textContent = originalText;
-        }, 1200);
-
-    } catch (error) {
-
-        console.error(
-            "Could not copy command:",
-            error
-        );
-    }
-
-}
-
-copyCommandButton.addEventListener("click", async () => {
-
-    try {
-
-        await navigator.clipboard.writeText(currentNade["setpos/setang"]);
-
-        const originalText = copyCommandButton.textContent;
-
-        copyCommandButton.textContent = "COPIED";
-
-        setTimeout(() => {
-
-            copyCommandButton.textContent =originalText;
-
-        }, 1200);
-
-    } catch (error) {
-
-        console.error(
-            "Could not copy command:",
-            error
-        );
-    }
 });
 
-function setupImageZoom() {
+function setupZoom(media) {
 
-    imageContainer.style.setProperty("--zoom-image",`url("${lineupImage.src}")`);
+    const zoom = 3;
 
-    lineupImage.addEventListener("mousemove",handleZoom);
+    media.addEventListener("mousemove", e => {
 
-    lineupImage.addEventListener("mouseenter",() => 
-        {
-            imageContainer.classList.add("zooming");
+        const rect = media.getBoundingClientRect();
+
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+
+        if (y > rect.height * 0.90 && media.tagName == "VIDEO") {
+            return;
         }
-    );
 
-    lineupImage.addEventListener("mouseleave",() => 
-        {
-            imageContainer.classList.remove("zooming");
-        }
-    );
+        const originX = (x / rect.width) * 100;
+        const originY = (y / rect.height) * 100;
 
-}
-
-function setupImageZoom() {
-
-    imageContainer.style.setProperty("--zoom-image", `url("${lineupImage.src}")`);
-
-    lineupImage.addEventListener("mousemove", event => {
-        handleZoom(event, lineupImage, imageContainer);
-    });
-
-    lineupImage.addEventListener("mouseenter", () => {
-        imageContainer.classList.add("zooming");
-    });
-
-    lineupImage.addEventListener("mouseleave", () => {
-        imageContainer.classList.remove("zooming");
-    });
-
-}
-
-function setupVideoZoom() {
-
-    video.addEventListener("mousemove", event => {
-
-    const rect = video.getBoundingClientRect();
-    const y = event.clientY - rect.top;
-
-    if (y > rect.height - 60) {
-        videoContainer.classList.remove("zooming");
-        return;
-    }
-
-    videoContainer.classList.add("zooming");
-    handleZoom(event, video, videoContainer);
+        media.style.transformOrigin = `${originX}% ${originY}%`;
+        media.style.transform = `scale(${zoom})`;
 
     });
 
-    video.addEventListener("mouseenter", () => {
-        videoContainer.classList.add("zooming");
-    });
-
-    video.addEventListener("mouseleave", () => {
-        videoContainer.classList.remove("zooming");
-        video.style.transformOrigin = "center center";
-    });
+    media.addEventListener("mouseleave", () => media.style.transform = "scale(1)");
 
 }
 
-function handleZoom(event, element, container) {
-
-    const rect = element.getBoundingClientRect();
-
-    const x = event.clientX - rect.left;
-    const y = event.clientY - rect.top;
-
-    const percentX = (x / rect.width) * 100;
-    const percentY = (y / rect.height) * 100;
-
-    const zoom = 2.5;
-
-    if (element === video) {
-        video.style.transformOrigin = `${percentX}% ${percentY}%`;
-    } else {
-        container.style.setProperty("--mouse-x", `${x}px`);
-        container.style.setProperty("--mouse-y", `${y}px`);
-
-        container.style.setProperty(
-            "--zoom-size",
-            `${rect.width * zoom}px ${rect.height * zoom}px`
-        );
-
-        container.style.setProperty(
-            "--zoom-position",
-            `${percentX}% ${percentY}%`
-        );
-    }
-
-}
-
-/*
-function setupVideoZoom() {
-
-    video.addEventListener("mousemove", handleVideoZoom);
-
-    video.addEventListener("mouseenter", () => {
-        videoContainer.classList.add("zooming");
-    });
-
-    video.addEventListener("mouseleave", () => {
-        videoContainer.classList.remove("zooming");
-        video.style.transformOrigin = "center center";
-    });
-
-}
-
-function handleZoom(event, element, container) {
-
-    const rect = element.getBoundingClientRect();
-
-    const x = event.clientX - rect.left;
-    const y = event.clientY - rect.top;
-
-    const percentX = (x / rect.width) * 100;
-    const percentY = (y / rect.height) * 100;
-
-    container.style.setProperty("--mouse-x", `${x}px`);
-    container.style.setProperty("--mouse-y", `${y}px`);
-
-    const zoom = 2.5;
-
-    container.style.setProperty(
-        "--zoom-size",
-        `${rect.width * zoom}px ${rect.height * zoom}px`
-    );
-
-    container.style.setProperty(
-        "--zoom-position",
-        `${percentX}% ${percentY}%`
-    );
-}
-
-
-function handleVideoZoom(event) {
-
-    if (event.offsetY > video.clientHeight - 45) return;
-
-    const rect = video.getBoundingClientRect();
-
-    const x = event.clientX - rect.left;
-    const y = event.clientY - rect.top;
-
-    const percentX = (x / rect.width) * 100;
-    const percentY = (y / rect.height) * 100;
-
-    video.style.transformOrigin = `${percentX}% ${percentY}%`;
-
-}
-
-function handleZoom(event) {
-
-    const rect = lineupImage.getBoundingClientRect();
-
-    const x = event.clientX - rect.left;
-
-    const y = event.clientY - rect.top;
-        
-    const percentX = (x / rect.width) * 100;
-
-    const percentY = (y / rect.height) * 100;
-
-    imageContainer.style.setProperty("--mouse-x",`${x}px`);
-
-    imageContainer.style.setProperty("--mouse-y",`${y}px`);
-
-    const zoom = 2.5;
-
-    imageContainer.style.setProperty("--zoom-size",`${rect.width * zoom}px ${rect.height * zoom}px`);
-
-    imageContainer.style.setProperty("--zoom-position",`${percentX}% ${percentY}%`);
-
-}
-*/
 loadNade();
+

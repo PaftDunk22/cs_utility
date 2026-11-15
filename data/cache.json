@@ -350,17 +350,17 @@
                 "difficulty": "advanced",
                 "situation": "default",
                 "instant": false,
-                "description": "Vent molotov, 1 walking step forward and jumpthrow, can throw a simple decoy first to break vent if it is not already",
-                "technique": "Left Click, Walking, Jumpthrow",
+                "description": "Vent molotov, stand at the tip of the leaf in front of the stick on the ground then aim between the 2 white spots on the wall, burns fully without previously destroyed vent",
+                "technique": "Left Click, Tap W + Jumpthrow",
                 "landingPosition": {
                     "x": 45.10,
                     "y": 62.17
                 },
                 "originPosition": {
-                    "x": 58.71,
-                    "y": 38.51
+                    "x": 56.94,
+        	        "y": 39.46
                 },
-                "setpos/setang": "setpos 1315.937500 1106.255615 1711.048828;setang 5.059602 -121.695007 0",
+                "setpos/setang": "setpos 1224.983521 1006.266418 1680.921631;setang 2.210008 -119.920631 0",
                 "image": "lineups/cache/vent-molotov.jpg",
                 "video": "lineups/cache/vent-molotov.mp4"
             },

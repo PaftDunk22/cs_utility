@@ -146,83 +146,27 @@
     color: white;
 }
 
-
-.media-container {
-    display: none;
-
-    background: #050505;
+/* .media-container{
+    width: 100%;
 
     border: 1px solid #333;
 
-    border-radius: 6px;
+    border-radius: 10px;
 
+} */
+
+#video-container,
+#image-container {
     overflow: hidden;
 }
 
-.media-container.active {
-    display: block;
-}
-
-#nade-video {
+.media-container {
     width: 100%;
-
-    display: block;
-
-    background: #000;
-
-    transition: transform 0.15s ease;
-}
-
-#video-container.zooming #nade-video {
-    transform: scale(2.5);
+    border: 1px solid #333;
+    border-radius: 10px;
+    transform-origin: center;
     cursor: zoom-in;
-}
-
-.image-container {
-    position: relative;
-
-    cursor: crosshair;
-}
-
-.image-container img {
-    width: 100%;
-
-    height: auto;
-
-    display: block;
-}
-
-.image-container.zooming::after {
-    content: "";
-
-    position: absolute;
-
-    width: 220px;
-    height: 220px;
-
-    left: var(--mouse-x);
-    top: var(--mouse-y);
-
-    transform: translate(-50%, -50%);
-
-    border: 2px solid white;
-
-    border-radius: 50%;
-
-    background-image: var(--zoom-image);
-
-    background-repeat: no-repeat;
-
-    background-size: var(--zoom-size);
-
-    background-position: var(--zoom-position);
-
-    pointer-events: none;
-
-    box-shadow:
-        0 0 0 2px rgba(0, 0, 0, 0.6);
-
-    z-index: 5;
+    transition: transform 0.25s ease-out;
 }
 
 .details {
@@ -304,7 +248,7 @@
     word-break: break-word;
 }
 
-.copy-button {
+#copy-button {
     padding: 6px 11px;
 
     border: 1px solid #444;
@@ -328,7 +272,7 @@
         color 0.15s;
 }
 
-.copy-button:hover {
+#copy-button:hover {
     background: #2d2d2d;
 
     color: white;
@@ -368,3 +312,4 @@
     }
 
 }
+
